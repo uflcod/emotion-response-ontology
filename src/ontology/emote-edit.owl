@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://w3id.org/emototion-experience-ontology/emote.owl>
+Ontology(<https://w3id.org/emotion-experience-ontology/emote.owl>
 Import(<https://w3id.org/emototion-experience-ontology/emote/imports/go_import.owl>)
 Import(<https://w3id.org/emototion-experience-ontology/emote/imports/omo_import.owl>)
 Import(<https://w3id.org/emototion-experience-ontology/emote/imports/ro_import.owl>)
@@ -51,14 +51,11 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 
 # Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000000> (emotion process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000> "A behavioral response that includes overt action, cognitive or verbal response, or physiological reaction in response to a situation or event, or  internal process,  which evokes positive or negative feelings (i.e., emotional experiences).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000> "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive or negative feelings (i.e., emotional experiences).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000> "2025-11-24T20:50:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/EMOTE_0000000> "emotion process"@en)
 SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000000> <http://purl.obolibrary.org/obo/GO_0007610>)
-SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0050890>))
-SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/emototion-experience-ontology/EMOTE_0000006>))
-SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <https://w3id.org/emototion-experience-ontology/EMOTE_0000007>))
 
 # Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000001> (phenomenal cognitive experience)
 
@@ -74,7 +71,9 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emototion-experience-ontology/EMOTE_0000002> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emototion-experience-ontology/EMOTE_0000002> "2025-11-24T20:52:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/EMOTE_0000002> "emotional experience (feeling)"@en)
-EquivalentClasses(<https://w3id.org/emototion-experience-ontology/EMOTE_0000002> ObjectIntersectionOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>)))
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000002> <https://w3id.org/emototion-experience-ontology/EMOTE_0000001>)
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>))
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>))
 
 # Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000003> (anxiety process)
 
@@ -102,22 +101,27 @@ SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000005> <https
 
 # Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000006> (motoric response to emotion)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000006> "A motor behavior that happens as result of emotion. The motoric repsonse includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000006> "A motor behavior that is part of an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emototion-experience-ontology/EMOTE_0000006> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emototion-experience-ontology/EMOTE_0000006> "2025-11-24T21:02:42Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <https://w3id.org/emototion-experience-ontology/EMOTE_0000006> "Old definition:
 A multicellular organismal process that results in muscle contractions that move parts of the body or prevents the body from moving (e.g., freezing).")
 AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/EMOTE_0000006> "motoric response to emotion"@en)
-EquivalentClasses(<https://w3id.org/emototion-experience-ontology/EMOTE_0000006> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0061744> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0006936>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>)))
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000006> <http://purl.obolibrary.org/obo/GO_0061744>)
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>))
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0006936>))
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>))
 
-# Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> (physiological response to emotion)
+# Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> (psychophysiological response to emotion)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> "A physiological response that happens as result of an emotion.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> "A psychophysiological process that happens as result of an emotion.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> "2025-11-24T21:10:13Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> "physiological response to stimulus is an exact synonym of response to stimulus")
-AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> "physiological response to emotion"@en)
-EquivalentClasses(<https://w3id.org/emototion-experience-ontology/EMOTE_0000007> ObjectIntersectionOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>)))
+AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/EMOTE_0000007> "psychophysiological response to emotion"@en)
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000007> <https://w3id.org/emototion-experience-ontology/EMOTE_0000009>)
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>))
+SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>))
 
 # Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000008> (sweat secretion response to emotion)
 
@@ -128,12 +132,13 @@ AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/E
 SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000008> <http://purl.obolibrary.org/obo/GO_0160269>)
 SubClassOf(<https://w3id.org/emototion-experience-ontology/EMOTE_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <https://w3id.org/emototion-experience-ontology/EMOTE_0000000>))
 
-# Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> (physiological process)
+# Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> (psychophysiological process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> "A multicellular organismal process that pertans to components (like organs, tissues, and cells) function to sustain life and maintain homeostasis.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> "A multicellular organismal process that is regulated by a nervous system process.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> "2025-11-24T22:30:52Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> "physiological process"@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> "Distinguishing physiological processes from biological processes is difficult. In fact, the GO dropped the term 'physiological process. So, we are using the term 'psychophysiological process'.")
+AnnotationAssertion(rdfs:label <https://w3id.org/emototion-experience-ontology/EMOTE_0000009> "psychophysiological process"@en)
 EquivalentClasses(<https://w3id.org/emototion-experience-ontology/EMOTE_0000009> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0032501> ObjectUnionOf(<http://purl.obolibrary.org/obo/GO_0003012> <http://purl.obolibrary.org/obo/GO_0003013> <http://purl.obolibrary.org/obo/GO_0003016> <http://purl.obolibrary.org/obo/GO_0032941>)))
 
 # Class: <https://w3id.org/emototion-experience-ontology/EMOTE_0000010> (muscle tension due to emotion)
