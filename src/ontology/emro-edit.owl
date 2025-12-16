@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<https://w3id.org/emotion-experience-ontology/emote.owl>
+Ontology(<https://w3id.org/emotion-response-ontology/emro.owl>
 Import(<https://w3id.org/emototion-experience-ontology/emote/imports/go_import.owl>)
 Import(<https://w3id.org/emototion-experience-ontology/emote/imports/omo_import.owl>)
 Import(<https://w3id.org/emototion-experience-ontology/emote/imports/ro_import.owl>)
