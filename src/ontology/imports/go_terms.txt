@@ -1,7 +1,6 @@
 http://purl.obolibrary.org/obo/BFO_0000050 # part of
 http://purl.obolibrary.org/obo/BFO_0000051 # has part
 http://purl.obolibrary.org/obo/GO_0007610  # behavior
-http://purl.obolibrary.org/obo/GO_0050896  # response to stimulus
 http://purl.obolibrary.org/obo/GO_0050890  # cognition
 http://purl.obolibrary.org/obo/GO_0040011  # locomotion
 http://purl.obolibrary.org/obo/GO_0003016  # respiratory system process
