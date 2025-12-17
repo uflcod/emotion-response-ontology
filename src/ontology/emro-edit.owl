@@ -46,12 +46,21 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 
 
 
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
+
+# Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000000> (emotion process)
 
