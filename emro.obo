@@ -1,14 +1,14 @@
 format-version: 1.2
-data-version: https://w3id.org/emototion-experience-ontology/emro/releases/2025-12-16/emro.owl
+data-version: https://w3id.org/emototion-experience-ontology/emro/releases/2025-12-17/emro.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: https://w3id.org/emototion-experience-ontology/emro.owl
-property_value: owl:versionInfo "2025-12-16" xsd:string
+property_value: owl:versionInfo "2025-12-17" xsd:string
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
-property_value: terms:creator https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:creator https://orcid.org/0000-0002-0766-8455
 property_value: terms:license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: terms:title "Emotion Response Ontology" xsd:string
 
@@ -19,7 +19,7 @@ def: "A behavioral response that includes overt action, cognitive response, verb
 is_a: GO:0007610 ! behavior
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T20:50:19Z" xsd:dateTime
 
 [Term]
@@ -29,7 +29,7 @@ def: "A cognitive process during which an organism is aware of something either 
 is_a: GO:0050890 ! cognition
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T20:52:17Z" xsd:dateTime
 
 [Term]
@@ -37,12 +37,12 @@ id: EMRO:0000002
 name: emotional experience (feeling)
 def: "A phenomenal cognitive experience evaluated as pleasant or unpleasant." [] {IAO:0000119="https://dictionary.apa.org/feeling"}
 is_a: EMRO:0000001 ! phenomenal cognitive experience
+is_a: EMRO:0000013 ! cognitive response to emotion
 intersection_of: EMRO:0000001 ! phenomenal cognitive experience
 intersection_of: part_of EMRO:0000000 ! emotion process
-relationship: part_of EMRO:0000000 ! emotion process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T20:52:39Z" xsd:dateTime
 
 [Term]
@@ -52,7 +52,7 @@ def: "An emotion process that is a response that occurs more distally in time or
 is_a: EMRO:0000000 ! emotion process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T20:56:47Z" xsd:dateTime
 
 [Term]
@@ -62,7 +62,7 @@ def: "An emotion process that is an in-the-moment response to a perceived threat
 is_a: EMRO:0000000 ! emotion process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T20:57:08Z" xsd:dateTime
 
 [Term]
@@ -72,7 +72,7 @@ def: "A phenomenal cognitive experience produced by the parts of the nervous sys
 is_a: EMRO:0000001 ! phenomenal cognitive experience
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T20:59:47Z" xsd:dateTime
 
 [Term]
@@ -87,7 +87,7 @@ relationship: has_part GO:0006936 ! muscle contraction
 relationship: part_of EMRO:0000000 ! emotion process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T21:02:42Z" xsd:dateTime
 
 [Term]
@@ -100,7 +100,7 @@ intersection_of: part_of EMRO:0000000 ! emotion process
 relationship: part_of EMRO:0000000 ! emotion process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T21:10:13Z" xsd:dateTime
 
 [Term]
@@ -111,7 +111,7 @@ is_a: EMRO:0000007 ! psychophysiological response to emotion
 is_a: GO:0160269 ! sweat secretion
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T22:22:47Z" xsd:dateTime
 
 [Term]
@@ -122,7 +122,7 @@ comment: Distinguishing physiological processes from biological processes is dif
 is_a: GO:0032501 ! multicellular organismal process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T22:30:52Z" xsd:dateTime
 
 [Term]
@@ -133,7 +133,7 @@ is_a: EMRO:0000007 ! psychophysiological response to emotion
 is_a: GO:0006936 ! muscle contraction
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T22:36:17Z" xsd:dateTime
 
 [Term]
@@ -144,7 +144,7 @@ is_a: EMRO:0000007 ! psychophysiological response to emotion
 is_a: GO:0003015 ! heart process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T22:39:24Z" xsd:dateTime
 
 [Term]
@@ -155,8 +155,31 @@ is_a: EMRO:0000007 ! psychophysiological response to emotion
 is_a: GO:0003016 ! respiratory system process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T22:44:09Z" xsd:dateTime
+
+[Term]
+id: EMRO:0000013
+name: cognitive response to emotion
+def: "A cognitive process that is part of an emotion process." []
+is_a: GO:0050890 ! cognition
+intersection_of: GO:0050890 ! cognition
+intersection_of: part_of EMRO:0000000 ! emotion process
+relationship: part_of EMRO:0000000 ! emotion process
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
+property_value: terms:created "2025-12-17T17:11:45Z" xsd:dateTime
+
+[Term]
+id: EMRO:0000014
+name: cognitive appraisal processs
+def: "A cognitive process during which the nature and significance of a phenomenon or event is evaluated." []
+is_a: GO:0050890 ! cognition
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
+property_value: terms:created "2025-12-17T17:18:23Z" xsd:dateTime
 
 [Term]
 id: GO:0003008
@@ -494,9 +517,6 @@ def: "An unpleasant sensory and emotional experience associated with, or resembl
 comment: Pain is a term from the pain ontology.
 is_a: EMRO:0000002 ! emotional experience (feeling)
 is_a: EMRO:0000005 ! sensory experience
-property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:created "2025-12-05T16:59:16Z" xsd:dateTime
 
 [Typedef]
 id: BFO:0000062

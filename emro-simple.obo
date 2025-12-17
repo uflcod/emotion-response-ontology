@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: https://w3id.org/emototion-experience-ontology/emro/releases/2025-12-16/emro-simple.owl
+data-version: https://w3id.org/emototion-experience-ontology/emro/releases/2025-12-17/emro-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -9,10 +9,10 @@ subsetdef: RO:0002259 ""
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: https://w3id.org/emototion-experience-ontology/emro/emro-simple.owl
-property_value: owl:versionInfo "2025-12-16" xsd:string
+property_value: owl:versionInfo "2025-12-17" xsd:string
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
-property_value: terms:creator https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455
+property_value: terms:creator https://orcid.org/0000-0002-0766-8455
 property_value: terms:license https://creativecommons.org/publicdomain/zero/1.0/
 property_value: terms:title "Emotion Response Ontology" xsd:string
 

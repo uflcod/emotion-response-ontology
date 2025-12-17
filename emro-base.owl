@@ -11,15 +11,15 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/emototion-experience-ontology/emro/emro-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/emototion-experience-ontology/emro/releases/2025-12-16/emro-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/emototion-experience-ontology/emro/releases/2025-12-17/emro-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:creator rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <oboInOwl:date>16:12:2025 21:00</oboInOwl:date>
-        <owl:versionInfo>2025-12-16</owl:versionInfo>
+        <oboInOwl:date>17:12:2025 12:22</oboInOwl:date>
+        <owl:versionInfo>2025-12-17</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -202,7 +202,7 @@
         <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive or negative feelings (i.e., emotional experiences).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:50:19Z</terms:created>
         <rdfs:label xml:lang="en">emotion process</rdfs:label>
     </owl:Class>
@@ -216,7 +216,7 @@
         <obo:IAO_0000115>A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:17Z</terms:created>
         <rdfs:label xml:lang="en">phenomenal cognitive experience</rdfs:label>
     </owl:Class>
@@ -246,7 +246,7 @@
         <obo:IAO_0000115>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:39Z</terms:created>
         <rdfs:label xml:lang="en">emotional experience (feeling)</rdfs:label>
     </owl:Class>
@@ -266,7 +266,7 @@
         <obo:IAO_0000115>An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:56:47Z</terms:created>
         <rdfs:label xml:lang="en">anxiety process</rdfs:label>
     </owl:Class>
@@ -280,7 +280,7 @@
         <obo:IAO_0000115>An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:57:08Z</terms:created>
         <rdfs:label xml:lang="en">fear process</rdfs:label>
     </owl:Class>
@@ -294,7 +294,7 @@
         <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:59:47Z</terms:created>
         <rdfs:label xml:lang="en">sensory experience</rdfs:label>
     </owl:Class>
@@ -328,7 +328,7 @@
         <obo:IAO_0000115>A motor behavior that is part of an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:02:42Z</terms:created>
         <rdfs:label xml:lang="en">motoric response to emotion</rdfs:label>
     </owl:Class>
@@ -352,7 +352,7 @@
         <obo:IAO_0000115>A psychophysiological process that is part of an emotion process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:10:13Z</terms:created>
         <rdfs:label xml:lang="en">psychophysiological response to emotion</rdfs:label>
     </owl:Class>
@@ -372,7 +372,7 @@
         <obo:IAO_0000115>Sweat screation that happens as a response to an emotion process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:22:47Z</terms:created>
         <rdfs:label xml:lang="en">sweat secretion response to emotion</rdfs:label>
     </owl:Class>
@@ -400,7 +400,7 @@
         <obo:IAO_0000115>A multicellular organismal process that is regulated by a nervous system process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:30:52Z</terms:created>
         <rdfs:comment>Distinguishing physiological processes from biological processes is difficult. In fact, the GO dropped the term &apos;physiological process&apos;. So, we are using the term &apos;psychophysiological process&apos;.</rdfs:comment>
         <rdfs:label xml:lang="en">psychophysiological process</rdfs:label>
@@ -421,7 +421,7 @@
         <obo:IAO_0000115>Muscle contraction that happens as a response to an emotion process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:36:17Z</terms:created>
         <rdfs:label xml:lang="en">muscle tension response to emotion</rdfs:label>
     </owl:Class>
@@ -441,7 +441,7 @@
         <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an emotion process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:39:24Z</terms:created>
         <rdfs:label xml:lang="en">increased heart response to emotion</rdfs:label>
     </owl:Class>
@@ -461,9 +461,47 @@
         <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:44:09Z</terms:created>
         <rdfs:label xml:lang="en">increased breathing rate response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000013 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0050890"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>A cognitive process that is part of an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:11:45Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000014 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A cognitive process during which the nature and significance of a phenomenon or event is evaluated.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:18:23Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive appraisal processs</rdfs:label>
     </owl:Class>
     
 
@@ -479,9 +517,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-05T16:59:16Z</terms:created>
         <rdfs:comment>Pain is a term from the pain ontology.</rdfs:comment>
     </owl:Class>
     
@@ -498,34 +533,10 @@
     
 
 
-    <!-- https://orcid.org/0000-0001-9625-1899 -->
-
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9625-1899">
-        <rdfs:label>Bill Duncan</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://orcid.org/0000-0001-9990-8331 -->
-
-    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0001-9990-8331">
-        <rdfs:label xml:lang="en">Alexander D. Diehl</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://orcid.org/0009-0002-7282-0836 -->
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0009-0002-7282-0836">
         <rdfs:label xml:lang="en">Finn Wilson</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/emotion-response-ontology/emro.owl#https://orcid.org/0000-0002-0766-8455">
-        <rdfs:label>Daniel W. McNeil</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
