@@ -195,7 +195,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000013> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000013> "2025-12-17T17:11:45Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000013> "cognitive response to emotion"@en)
-SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000013> <http://purl.obolibrary.org/obo/GO_0050890>)
+EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000013> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050890> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>)))
 
 # Class: <https://w3id.org/emotion-response-ontology/**pain> (<https://w3id.org/emotion-response-ontology/**pain>)
 
