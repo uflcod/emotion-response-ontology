@@ -34,6 +34,7 @@ Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000010>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000011>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000012>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000013>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000014>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/**pain>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
@@ -196,6 +197,16 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000013> "2025-12-17T17:11:45Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000013> "cognitive response to emotion"@en)
 EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000013> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050890> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>)))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000014> (cognitive appraisal processs)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000014> "A cognitive process during which the nature and significance of a phenomenon or event is evaluated.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000014> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000014> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000014> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000014> "2025-12-17T17:18:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000014> "cognitive appraisal processs"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000014> <http://purl.obolibrary.org/obo/GO_0050890>)
 
 # Class: <https://w3id.org/emotion-response-ontology/**pain> (<https://w3id.org/emotion-response-ontology/**pain>)
 
