@@ -1,1 +1,0 @@
-ontospy gendocs ./emro-skos.ttl --preflabel label --nobrowser --type 2 --theme yeti -o tmp
