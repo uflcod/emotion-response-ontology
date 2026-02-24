@@ -142,3 +142,13 @@ mirror-%: | $(TMPDIR)
 			--input $(MIRRORDIR)/$(notdir $*).temp.owl \
 			--output $(MIRRORDIR)/$(notdir $*).owl && \
 		rm  $(MIRRORDIR)/$*.temp.owl; fi
+
+# ----------------------------------------
+# Ontospy documentation
+# ----------------------------------------
+
+ontospy-docs: $(ONT).owl
+	@echo "*** building ontospy documentation ***"
+	sh convert-to-skos-ttl.sh $< 
+	sh ontospy-gen-docs.sh $<.ttl docs
+	cp -r docs ../..

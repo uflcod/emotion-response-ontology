@@ -11,6 +11,6 @@ sed 's$obo:IAO_0000115$skos:definition$g' temp1-skos-$1 > temp2-skos-$1
 robot convert -i temp2-skos-$1 -o $1.ttl
 
 # clean up
-rm merged-$1
-rm temp1-skos-$1
-rm temp2-skos-$1
+# rm merged-$1
+# rm temp1-skos-$1
+# rm temp2-skos-$1
