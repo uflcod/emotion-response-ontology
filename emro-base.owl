@@ -12,15 +12,15 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="https://w3id.org/emototion-experience-ontology/emro/emro-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/emototion-experience-ontology/emro/releases/2025-12-17/emro-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/emototion-experience-ontology/emro/releases/2026-03-05/emro-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <oboInOwl:date>17:12:2025 12:28</oboInOwl:date>
-        <owl:versionInfo>2025-12-17</owl:versionInfo>
+        <oboInOwl:date>05:03:2026 19:13</oboInOwl:date>
+        <owl:versionInfo>2026-03-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -90,6 +90,24 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
@@ -122,6 +140,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002410 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002410"/>
     
 
 
@@ -180,9 +204,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0032941 -->
+    <!-- http://purl.obolibrary.org/obo/GO_0050877 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032941"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050877"/>
     
 
 
@@ -210,7 +234,7 @@
 
     <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive or negative feelings (i.e., emotional experiences).</obo:IAO_0000115>
+        <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -321,22 +345,20 @@
     <!-- https://w3id.org/emotion-response-ontology/EMRO_0000006 -->
 
     <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000006">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0061744"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115>A motor behavior that is part of an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0061744"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -352,14 +374,30 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000009"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003012"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003013"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003016"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0050877"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0061744"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0160269"/>
+                        </owl:unionOf>
+                    </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A psychophysiological process that is part of an emotion process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -376,7 +414,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0160269"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -390,42 +428,13 @@
     
 
 
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000009 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000009">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0032501"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003012"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003013"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003016"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0032941"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115>A multicellular organismal process that is regulated by a nervous system process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:30:52Z</terms:created>
-        <rdfs:comment>Distinguishing physiological processes from biological processes is difficult. In fact, the GO dropped the term &apos;physiological process&apos;. So, we are using the term &apos;psychophysiological process&apos;.</rdfs:comment>
-        <rdfs:label xml:lang="en">psychophysiological process</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/emotion-response-ontology/EMRO_0000010 -->
 
     <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -445,7 +454,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -465,7 +474,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -482,18 +491,14 @@
     <!-- https://w3id.org/emotion-response-ontology/EMRO_0000013 -->
 
     <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000013">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0050890"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <obo:IAO_0000115>A cognitive process that is part of an emotion process.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an emotion process.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -513,6 +518,351 @@
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:18:23Z</terms:created>
         <rdfs:label xml:lang="en">cognitive appraisal processs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000015 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000015">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T11:54:16Z</terms:created>
+        <oboInOwl:hasBroadSynonym>fainting</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>syncope</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>fainting response to emotion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>vasovagal syncope</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">syncope response to emotion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000019 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000019">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:16:30Z</terms:created>
+        <rdfs:label xml:lang="en">muscle tension response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000020 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000020">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:20:49Z</terms:created>
+        <rdfs:label xml:lang="en">psychophysiological response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000021 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000021">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:21:09Z</terms:created>
+        <rdfs:label xml:lang="en">psychophysiological response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000022 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000022">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:24:05Z</terms:created>
+        <rdfs:label xml:lang="en">muscle tension response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000023 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000023">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cognitive process that happens as a response to fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:16Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000024 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000024">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:25Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000025 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000025">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Sweat screation that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:28Z</terms:created>
+        <rdfs:label xml:lang="en">sweat secretion response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000026 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000026">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Sweat screation that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:36Z</terms:created>
+        <rdfs:label xml:lang="en">sweat secretion response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000027 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000027">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000011"/>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:32:52Z</terms:created>
+        <rdfs:label xml:lang="en">increased heart response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000028 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000028">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:33:04Z</terms:created>
+        <rdfs:label xml:lang="en">increased heart response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000029 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000029">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:20Z</terms:created>
+        <rdfs:label xml:lang="en">increased breathing rate response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000030 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000030">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:30Z</terms:created>
+        <rdfs:label xml:lang="en">increased breathing rate response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000031 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000031">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000015"/>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:42:51Z</terms:created>
+        <rdfs:label xml:lang="en">syncope response to fear</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of a fear process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000032 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000032">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000015"/>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:43:01Z</terms:created>
+        <rdfs:label xml:lang="en">syncope response to anxiety</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000033 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000033">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor behavior that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:03:57Z</terms:created>
+        <rdfs:label>motoric response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000034 -->
+
+    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000034">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:04:12Z</terms:created>
+        <rdfs:label>motoric response to anxiety</rdfs:label>
     </owl:Class>
     
 
