@@ -29,12 +29,28 @@ Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000005>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000006>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000007>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000008>))
-Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000009>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000010>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000011>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000012>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000013>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000014>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000015>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000019>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000020>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000021>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000022>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000023>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000024>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000025>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000026>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000027>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000028>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000029>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000030>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000031>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000032>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000033>))
+Declaration(Class(<https://w3id.org/emotion-response-ontology/EMRO_0000034>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/**pain>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
@@ -64,7 +80,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000000> (emotion process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000000> "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive or negative feelings (i.e., emotional experiences).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000000> "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000000> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000000> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000000> <https://orcid.org/0000-0002-0766-8455>)
@@ -124,13 +140,15 @@ SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000005> <https://w3
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000006> (motoric response to emotion)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000006> "A motor behavior that is part of an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000006> "A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000006> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000006> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000006> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000006> "2025-11-24T21:02:42Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000006> "motoric response to emotion"@en)
-EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000006> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0061744> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0006936>)))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000006> <http://purl.obolibrary.org/obo/GO_0061744>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/GO_0006936>))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000007> (psychophysiological response to emotion)
 
@@ -140,7 +158,9 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000007> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000007> "2025-11-24T21:10:13Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000007> "psychophysiological response to emotion"@en)
-EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000007> ObjectIntersectionOf(<https://w3id.org/emotion-response-ontology/EMRO_0000009> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>)))
+EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000007> ObjectIntersectionOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/GO_0003012> <http://purl.obolibrary.org/obo/GO_0003013> <http://purl.obolibrary.org/obo/GO_0003016> <http://purl.obolibrary.org/obo/GO_0050877> <http://purl.obolibrary.org/obo/GO_0061744> <http://purl.obolibrary.org/obo/GO_0160269>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <https://w3id.org/emotion-response-ontology/EMRO_0000000>)))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000007> <http://purl.obolibrary.org/obo/GO_0007610>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000008> (sweat secretion response to emotion)
 
@@ -151,18 +171,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000008> "2025-11-24T22:22:47Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000008> "sweat secretion response to emotion"@en)
 SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000008> <http://purl.obolibrary.org/obo/GO_0160269>)
-SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
-
-# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000009> (psychophysiological process)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000009> "A multicellular organismal process that is regulated by a nervous system process.")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000009> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000009> <https://orcid.org/0000-0001-9990-8331>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000009> <https://orcid.org/0000-0002-0766-8455>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000009> "2025-11-24T22:30:52Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:comment <https://w3id.org/emotion-response-ontology/EMRO_0000009> "Distinguishing physiological processes from biological processes is difficult. In fact, the GO dropped the term 'physiological process'. So, we are using the term 'psychophysiological process'.")
-AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000009> "psychophysiological process"@en)
-EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000009> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0032501> ObjectUnionOf(<http://purl.obolibrary.org/obo/GO_0003012> <http://purl.obolibrary.org/obo/GO_0003013> <http://purl.obolibrary.org/obo/GO_0003016> <http://purl.obolibrary.org/obo/GO_0032941>)))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000010> (muscle tension response to emotion)
 
@@ -173,7 +182,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000010> "2025-11-24T22:36:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000010> "muscle tension response to emotion"@en)
 SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000010> <http://purl.obolibrary.org/obo/GO_0006936>)
-SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000011> (increased heart response to emotion)
 
@@ -184,7 +193,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000011> "2025-11-24T22:39:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000011> "increased heart response to emotion"@en)
 SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000011> <http://purl.obolibrary.org/obo/GO_0003015>)
-SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000012> (increased breathing rate response to emotion)
 
@@ -195,17 +204,18 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000012> "2025-11-24T22:44:09Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000012> "increased breathing rate response to emotion"@en)
 SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000012> <http://purl.obolibrary.org/obo/GO_0003016>)
-SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000013> (cognitive response to emotion)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000013> "A cognitive process that is part of an emotion process.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000013> "A cognitive process that happens as a response to an emotion process.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000013> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000013> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000013> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000013> "2025-12-17T17:11:45Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000013> "cognitive response to emotion"@en)
-EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000013> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/GO_0050890> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000000>)))
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000013> <http://purl.obolibrary.org/obo/GO_0050890>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000013> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002410> <https://w3id.org/emotion-response-ontology/EMRO_0000000>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000014> (cognitive appraisal processs)
 
@@ -216,6 +226,190 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000014> "2025-12-17T17:18:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000014> "cognitive appraisal processs"@en)
 SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000014> <http://purl.obolibrary.org/obo/GO_0050890>)
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000015> (syncope response to emotion)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.") <http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000015> "A transient loss of consciousness and postural tone that happens as a result of an emotion process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000015> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000015> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000015> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000015> "2026-03-05T11:54:16Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <https://w3id.org/emotion-response-ontology/EMRO_0000015> "fainting")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <https://w3id.org/emotion-response-ontology/EMRO_0000015> "syncope")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <https://w3id.org/emotion-response-ontology/EMRO_0000015> "fainting response to emotion")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <https://w3id.org/emotion-response-ontology/EMRO_0000015> "vasovagal syncope")
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000015> "syncope response to emotion"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000015> <https://w3id.org/emotion-response-ontology/EMRO_0000007>)
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000019> (muscle tension response to fear)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000019> "Muscle contraction that happens as a response to a fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000019> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000019> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000019> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000019> "2026-03-05T21:16:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000019> "muscle tension response to fear"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000019> <https://w3id.org/emotion-response-ontology/EMRO_0000010>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000019> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000004>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000020> (psychophysiological response to fear)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000020> "psychophysiological response to emotion that is part of a fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000020> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000020> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000020> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000020> "2026-03-05T21:20:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000020> "psychophysiological response to fear"@en)
+EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000020> ObjectIntersectionOf(<https://w3id.org/emotion-response-ontology/EMRO_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000004>)))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000021> (psychophysiological response to anxiety)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000021> "psychophysiological response to emotion that is part of an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000021> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000021> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000021> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000021> "2026-03-05T21:21:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000021> "psychophysiological response to anxiety"@en)
+EquivalentClasses(<https://w3id.org/emotion-response-ontology/EMRO_0000021> ObjectIntersectionOf(<https://w3id.org/emotion-response-ontology/EMRO_0000007> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>)))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000022> (muscle tension response to anxiety)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000022> "Muscle contraction that happens as a response to an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000022> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000022> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000022> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000022> "2026-03-05T21:24:05Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000022> "muscle tension response to anxiety"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000022> <https://w3id.org/emotion-response-ontology/EMRO_0000010>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000023> (cognitive response to fear)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000023> "A cognitive process that happens as a response to fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000023> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000023> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000023> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000023> "2026-03-05T21:26:16Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000023> "cognitive response to fear"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000023> <https://w3id.org/emotion-response-ontology/EMRO_0000013>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000004>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000024> (cognitive response to anxiety)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000024> "A cognitive process that happens as a response to an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000024> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000024> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000024> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000024> "2026-03-05T21:26:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000024> "cognitive response to anxiety"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000024> <https://w3id.org/emotion-response-ontology/EMRO_0000013>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000024> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000025> (sweat secretion response to fear)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000025> "Sweat screation that happens as a response to a fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000025> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000025> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000025> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000025> "2026-03-05T21:31:28Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000025> "sweat secretion response to fear"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000025> <https://w3id.org/emotion-response-ontology/EMRO_0000008>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000025> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000004>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000026> (sweat secretion response to anxiety)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000026> "Sweat screation that happens as a response to an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000026> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000026> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000026> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000026> "2026-03-05T21:31:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000026> "sweat secretion response to anxiety"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000026> <https://w3id.org/emotion-response-ontology/EMRO_0000008>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000026> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000027> (increased heart response to fear)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000027> "A heart process during which the rate at which the heart beats increases as a response to a fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000027> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000027> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000027> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000027> "2026-03-05T21:32:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000027> "increased heart response to fear"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000027> <https://w3id.org/emotion-response-ontology/EMRO_0000011>)
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000028> (increased heart response to anxiety)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000028> "A heart process during which the rate at which the heart beats increases as a response to an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000028> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000028> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000028> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000028> "2026-03-05T21:33:04Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000028> "increased heart response to anxiety"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000028> <https://w3id.org/emotion-response-ontology/EMRO_0000011>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000028> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000029> (increased breathing rate response to fear)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000029> "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000029> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000029> "2026-03-05T21:34:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000029> "increased breathing rate response to fear"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000029> <https://w3id.org/emotion-response-ontology/EMRO_0000012>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000029> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000004>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000030> (increased breathing rate response to anxiety)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000030> "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000030> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000030> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000030> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000030> "2026-03-05T21:34:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000030> "increased breathing rate response to anxiety"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000030> <https://w3id.org/emotion-response-ontology/EMRO_0000012>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000031> (syncope response to fear)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.") <http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000031> "A transient loss of consciousness and postural tone that happens as a result of a fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000031> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000031> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000031> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000031> "2026-03-05T21:42:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000031> "syncope response to fear"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000031> <https://w3id.org/emotion-response-ontology/EMRO_0000015>)
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000032> (syncope response to anxiety)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.") <http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000032> "A transient loss of consciousness and postural tone that happens as a result of an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000032> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000032> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000032> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000032> "2026-03-05T21:43:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000032> "syncope response to anxiety"@en)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000032> <https://w3id.org/emotion-response-ontology/EMRO_0000015>)
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000033> (motoric response to fear)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000033> "A motor behavior that happens as a response to a fear process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000033> <http://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000033> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000033> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000033> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000033> "2026-03-05T22:03:57Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000033> "motoric response to fear")
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000033> <https://w3id.org/emotion-response-ontology/EMRO_0000006>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000004>))
+
+# Class: <https://w3id.org/emotion-response-ontology/EMRO_0000034> (motoric response to anxiety)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://w3id.org/emotion-response-ontology/EMRO_0000034> "A motor behavior that happens as a response to an anxiety process.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000034> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000034> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emotion-response-ontology/EMRO_0000034> <https://orcid.org/0000-0002-0766-8455>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000034> "2026-03-05T22:04:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000034> "motoric response to anxiety")
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000034> <https://w3id.org/emotion-response-ontology/EMRO_0000006>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>))
 
 # Class: <https://w3id.org/emotion-response-ontology/**pain> (<https://w3id.org/emotion-response-ontology/**pain>)
 
