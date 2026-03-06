@@ -377,6 +377,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000031> "2026-03-05T21:42:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000031> "syncope response to fear"@en)
 SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000031> <https://w3id.org/emotion-response-ontology/EMRO_0000015>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000004>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000032> (syncope response to anxiety)
 
@@ -387,6 +388,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <https://w3id.org/emo
 AnnotationAssertion(<http://purl.org/dc/terms/created> <https://w3id.org/emotion-response-ontology/EMRO_0000032> "2026-03-05T21:43:01Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <https://w3id.org/emotion-response-ontology/EMRO_0000032> "syncope response to anxiety"@en)
 SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000032> <https://w3id.org/emotion-response-ontology/EMRO_0000015>)
+SubClassOf(<https://w3id.org/emotion-response-ontology/EMRO_0000032> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <https://w3id.org/emotion-response-ontology/EMRO_0000003>))
 
 # Class: <https://w3id.org/emotion-response-ontology/EMRO_0000033> (motoric response to fear)
 
