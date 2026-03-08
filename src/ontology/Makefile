@@ -21,7 +21,7 @@
 # ----------------------------------------
 # these can be overwritten on the command line
 
-URIBASE=                    https://w3id.org/emototion-experience-ontology
+URIBASE=                    http://purl.bioontology.org/ontology
 ONT=                        emro
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl
@@ -172,10 +172,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/PAIN_ --base-iri $(URIBASE)/pain --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/EMRO_ --base-iri $(URIBASE)/emro --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/PAIN_ --base-iri $(URIBASE)/pain --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/EMRO_ --base-iri $(URIBASE)/emro --print 5 -o $@
 
 # ----------------------------------------
 # Release assets
@@ -358,7 +358,7 @@ SHARED_ROBOT_COMMANDS =
 
 $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	touch $(ONTOLOGYTERMS) && \
-	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/pain_terms.sparql $@
+	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/emro_terms.sparql $@
 
 # base: OTHER sources of interest, such as definitions owl
 $(ONT)-base.owl: $(SRC) $(OTHER_SRC)

@@ -34,29 +34,11 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 		--annotate-defined-by true \
 		--ontology-iri $(URIBASE)/$(ONT)/$@ \
 		--version-iri $(URIBASE)/$(ONT)/$@ \
-	convert --format ofn \
-	  --output $@.tmp.owl && mv $@.tmp.owl $@
+	 convert --format ofn \
+	  --output $@ 
+# .tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt 
-	@echo "*** building $@ ***"
-	$(ROBOT) \
-		filter \
-			--input $< \
-			--term-file $(word 2, $^) \
-			--select "annotations self ancestors" \
-			--axioms logical \
-			--signature true \
-			--trim true \
-		remove \
-			--select "owl:deprecated='true'^^xsd:boolean" \
-		annotate \
-			--annotate-defined-by true \
-			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-			--version-iri $(URIBASE)/$(ONT)/$@ \
-		convert --format ofn \
-		--output $@.tmp.owl && mv $@.tmp.owl $@
-
-$(IMPORTDIR)/cl_import.owl: $(MIRRORDIR)/cl.owl $(IMPORTDIR)/cl_terms.txt 
 	@echo "*** building $@ ***"
 	$(ROBOT) \
 		filter \
