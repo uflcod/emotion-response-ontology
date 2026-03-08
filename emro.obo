@@ -1,12 +1,12 @@
 format-version: 1.2
-data-version: https://w3id.org/emototion-experience-ontology/emro/releases/2026-03-05/emro.owl
+data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-08/emro.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
-ontology: https://w3id.org/emototion-experience-ontology/emro.owl
-property_value: owl:versionInfo "2026-03-05" xsd:string
+ontology: http://purl.bioontology.org/ontology/emro.owl
+property_value: owl:versionInfo "2026-03-08" xsd:string
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
 property_value: terms:creator https://orcid.org/0000-0002-0766-8455
@@ -317,6 +317,7 @@ id: EMRO:0000031
 name: syncope response to fear
 def: "A transient loss of consciousness and postural tone that happens as a result of a fear process." [] {IAO:0000119="Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007."}
 is_a: EMRO:0000015 ! syncope response to emotion
+is_a: EMRO:0000020 ! psychophysiological response to fear
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -327,6 +328,7 @@ id: EMRO:0000032
 name: syncope response to anxiety
 def: "A transient loss of consciousness and postural tone that happens as a result of an anxiety process." [] {IAO:0000119="Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007."}
 is_a: EMRO:0000015 ! syncope response to emotion
+is_a: EMRO:0000021 ! psychophysiological response to anxiety
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455

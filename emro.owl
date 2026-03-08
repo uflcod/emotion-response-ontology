@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/emototion-experience-ontology/emro.owl#"
-     xml:base="https://w3id.org/emototion-experience-ontology/emro.owl"
+<rdf:RDF xmlns="http://purl.bioontology.org/ontology/emro.owl#"
+     xml:base="http://purl.bioontology.org/ontology/emro.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,14 +12,14 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://w3id.org/emototion-experience-ontology/emro.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/emototion-experience-ontology/emro/releases/2026-03-05/emro.owl"/>
+    <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/emro.owl">
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-08/emro.owl"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <owl:versionInfo>2026-03-05</owl:versionInfo>
+        <owl:versionInfo>2026-03-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -38,7 +38,7 @@
     <!-- http://protege.stanford.edu/plugins/owl/protege#defaultLanguage -->
 
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -51,8 +51,8 @@
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -66,8 +66,8 @@
         <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -80,7 +80,7 @@
         <obo:IAO_0000115 xml:lang="en">An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">GROUP:OBI</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000277</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">in branch</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -93,8 +93,8 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -128,9 +128,9 @@ Personally, I am more comfortable weakening definition to documentation, with in
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -144,8 +144,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -160,8 +160,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -177,8 +177,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:comment>Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">alternative label</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -193,8 +193,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -207,7 +207,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -220,8 +220,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">curator note</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -237,8 +237,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">term tracker item</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -253,7 +253,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <rdfs:comment>The &apos;term requester&apos; can credit the person, organization or project who request the ontology term.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">ontology term requester</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -266,7 +266,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 xml:lang="en">Relates an class defined in an ontology, to the type of it&apos;s denotator</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">In OWL 2 add AnnotationPropertyRange(&apos;is denotator type&apos; &apos;denotator type&apos;)</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">is denotator type</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -281,7 +281,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -297,8 +297,8 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
 </obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">expand expression to</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -314,7 +314,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
 </obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">expand assertion to</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -325,7 +325,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000426">
         <obo:IAO_0000111 xml:lang="en">first order logic expression</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">first order logic expression</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -338,7 +338,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <obo:IAO_0000112 xml:lang="en">part_of antisymmetric property xsd:true</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Use boolean value xsd:true to indicate that the property is an antisymmetric property</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">antisymmetric property</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OMO_0001001"/>
     </owl:AnnotationProperty>
@@ -357,7 +357,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <obo:IAO_0000117 xml:lang="en">PERSON:Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">OBO foundry unique label</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -375,7 +375,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
      &apos;has ID policy for&apos;: &quot;RO&quot;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Relates an ontology used to record id policy to the number of digits in the URI. The URI is: the &apos;has ID prefix&quot; annotation property value concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits)</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has ID digit count</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -391,7 +391,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 </obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Relates a datatype that encodes a range of integers to the name of the person or organization who can use those ids constructed in that range to define new terms</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has ID range allocated to</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -409,7 +409,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
      &apos;has ID policy for&apos;: &quot;RO&quot;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Relating an ontology used to record id policy to the ontology namespace whose policy it manages</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has ID policy for</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -427,7 +427,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
      &apos;has ID policy for&apos;: &quot;RO&quot;</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Relates an ontology used to record id policy to a prefix concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits) to construct an ID for a term being created.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has ID prefix</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -440,7 +440,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person:Barry Smith</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">elucidation</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -453,7 +453,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -466,7 +466,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -479,7 +479,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115 xml:lang="en">Relates an ontology IRI to an (inclusive) range of IRIs in an OBO name space. The range is give as, e.g. &quot;IAO_0020000-IAO_0020999&quot;</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">Add as annotation triples in the granting ontology</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">is allocated id range</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -491,7 +491,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000111 xml:lang="en">has ontology root term</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Nicolas Matentzoglu</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has ontology root term</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -506,7 +506,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 xml:lang="en">#40</obo:IAO_0000233>
         <obo:IAO_0000234 xml:lang="en">VFB</obo:IAO_0000234>
         <rdfs:comment xml:lang="en">Edges asserting this should be annotated with to record evidence supporting the assertion and its provenance.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">may be identical to</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -521,7 +521,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 xml:lang="en">https://github.com/geneontology/go-ontology/issues/15532</obo:IAO_0000233>
         <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/ontology-metadata/issues/32</obo:IAO_0000233>
         <obo:IAO_0000234 xml:lang="en">GO ontology</obo:IAO_0000234>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">scheduled for obsoletion on or after</rdfs:label>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:AnnotationProperty>
@@ -535,7 +535,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">A URI that is intended to be unique label for an axiom used for tracking change to the ontology. For an axiom expressed in different languages, each expression is given the same URI</obo:IAO_0000600>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has axiom label</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -550,7 +550,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">Add as annotation triples in the granting ontology</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">term replaced by</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -562,7 +562,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>This is an annotation used on an object property to indicate a logical characterstic beyond what is possible in OWL.</obo:IAO_0000115>
         <obo:IAO_0000119>OBO Operations call</obo:IAO_0000119>
         <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>logical characteristic of object property</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -593,7 +593,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/ontodev/robot/issues/963"/>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-7356-1779"/>
         <dc:contributor rdf:resource="https://orcid.org/0000-0002-8688-6599"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>defined by construct</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -607,7 +607,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>abbreviation</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -621,7 +621,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>ambiguous synonym</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -635,7 +635,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>dubious synonym</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -650,7 +650,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>layperson synonym</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -665,7 +665,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>plural form</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -680,7 +680,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/122"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>UK spelling synonym</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -694,7 +694,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/132"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>misspelling</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -708,7 +708,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/133"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-03-03</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>misnomer</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -723,7 +723,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/139"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-25</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>previous name</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -738,7 +738,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/141"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-07-27</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>legal name</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -753,7 +753,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/149"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-09-30</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>International Nonproprietary Name</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -768,7 +768,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/ontology-metadata/issues/146"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-1773-2692"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-10-12</terms:created>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>latin term</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SynonymType"/>
     </owl:AnnotationProperty>
@@ -778,7 +778,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -786,7 +786,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -794,7 +794,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -802,7 +802,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/coverage -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -810,7 +810,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -818,7 +818,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -826,7 +826,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -834,7 +834,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/format -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -842,7 +842,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/identifier -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -850,7 +850,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/language -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -858,7 +858,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -866,7 +866,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/relation -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -874,7 +874,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -882,7 +882,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -890,7 +890,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/subject -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -898,7 +898,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -906,7 +906,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/elements/1.1/type -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -914,7 +914,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -922,7 +922,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -936,7 +936,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -944,7 +944,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -958,7 +958,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#SynonymType -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymType">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -966,8 +966,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -975,8 +975,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -984,7 +984,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -995,8 +995,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -1007,8 +1007,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -1019,8 +1019,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -1034,8 +1034,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has narrow synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</rdfs:seeAlso>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -1046,7 +1046,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -1057,9 +1057,9 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has related synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</rdfs:seeAlso>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -1070,7 +1070,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -1078,8 +1078,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -1087,7 +1087,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -1159,8 +1159,8 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>part of</rdfs:label>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
@@ -1195,8 +1195,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>has part</rdfs:label>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
@@ -1220,7 +1220,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">preceded_by</obo:IAO_0000118>
         <terms:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</terms:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1238,7 +1238,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000111 xml:lang="en">precedes</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1257,7 +1257,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1275,7 +1275,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1291,7 +1291,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">participates in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1312,7 +1312,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
         <terms:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</terms:source>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1326,7 +1326,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:comment xml:lang="en">X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">ends after</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1360,7 +1360,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1379,7 +1379,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
         <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">capable of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1397,7 +1397,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>c stands in this relationship to p if and only if there exists some p&apos; such that c is capable_of p&apos;, and p&apos; is part_of p.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>has function in</obo:IAO_0000118>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">capable of part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
     </owl:ObjectProperty>
@@ -1414,7 +1414,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1</terms:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:comment>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">temporally related to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1433,7 +1433,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has input</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_input</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1453,7 +1453,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has output</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_output</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1478,7 +1478,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118>inheres in part of</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">characteristic of part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
     </owl:ObjectProperty>
@@ -1492,7 +1492,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000232>Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships</obo:IAO_0000232>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">mereotopologically related to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1517,7 +1517,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118>is executing</obo:IAO_0000118>
         <obo:IAO_0000232>This relation differs from the parent relation &apos;capable of&apos; in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized.</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">enables</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Enables</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1530,7 +1530,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000232>This is a grouping relation that collects relations used for the purpose of connecting structure and function</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">functionally related to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1544,7 +1544,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>inverse of enables</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">enabled by</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Enabled_by</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1560,7 +1560,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">input of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1575,7 +1575,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">output of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1590,7 +1590,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>inverse of upstream of</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">causally downstream of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1617,7 +1617,7 @@ For the third, we consider the effect of the upstream process on the output(s) o
 Each of these 3 primitives can be composed to yield a cross-product of different relation types.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">causally related to</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
@@ -1639,7 +1639,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">causally upstream of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1656,7 +1656,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>influences (processual)</obo:IAO_0000118>
         <oboInOwl:hasRelatedSynonym>affects</oboInOwl:hasRelatedSynonym>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>causally upstream of or within</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1671,7 +1671,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>causally downstream of or within</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1683,7 +1683,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002595"/>
         <obo:IAO_0000115>A relationship between a material entity and a process where the material entity has some causal role that influences the process</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>causal agent in process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1697,7 +1697,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>causal relation between processes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1707,7 +1707,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>depends on</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
     </owl:ObjectProperty>
@@ -1722,7 +1722,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000116>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label>causal relation between material entity and a process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1739,6 +1739,587 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000000 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:50:19Z</terms:created>
+        <rdfs:label xml:lang="en">emotion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:17Z</terms:created>
+        <rdfs:label xml:lang="en">phenomenal cognitive experience</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cognitive process during which an organism is aware of something either internal or external to itself.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/consciousness</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/EMRO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:39Z</terms:created>
+        <rdfs:label xml:lang="en">emotional experience (feeling)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/feeling</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000000"/>
+        <obo:IAO_0000115>An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:56:47Z</terms:created>
+        <rdfs:label xml:lang="en">anxiety process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000000"/>
+        <obo:IAO_0000115>An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:57:08Z</terms:created>
+        <rdfs:label xml:lang="en">fear process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000001"/>
+        <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:59:47Z</terms:created>
+        <rdfs:label xml:lang="en">sensory experience</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/sensation</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0061744"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:02:42Z</terms:created>
+        <rdfs:label xml:lang="en">motoric response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000007">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003012"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003013"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003016"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0050877"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0061744"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0160269"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A psychophysiological process that is part of an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:10:13Z</terms:created>
+        <rdfs:label xml:lang="en">psychophysiological response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0160269"/>
+        <obo:IAO_0000115>Sweat screation that happens as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:22:47Z</terms:created>
+        <rdfs:label xml:lang="en">sweat secretion response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:36:17Z</terms:created>
+        <rdfs:label xml:lang="en">muscle tension response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003015"/>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:39:24Z</terms:created>
+        <rdfs:label xml:lang="en">increased heart response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003016"/>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:44:09Z</terms:created>
+        <rdfs:label xml:lang="en">increased breathing rate response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:11:45Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A cognitive process during which the nature and significance of a phenomenon or event is evaluated.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:18:23Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive appraisal processs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T11:54:16Z</terms:created>
+        <oboInOwl:hasBroadSynonym>fainting</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>syncope</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>fainting response to emotion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>vasovagal syncope</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">syncope response to emotion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000020"/>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:16:30Z</terms:created>
+        <rdfs:label xml:lang="en">muscle tension response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000020">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:20:49Z</terms:created>
+        <rdfs:label xml:lang="en">psychophysiological response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000021">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:21:09Z</terms:created>
+        <rdfs:label xml:lang="en">psychophysiological response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000021"/>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:24:05Z</terms:created>
+        <rdfs:label xml:lang="en">muscle tension response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000020"/>
+        <obo:IAO_0000115>A cognitive process that happens as a response to fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:16Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000021"/>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:25Z</terms:created>
+        <rdfs:label xml:lang="en">cognitive response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000020"/>
+        <obo:IAO_0000115>Sweat screation that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:28Z</terms:created>
+        <rdfs:label xml:lang="en">sweat secretion response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000021"/>
+        <obo:IAO_0000115>Sweat screation that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:36Z</terms:created>
+        <rdfs:label xml:lang="en">sweat secretion response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000011"/>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:32:52Z</terms:created>
+        <rdfs:label xml:lang="en">increased heart response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000021"/>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:33:04Z</terms:created>
+        <rdfs:label xml:lang="en">increased heart response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000020"/>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:20Z</terms:created>
+        <rdfs:label xml:lang="en">increased breathing rate response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000021"/>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:30Z</terms:created>
+        <rdfs:label xml:lang="en">increased breathing rate response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000020"/>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:42:51Z</terms:created>
+        <rdfs:label xml:lang="en">syncope response to fear</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of a fear process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000021"/>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:43:01Z</terms:created>
+        <rdfs:label xml:lang="en">syncope response to anxiety</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000020"/>
+        <obo:IAO_0000115>A motor behavior that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:03:57Z</terms:created>
+        <rdfs:label>motoric response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO_0000034 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000021"/>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:04:12Z</terms:created>
+        <rdfs:label>motoric response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0003008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003008">
@@ -1747,7 +2328,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasExactSynonym>organ system process</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0003008</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1769,7 +2350,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0003012</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>muscle system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1791,7 +2372,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0003013</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>circulatory system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1811,7 +2392,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>cardiac process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0003015</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>heart process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1839,7 +2420,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0003016</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>respiratory system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1878,7 +2459,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:comment>Note that this term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term, for e.g. to transmembrane transport, to microtubule-based transport or to vesicle-mediated transport.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>transport</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1909,7 +2490,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006936</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>muscle contraction</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1939,7 +2520,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0007585</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>respiratory gaseous exchange by respiratory system</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1959,7 +2540,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>The controlled release of a fluid by a cell or tissue in an animal.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0007589</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>body fluid secretion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -1996,7 +2577,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <rdfs:comment>1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
 2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>behavior</rdfs:label>
         <skos:prefLabel>behavioral response to stimulus</skos:prefLabel>
     </owl:Class>
@@ -2037,7 +2618,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
         <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>biological_process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2066,7 +2647,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>multicellular organismal process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2091,7 +2672,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>expulsion of gland contents</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0032941</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>secretion by tissue</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2118,7 +2699,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0040011</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>locomotion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2138,7 +2719,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0046903</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>secretion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2166,7 +2747,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>nervous system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2187,7 +2768,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0050878</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>regulation of body fluid levels</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2210,7 +2791,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0050890</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>cognition</rdfs:label>
         <skos:prefLabel>cognitive process</skos:prefLabel>
     </owl:Class>
@@ -2244,7 +2825,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0051179</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>localization</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2283,7 +2864,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>establishment of localization</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2311,7 +2892,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:creation_date>2015-11-09T12:43:11Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0061744</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>motor behavior</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2335,7 +2916,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0065007</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>biological regulation</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2363,7 +2944,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0065008</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>regulation of biological quality</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2393,7 +2974,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasExactSynonym>sweating</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0160269</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:label>sweat secretion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2405,590 +2986,11 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000000 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:50:19Z</terms:created>
-        <rdfs:label xml:lang="en">emotion process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000001 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <obo:IAO_0000115>A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:17Z</terms:created>
-        <rdfs:label xml:lang="en">phenomenal cognitive experience</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A cognitive process during which an organism is aware of something either internal or external to itself.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://dictionary.apa.org/consciousness</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000002 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000002">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:39Z</terms:created>
-        <rdfs:label xml:lang="en">emotional experience (feeling)</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000002"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://dictionary.apa.org/feeling</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000003 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000003">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-        <obo:IAO_0000115>An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:56:47Z</terms:created>
-        <rdfs:label xml:lang="en">anxiety process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000004 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000004">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-        <obo:IAO_0000115>An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:57:08Z</terms:created>
-        <rdfs:label xml:lang="en">fear process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000005 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000005">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000001"/>
-        <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:59:47Z</terms:created>
-        <rdfs:label xml:lang="en">sensory experience</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000005"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
-        <obo:IAO_0000119>https://dictionary.apa.org/sensation</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000006 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0061744"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:02:42Z</terms:created>
-        <rdfs:label xml:lang="en">motoric response to emotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000007 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000007">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003012"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003013"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0003016"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0050877"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0061744"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0160269"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A psychophysiological process that is part of an emotion process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:10:13Z</terms:created>
-        <rdfs:label xml:lang="en">psychophysiological response to emotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000008 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0160269"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <obo:IAO_0000115>Sweat screation that happens as a response to an emotion process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:22:47Z</terms:created>
-        <rdfs:label xml:lang="en">sweat secretion response to emotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000010 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <obo:IAO_0000115>Muscle contraction that happens as a response to an emotion process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:36:17Z</terms:created>
-        <rdfs:label xml:lang="en">muscle tension response to emotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000011 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003015"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an emotion process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:39:24Z</terms:created>
-        <rdfs:label xml:lang="en">increased heart response to emotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000012 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003016"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:44:09Z</terms:created>
-        <rdfs:label xml:lang="en">increased breathing rate response to emotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000013 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <obo:IAO_0000115>A cognitive process that happens as a response to an emotion process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:11:45Z</terms:created>
-        <rdfs:label xml:lang="en">cognitive response to emotion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000014 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <obo:IAO_0000115>A cognitive process during which the nature and significance of a phenomenon or event is evaluated.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:18:23Z</terms:created>
-        <rdfs:label xml:lang="en">cognitive appraisal processs</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000015 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000015">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T11:54:16Z</terms:created>
-        <oboInOwl:hasBroadSynonym>fainting</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>syncope</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym>fainting response to emotion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>vasovagal syncope</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">syncope response to emotion</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</owl:annotatedTarget>
-        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000019 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000019">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000010"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000020"/>
-        <obo:IAO_0000115>Muscle contraction that happens as a response to a fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:16:30Z</terms:created>
-        <rdfs:label xml:lang="en">muscle tension response to fear</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000020 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000020">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>psychophysiological response to emotion that is part of a fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:20:49Z</terms:created>
-        <rdfs:label xml:lang="en">psychophysiological response to fear</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000021 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000021">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000007"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>psychophysiological response to emotion that is part of an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:21:09Z</terms:created>
-        <rdfs:label xml:lang="en">psychophysiological response to anxiety</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000022 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000022">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000010"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000021"/>
-        <obo:IAO_0000115>Muscle contraction that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:24:05Z</terms:created>
-        <rdfs:label xml:lang="en">muscle tension response to anxiety</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000023 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000023">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000013"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000020"/>
-        <obo:IAO_0000115>A cognitive process that happens as a response to fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:16Z</terms:created>
-        <rdfs:label xml:lang="en">cognitive response to fear</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000024 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000024">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000013"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000021"/>
-        <obo:IAO_0000115>A cognitive process that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:25Z</terms:created>
-        <rdfs:label xml:lang="en">cognitive response to anxiety</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000025 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000025">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000008"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000020"/>
-        <obo:IAO_0000115>Sweat screation that happens as a response to a fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:28Z</terms:created>
-        <rdfs:label xml:lang="en">sweat secretion response to fear</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000026 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000026">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000008"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000021"/>
-        <obo:IAO_0000115>Sweat screation that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:36Z</terms:created>
-        <rdfs:label xml:lang="en">sweat secretion response to anxiety</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000027 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000027">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000011"/>
-        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to a fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:32:52Z</terms:created>
-        <rdfs:label xml:lang="en">increased heart response to fear</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000028 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000028">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000011"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000021"/>
-        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:33:04Z</terms:created>
-        <rdfs:label xml:lang="en">increased heart response to anxiety</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000029 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000029">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000012"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000020"/>
-        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:20Z</terms:created>
-        <rdfs:label xml:lang="en">increased breathing rate response to fear</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000030 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000030">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000012"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000021"/>
-        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:30Z</terms:created>
-        <rdfs:label xml:lang="en">increased breathing rate response to anxiety</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000031 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000031">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000015"/>
-        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of a fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:42:51Z</terms:created>
-        <rdfs:label xml:lang="en">syncope response to fear</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of a fear process.</owl:annotatedTarget>
-        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000032 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000032">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000015"/>
-        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:43:01Z</terms:created>
-        <rdfs:label xml:lang="en">syncope response to anxiety</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000032"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</owl:annotatedTarget>
-        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000033 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000033">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000006"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000020"/>
-        <obo:IAO_0000115>A motor behavior that happens as a response to a fear process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:03:57Z</terms:created>
-        <rdfs:label>motoric response to fear</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/EMRO_0000034 -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/EMRO_0000034">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000006"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000021"/>
-        <obo:IAO_0000115>A motor behavior that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:04:12Z</terms:created>
-        <rdfs:label>motoric response to anxiety</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/emotion-response-ontology/**pain -->
 
     <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/**pain">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000002"/>
-        <rdfs:subClassOf rdf:resource="https://w3id.org/emotion-response-ontology/EMRO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO_0000005"/>
         <obo:IAO_0000115>An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.</obo:IAO_0000115>
         <rdfs:comment>Pain is a term from the pain ontology.</rdfs:comment>
     </owl:Class>
@@ -3010,7 +3012,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
         <obo:IAO_0000111 xml:lang="en">example to be eventually removed</obo:IAO_0000111>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3022,7 +3024,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000111 xml:lang="en">failed exploratory term</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3033,7 +3035,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
         <obo:IAO_0000111 xml:lang="en">metadata complete</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">metadata complete</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3044,7 +3046,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
         <obo:IAO_0000111 xml:lang="en">organizational term</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Term created to ease viewing/sort terms for development purpose, and will not be included in a release</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">organizational term</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3055,7 +3057,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
         <obo:IAO_0000111 xml:lang="en">ready for release</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">ready for release</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3066,7 +3068,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
         <obo:IAO_0000111 xml:lang="en">metadata incomplete</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3077,7 +3079,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000124">
         <obo:IAO_0000111 xml:lang="en">uncurated</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">uncurated</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3088,7 +3090,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
         <obo:IAO_0000111 xml:lang="en">pending final vetting</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3098,7 +3100,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
         <obo:IAO_0000111 xml:lang="en">placeholder removed</obo:IAO_0000111>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3109,7 +3111,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000227">
         <obo:IAO_0000111 xml:lang="en">terms merged</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">An editor note should explain what were the merged terms and the reason for the merge.</obo:IAO_0000116>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">terms merged</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3120,7 +3122,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000228">
         <obo:IAO_0000111 xml:lang="en">term imported</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.</obo:IAO_0000116>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">term imported</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3131,7 +3133,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000229">
         <obo:IAO_0000111 xml:lang="en">term split</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">term split</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3144,7 +3146,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000116 xml:lang="en">Hard to give a definition for. Intuitively a &quot;natural kind&quot; rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">universal</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3157,7 +3159,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115 xml:lang="en">A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">&quot;definitions&quot;, in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">defined class</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3170,7 +3172,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115 xml:lang="en">A named class expression is a logical expression that is given a name. The name can be used in place of the expression.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">named class expression</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3183,7 +3185,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3196,7 +3198,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">requires discussion</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3210,7 +3212,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/77</obo:IAO_0000233>
         <obo:IAO_0000234>https://orcid.org/0000-0001-5208-3432</obo:IAO_0000234>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>out of scope</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3224,7 +3226,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-4142-7153"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/136</obo:IAO_0000233>
         <obo:IAO_0000234>https://orcid.org/0000-0002-4142-7153</obo:IAO_0000234>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label>domain entity does not exist</rdfs:label>
     </owl:NamedIndividual>
     

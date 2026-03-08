@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/emototion-experience-ontology/emro/emro-simple.owl#"
-     xml:base="https://w3id.org/emototion-experience-ontology/emro/emro-simple.owl"
+<rdf:RDF xmlns="http://purl.bioontology.org/ontology/emro/emro-simple.owl#"
+     xml:base="http://purl.bioontology.org/ontology/emro/emro-simple.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,14 +11,14 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="https://w3id.org/emototion-experience-ontology/emro/emro-simple.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/emototion-experience-ontology/emro/releases/2026-03-05/emro-simple.owl"/>
+    <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/emro/emro-simple.owl">
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-08/emro-simple.owl"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <owl:versionInfo>2026-03-05</owl:versionInfo>
+        <owl:versionInfo>2026-03-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -80,9 +80,9 @@ Personally, I am more comfortable weakening definition to documentation, with in
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -115,8 +115,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -197,7 +197,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -205,7 +205,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/created -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -219,7 +219,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -242,8 +242,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -262,8 +262,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -282,9 +282,9 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has related synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -358,8 +358,8 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:label>part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
@@ -393,8 +393,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
         <rdfs:label>has part</rdfs:label>
     </owl:ObjectProperty>
@@ -408,7 +408,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">output of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -435,7 +435,7 @@ For the third, we consider the effect of the upstream process on the output(s) o
 Each of these 3 primitives can be composed to yield a cross-product of different relation types.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="https://w3id.org/emototion-experience-ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">causally related to</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
