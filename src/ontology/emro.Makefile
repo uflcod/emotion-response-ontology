@@ -131,7 +131,7 @@ mirror-%: | $(TMPDIR)
 
 ontospy-docs: $(ONT).owl
 	@echo "*** building ontospy documentation ***"
-	$(ROBOT) convert --input $< --format ttl q--output $<.ttl
+	$(ROBOT) convert --input $< --format ttl --output $<.ttl
 	sh convert-to-skos-ttl.sh $< 
 	sh ontospy-gen-docs.sh $<.ttl docs
 	cp -r docs ../..
