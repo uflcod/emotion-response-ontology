@@ -11,6 +11,7 @@ Import(<http://purl.bioontology.org/ontology/emro/components/emro_contributors.o
 Import(<http://purl.bioontology.org/ontology/emro/imports/go_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/omo_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/ro_import.owl>)
+Annotation(<http://purl.org/dc/terms/created> "2025-11-24"^^xsd:date)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9625-1899>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9990-8331>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-0766-8455>)
