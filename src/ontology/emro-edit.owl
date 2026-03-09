@@ -14,12 +14,10 @@ Import(<http://purl.bioontology.org/ontology/emro/imports/ro_import.owl>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9625-1899>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9990-8331>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-0766-8455>)
+Annotation(<http://purl.org/dc/terms/description> "The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).")
 Annotation(<http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/>)
 Annotation(<http://purl.org/dc/terms/title> "Emotion Response Ontology")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000000>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000001>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000002>))
@@ -51,6 +49,9 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000031>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000032>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000033>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
 Declaration(Class(<https://w3id.org/emotion-response-ontology/**pain>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
@@ -60,6 +61,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
@@ -69,14 +71,6 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 ############################
 #   Classes
 ############################
-
-# Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
-
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
-
-# Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
-
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
 
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000000> (emotion process)
 
@@ -412,6 +406,14 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000034> "motoric response to anxiety")
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000034> <http://purl.bioontology.org/ontology/EMRO/0000006>)
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.bioontology.org/ontology/EMRO/0000003>))
+
+# Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
+
+# Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
+
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
 
 # Class: <https://w3id.org/emotion-response-ontology/**pain> (<https://w3id.org/emotion-response-ontology/**pain>)
 
