@@ -13,13 +13,15 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/emro/emro-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-09/emro-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-10/emro-non-classified.owl"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-24</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <terms:description>The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <owl:versionInfo>2026-03-09</owl:versionInfo>
+        <owl:versionInfo>2026-03-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -930,6 +932,12 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
