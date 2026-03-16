@@ -1,12 +1,12 @@
 format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-10/emro-non-classified.owl
+data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-16/emro-non-classified.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: http://purl.bioontology.org/ontology/emro/emro-non-classified.owl
-property_value: owl:versionInfo "2026-03-10" xsd:string
+property_value: owl:versionInfo "2026-03-16" xsd:string
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
 property_value: terms:creator https://orcid.org/0000-0002-0766-8455
@@ -679,13 +679,6 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2026-03-05T22:04:12Z" xsd:dateTime
-
-[Term]
-id: https://w3id.org/emotion-response-ontology/**pain
-def: "An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage." []
-comment: Pain is a term from the pain ontology.
-is_a: http://purl.bioontology.org/ontology/EMRO/0000005 ! sensory experience
-relationship: part_of http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
 
 [Typedef]
 id: BFO:0000062

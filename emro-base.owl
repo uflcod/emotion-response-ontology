@@ -12,7 +12,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/emro/emro-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-10/emro-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-16/emro-base.owl"/>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-24</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
@@ -21,8 +21,8 @@
         <terms:description>The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <oboInOwl:date>10:03:2026 15:59</oboInOwl:date>
-        <owl:versionInfo>2026-03-10</owl:versionInfo>
+        <oboInOwl:date>16:03:2026 17:16</oboInOwl:date>
+        <owl:versionInfo>2026-03-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -901,22 +901,6 @@
     <!-- http://purl.obolibrary.org/obo/GO_0160269 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0160269"/>
-    
-
-
-    <!-- https://w3id.org/emotion-response-ontology/**pain -->
-
-    <owl:Class rdf:about="https://w3id.org/emotion-response-ontology/**pain">
-        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>An unpleasant sensory and emotional experience associated with, or resembling that associated with, actual or potential tissue damage.</obo:IAO_0000115>
-        <rdfs:comment>Pain is a term from the pain ontology.</rdfs:comment>
-    </owl:Class>
     
 
 
