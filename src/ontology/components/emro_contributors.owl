@@ -1,0 +1,38 @@
+Prefix(:=<http://purl.bioontology.org/ontology/emro/components/emro_contributors.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.bioontology.org/ontology/emro/components/emro_contributors.owl>
+
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-9990-8331>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-0766-8455>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9625-1899> "Bill Duncan")
+
+# Individual: <https://orcid.org/0000-0001-9990-8331> (Alexander D. Diehl)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9990-8331> "Alexander D. Diehl")
+
+# Individual: <https://orcid.org/0000-0002-0766-8455> (Daniel W. McNeil)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-0766-8455> "Daniel W. McNeil")
+
+# Individual: <https://orcid.org/0009-0002-7282-0836> (Finn Wilson)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0002-7282-0836> "Finn Wilson")
+
+
+)
