@@ -6,5 +6,6 @@
         <uri name="http://purl.bioontology.org/ontology/emro/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
         <uri name="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl" uri="imports/ro_import.owl"/>
         <uri name="http://purl.bioontology.org/ontology/emro/imports/go_import.owl" uri="imports/go_import.owl"/>
+        <uri name="http://purl.bioontology.org/ontology/emro/imports/pato_import.owl" uri="imports/pato_import.owl"/>
     </group>
 </catalog>

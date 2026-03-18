@@ -10,6 +10,7 @@ Ontology(<http://purl.bioontology.org/ontology/emro.owl>
 Import(<http://purl.bioontology.org/ontology/emro/components/emro_contributors.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/go_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/omo_import.owl>)
+Import(<http://purl.bioontology.org/ontology/emro/imports/pato_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/ro_import.owl>)
 Annotation(<http://purl.org/dc/terms/created> "2025-11-24"^^xsd:date)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9625-1899>)
@@ -37,7 +38,6 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000014>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000015>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000016>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000017>))
-Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000018>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000019>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000020>))
 Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000021>))
@@ -261,12 +261,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000017> "neutral emotional valence")
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000017> <http://purl.bioontology.org/ontology/EMRO/0000035>)
 
-# Class: <http://purl.bioontology.org/ontology/EMRO/0000018> (characteristic)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000018> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000018> "2026-03-17T20:03:55Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000018> "characteristic")
-
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000019> (muscle tension response to fear)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000019> "Muscle contraction that happens as a response to a fear process.")
@@ -444,7 +438,7 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000034> ObjectSomeValuesF
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000035> "2026-03-17T20:06:41Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000035> "emotional valence")
-SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> <http://purl.bioontology.org/ontology/EMRO/0000018>)
+SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> <http://purl.obolibrary.org/obo/PATO_0001236>)
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.bioontology.org/ontology/EMRO/0000014>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)

@@ -97,6 +97,22 @@ $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 		convert --format ofn \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
+$(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
+	@echo "*** building $@ ***"
+	$(ROBOT) \
+		filter \
+			--input $< \
+			--term-file $(word 2, $^) \
+			--select "annotations self" \
+		remove \
+			--select "owl:deprecated='true'^^xsd:boolean" \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@.tmp.owl && mv $@.tmp.owl $@
+
 # ----------------------------------------
 # Mirroring upstream ontologies
 # ----------------------------------------
@@ -111,19 +127,24 @@ download-mirrors:
 	make $(patsubst %, $(MIRRORDIR)/%.owl, $(IMPORTS))
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
-	if [ $(IMP) = true ] && [ $(MIR) = true ] && [ -f $(TMPDIR)/mirror-$*.owl ]; then if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." &&\
-		cp $(TMPDIR)/mirror-$*.owl $@; fi; fi
+	if [ $(IMP) = true ] && [ $(MIR) = true ] && [ -f $(TMPDIR)/mirror-$*.owl ]; then \
+		if cmp -s $(TMPDIR)/mirror-$*.owl $@ ; then \
+			echo "Mirror identical, IGNORING."; \
+		else echo "Mirrors different, UPDATING." && \
+			$(ROBOT) convert \
+				--input $(TMPDIR)/$(notdir $*).temp.owl \
+				--output $(TMPDIR)/$(notdir $*).owl && \
+			cp $(TMPDIR)/mirror-$*.owl $@; \
+		fi; \
+	fi
 
 .PHONY: mirror-%
 mirror-%: | $(TMPDIR)
 	@echo "*** mirroring $* ***"
 	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then \
 		curl -L $(URIBASE)/$*.owl \
-			--create-dirs -o $(MIRRORDIR)/$(notdir $*).temp.owl --retry 4 --max-time 200 && \
-		$(ROBOT) convert \
-			--input $(MIRRORDIR)/$(notdir $*).temp.owl \
-			--output $(MIRRORDIR)/$(notdir $*).owl && \
-		rm  $(MIRRORDIR)/$*.temp.owl; fi
+			--create-dirs -o $(TMPDIR)/$(notdir $*).temp.owl --retry 4 --max-time 200; \
+	fi
 
 # ----------------------------------------
 # Ontospy documentation
