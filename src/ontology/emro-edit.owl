@@ -446,10 +446,6 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> <http://purl.obol
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.bioontology.org/ontology/EMRO/0000000>))
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.bioontology.org/ontology/EMRO/0000014>))
 
-# Class: <http://purl.obolibrary.org/obo/COB_0000502> (characteristic)
-
-SubClassOf(<http://purl.obolibrary.org/obo/COB_0000502> <http://purl.obolibrary.org/obo/BFO_0000001>)
-
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")

@@ -43,22 +43,6 @@ $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
-# 	$(ROBOT) \
-# 		filter \
-# 			--input $< \
-# 			--term-file $(word 2, $^) \
-# 			--select "annotations self ancestors" \
-# 			--axioms logical \
-# 			--signature true \
-# 			--trim true \
-# 		remove \
-# 			--select "owl:deprecated='true'^^xsd:boolean" \
-# 		annotate \
-# 			--annotate-defined-by true \
-# 			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-# 			--version-iri $(URIBASE)/$(ONT)/$@ \
-# 		convert --format ofn \
-# 		--output $@.tmp.owl && mv $@.tmp.owl $@
 		
 $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
 	@echo "*** building $@ ***"
@@ -73,63 +57,15 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 		convert --format ofn \
 	--output $@.tmp.owl && mv $@.tmp.owl $@
 
-# 	$(ROBOT) \
-# 		filter \
-# 			--input $< \
-# 			--term-file $(word 2, $^) \
-# 			--select "annotations self ancestors" \
-# 			--axioms logical \
-# 			--signature true \
-# 			--trim true \
-# 		remove \
-# 			--select "owl:deprecated='true'^^xsd:boolean" \
-# 		remove \
-# 			--select "<http://purl.obolibrary.org/obo/NCBITaxon_*>" \
-# 		annotate \
-# 			--annotate-defined-by true \
-# 			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-# 			--version-iri $(URIBASE)/$(ONT)/$@ \
-# 		convert --format ofn \
-# 		--output $@.tmp.owl && mv $@.tmp.owl $@
-
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
-# 	$(ROBOT) \
-# 		filter \
-# 			--input $< \
-# 			--term-file $(word 2, $^) \
-# 			--select "annotations self ancestors" \
-# 			--axioms logical \
-# 			--signature true \
-# 			--trim true \
-# 		remove \
-# 			--select "owl:deprecated='true'^^xsd:boolean" \
-# 		annotate \
-# 			--annotate-defined-by true \
-# 			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-# 			--version-iri $(URIBASE)/$(ONT)/$@ \
-# 		convert --format ofn \
-# 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
-# 	$(ROBOT) \
-# 		filter \
-# 			--input $< \
-# 			--term-file $(word 2, $^) \
-# 			--select "annotations self" \
-# 		remove \
-# 			--select "owl:deprecated='true'^^xsd:boolean" \
-# 		annotate \
-# 			--annotate-defined-by true \
-# 			--ontology-iri $(URIBASE)/$(ONT)/$@ \
-# 			--version-iri $(URIBASE)/$(ONT)/$@ \
-# 		convert --format ofn \
-# 		--output $@.tmp.owl && mv $@.tmp.owl $@
 
 $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
 	@echo "*** building $@ ***"
@@ -139,7 +75,8 @@ $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
 $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
 	@echo "*** building $@ ***"
 	$(call onotlogy-annotation,$<)
-	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+# 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
 
 # ----------------------------------------
 # Mirroring upstream ontologies
