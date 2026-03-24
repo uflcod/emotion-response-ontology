@@ -59,6 +59,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
@@ -450,6 +451,12 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl
 # Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (obsolete class)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "2026-03-24T21:31:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "obsolete class")
 
 
 ############################
