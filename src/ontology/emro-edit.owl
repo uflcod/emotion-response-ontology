@@ -8,6 +8,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.bioontology.org/ontology/emro.owl>
 Import(<http://purl.bioontology.org/ontology/emro/components/emro_contributors.owl>)
+Import(<http://purl.bioontology.org/ontology/emro/imports/bfo_import.owl>)
+Import(<http://purl.bioontology.org/ontology/emro/imports/cob_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/go_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/omo_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/pato_import.owl>)
@@ -444,13 +446,25 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> <http://purl.obol
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.bioontology.org/ontology/EMRO/0000000>))
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.bioontology.org/ontology/EMRO/0000014>))
 
+# Class: <http://purl.obolibrary.org/obo/COB_0000502> (characteristic)
+
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000502> <http://purl.obolibrary.org/obo/BFO_0000001>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
 
+# Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
 
 # Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (obsolete class)
 
