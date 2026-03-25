@@ -136,8 +136,10 @@ ontospy-docs: $(RELEASEDIR)/$(ONT).owl
 	sh ontospy-gen-docs.sh $(notdir $<).ttl docs
 
 # 	remove old documentation
-	git rm -r $(RELEASEDIR)/docs
-	git commit -am 'removing old documentation'
+	if [ -d $(RELEASEDIR)/docs ]; then \
+		git rm -r $(RELEASEDIR)/docs; \
+		git commit -am 'removing old documentation'; \
+	fi
 
 #	add new documentation
 	cp -r docs $(RELEASEDIR)
