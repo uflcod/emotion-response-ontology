@@ -128,12 +128,14 @@ force-all-mirrors:
 # Ontospy documentation
 # ----------------------------------------
 
-ontospy-docs: $(ONT).owl
-	@echo "*** building ontospy documentation ***"
-	$(ROBOT) convert --input $< --format ttl --output $<.ttl
-	sh convert-to-skos-ttl.sh $< 
-	sh ontospy-gen-docs.sh $<.ttl docs
-	cp -r docs ../..
+# note: the documenation is built from the root emro.owl not src/ontology/emro-edit.owl
+ontospy-docs: $(RELEASEDIR)/$(ONT).owl
+	@echo "\n *** building ontospy documentation *** \n"
+	$(ROBOT) convert --input $< --format ttl --output $(notdir $<).ttl
+	sh convert-to-skos-ttl.sh $(notdir $<).ttl
+	sh ontospy-gen-docs.sh $(notdir $<).ttl docs
+	cp -r docs $(RELEASEDIR)
+	git add $(RELEASEDIR)/docs
 
 # ----------------------------------------
 # Helper Functions
