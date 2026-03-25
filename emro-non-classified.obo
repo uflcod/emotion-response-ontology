@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#"
      xml:base="http://purl.bioontology.org/ontology/emro/emro-non-classified.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -11,7 +12,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:emro-non-classified="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/emro/emro-non-classified.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl/http://purl.bioontology.org/ontology/emro/releases/2026-03-24/emro-non-classified.owl/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
@@ -38,9 +40,109 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424">
+        <rdfs:label>expand expression to</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0010000 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0010000"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#isDefinedBy"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#seeAlso"/>
+    
+
+
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -62,15 +164,2214 @@
     
 
 
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
+        <rdfs:label>created by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
+        <rdfs:label>creation date</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label>has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym">
+        <rdfs:label>has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label>has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label>has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
+        <rdfs:label>has_obo_format_version</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label>has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label>has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
+        <rdfs:label>id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label>in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label>shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111>is part of</obo:IAO_0000111>
+        <obo:IAO_0000112>my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112>my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
+        <obo:IAO_0000112>this day is part of this year (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115>a core relation that holds between a part and its whole</obo:IAO_0000115>
+        <obo:IAO_0000118>part_of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
+        <emro-non-classified:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
+        <emro-non-classified:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Part_of</emro-non-classified:seeAlso>
+        <emro-non-classified:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</emro-non-classified:seeAlso>
+        <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>part_of</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
+        <rdfs:label>part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002131"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000111>has part</obo:IAO_0000111>
+        <obo:IAO_0000112>my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
+        <obo:IAO_0000112>my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
+        <obo:IAO_0000112>this year has part this day (occurrent parthood)</obo:IAO_0000112>
+        <obo:IAO_0000115>a core relation that holds between a whole and its part</obo:IAO_0000115>
+        <obo:IAO_0000118>has_part</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>has_part</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
+        <rdfs:label>has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002086"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000062"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000111>preceded by</obo:IAO_0000111>
+        <obo:IAO_0000115>x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <obo:IAO_0000118>is preceded by</obo:IAO_0000118>
+        <obo:IAO_0000118>preceded_by</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</terms:source>
+        <oboInOwl:id>BFO:0000062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>preceded by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000063">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000063"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000111>precedes</obo:IAO_0000111>
+        <obo:IAO_0000115>x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>BFO:0000063</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>precedes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002314"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <obo:IAO_0000111>inheres in</obo:IAO_0000111>
+        <obo:IAO_0000112>this fragility is a characteristic of this vase</obo:IAO_0000112>
+        <obo:IAO_0000112>this red color is a characteristic of this apple</obo:IAO_0000112>
+        <obo:IAO_0000115>a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.</obo:IAO_0000115>
+        <obo:IAO_0000118>inheres_in</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0000052</oboInOwl:id>
+        <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
+        <rdfs:label>characteristic of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <obo:IAO_0000111>bearer of</obo:IAO_0000111>
+        <obo:IAO_0000112>this apple is bearer of this red color</obo:IAO_0000112>
+        <obo:IAO_0000112>this vase is bearer of this fragility</obo:IAO_0000112>
+        <obo:IAO_0000115>Inverse of characteristic_of</obo:IAO_0000115>
+        <obo:IAO_0000118>bearer_of</obo:IAO_0000118>
+        <obo:IAO_0000118>is bearer of</obo:IAO_0000118>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0000053</oboInOwl:id>
+        <rdfs:label>has characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <obo:IAO_0000111>participates in</obo:IAO_0000111>
+        <obo:IAO_0000112>this blood clot participates in this blood coagulation</obo:IAO_0000112>
+        <obo:IAO_0000112>this input material (or this output material) participates in this process</obo:IAO_0000112>
+        <obo:IAO_0000112>this investigator participates in this investigation</obo:IAO_0000112>
+        <obo:IAO_0000115>a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000118>participates_in</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0000056</oboInOwl:id>
+        <rdfs:label>participates in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000057"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000111>has participant</obo:IAO_0000111>
+        <obo:IAO_0000112>this blood coagulation has participant this blood clot</obo:IAO_0000112>
+        <obo:IAO_0000112>this investigation has participant this investigator</obo:IAO_0000112>
+        <obo:IAO_0000112>this process has participant this input material (or this output material)</obo:IAO_0000112>
+        <obo:IAO_0000115>a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
+        <obo:IAO_0000118>has_participant</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <terms:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</terms:source>
+        <oboInOwl:id>RO:0000057</oboInOwl:id>
+        <rdfs:label>has participant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002086 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002086">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002222"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002086</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:comment>X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)</rdfs:comment>
+        <rdfs:label>ends after</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002131 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002323"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000115>x overlaps y if and only if there exists some z such that x has part z and z part of y</obo:IAO_0000115>
+        <obo:IAO_0000424>http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)</obo:IAO_0000424>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002131</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>overlaps</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002216"/>
+        <obo:IAO_0000112>mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)</obo:IAO_0000112>
+        <obo:IAO_0000112>osteoclast SubClassOf &apos;capable of&apos; some &apos;bone resorption&apos;</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. </obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>has function realized in</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20123131"/>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002215</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>capable of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002216 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002216">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002215"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000115>c stands in this relationship to p if and only if there exists some p&apos; such that c is capable_of p&apos;, and p&apos; is part_of p.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>has function in</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
+        <oboInOwl:id>RO:0002216</oboInOwl:id>
+        <rdfs:label>capable of part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002222 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002222">
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Allen%27s_interval_algebra"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1</terms:source>
+        <oboInOwl:id>RO:0002222</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:comment>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</rdfs:comment>
+        <rdfs:label>temporally related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002352"/>
+        <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>consumes</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_input</emro-non-classified:seeAlso>
+        <oboInOwl:id>RO:0002233</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+        <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>produces</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_output</emro-non-classified:seeAlso>
+        <oboInOwl:id>RO:0002234</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002314">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002502"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002314"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000115>q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>inheres in part of</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
+        <oboInOwl:id>RO:0002314</oboInOwl:id>
+        <rdfs:label>characteristic of part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002323 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002323">
+        <obo:IAO_0000115>A mereological relationship or a topological relationship</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002323</oboInOwl:id>
+        <rdfs:label>mereotopologically related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002327 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002327">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002333"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002327"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000112>a particular instances of akt-2 enables some instance of protein kinase activity</obo:IAO_0000112>
+        <obo:IAO_0000115>c enables p iff c is capable of p and c acts to execute p.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>catalyzes</obo:IAO_0000118>
+        <obo:IAO_0000118>executes</obo:IAO_0000118>
+        <obo:IAO_0000118>has</obo:IAO_0000118>
+        <obo:IAO_0000118>is catalyzing</obo:IAO_0000118>
+        <obo:IAO_0000118>is executing</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Enables</emro-non-classified:seeAlso>
+        <oboInOwl:id>RO:0002327</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
+        <rdfs:label>enables</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002328 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002328">
+        <obo:IAO_0000115>A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002328</oboInOwl:id>
+        <rdfs:label>functionally related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002333 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002333">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <obo:IAO_0000115>inverse of enables</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Enabled_by</emro-non-classified:seeAlso>
+        <oboInOwl:id>RO:0002333</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label>enabled by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002352 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002352">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <obo:IAO_0000115>inverse of has input</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002352</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>input of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002353 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002353">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <obo:IAO_0000115>inverse of has output</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002353</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#ro-eco"/>
+        <rdfs:label>output of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002404 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002404">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+        <obo:IAO_0000115>inverse of upstream of</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002404</oboInOwl:id>
+        <rdfs:label>causally downstream of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002410 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002410">
+        <obo:IAO_0000115>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002410</oboInOwl:id>
+        <rdfs:label>causally related to</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Causality</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002411 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002411">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002418"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115>p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002411</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
+        <rdfs:label>causally upstream of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002418 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002418">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002501"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115>p is &apos;causally upstream or within&apos; q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000118>influences (processual)</obo:IAO_0000118>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:hasRelatedSynonym>affects</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>RO:0002418</oboInOwl:id>
+        <rdfs:label>causally upstream of or within</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002427 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002427">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002501"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <obo:IAO_0000115>inverse of causally upstream of or within</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002427</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <rdfs:label>causally downstream of or within</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002500 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002500">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002595"/>
+        <obo:IAO_0000115>A relationship between a material entity and a process where the material entity has some causal role that influences the process</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002500</oboInOwl:id>
+        <rdfs:label>causal agent in process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002501 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002501">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+        <obo:IAO_0000115>p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002501</oboInOwl:id>
+        <rdfs:label>causal relation between processes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002502 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <emro-non-classified:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
+        <oboInOwl:id>RO:0002502</oboInOwl:id>
+        <rdfs:label>depends on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002595 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002595">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+        <obo:IAO_0000115>A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+        <oboInOwl:id>RO:0002595</oboInOwl:id>
+        <rdfs:label>causal relation between material entity and a process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000000 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:50:19Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000000</oboInOwl:id>
+        <rdfs:label>emotion process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000001 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:17Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000001</oboInOwl:id>
+        <rdfs:label>phenomenal cognitive experience</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cognitive process during which an organism is aware of something either internal or external to itself.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/consciousness</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000002 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/EMRO/0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:52:39Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000002</oboInOwl:id>
+        <rdfs:label>emotional experience (feeling)</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/feeling</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000003 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+        <obo:IAO_0000115>An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:56:47Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000003</oboInOwl:id>
+        <rdfs:label>anxiety process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000004 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+        <obo:IAO_0000115>An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:57:08Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000004</oboInOwl:id>
+        <rdfs:label>fear process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000005 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000001"/>
+        <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:59:47Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000005</oboInOwl:id>
+        <rdfs:label>sensory experience</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000005"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/sensation</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000006 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0061744"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:02:42Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000006</oboInOwl:id>
+        <rdfs:label>motoric response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000007 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A psychophysiological process that is part of an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T21:10:13Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000007</oboInOwl:id>
+        <rdfs:label>psychophysiological response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000008 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0160269"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Sweat screation that happens as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:22:47Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000008</oboInOwl:id>
+        <rdfs:label>sweat secretion response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000009 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000035"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:16Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000009</oboInOwl:id>
+        <rdfs:label>positive emotional valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000010 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:36:17Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000010</oboInOwl:id>
+        <rdfs:label>muscle tension response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000011 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:39:24Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000011</oboInOwl:id>
+        <rdfs:label>increased heart response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000012 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T22:44:09Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000012</oboInOwl:id>
+        <rdfs:label>increased breathing rate response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000013 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:11:45Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000013</oboInOwl:id>
+        <rdfs:label>cognitive response to emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000014 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A cognitive process during which the nature and significance of a phenomenon or event is evaluated.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:18:23Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000014</oboInOwl:id>
+        <rdfs:label>cognitive appraisal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000015 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000007"/>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T11:54:16Z</terms:created>
+        <oboInOwl:hasBroadSynonym>fainting</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>syncope</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>fainting response to emotion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>vasovagal syncope</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000015</oboInOwl:id>
+        <rdfs:label>syncope response to emotion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000016 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000035"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:31Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000016</oboInOwl:id>
+        <rdfs:label>negative emotional valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000017 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000035"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:29:48Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000017</oboInOwl:id>
+        <rdfs:label>neutral emotional valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000019 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:16:30Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000019</oboInOwl:id>
+        <rdfs:label>muscle tension response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000020 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000020">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/EMRO/0000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000004"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:20:49Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000020</oboInOwl:id>
+        <rdfs:label>psychophysiological response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000021 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000021">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/EMRO/0000007"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:21:09Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000021</oboInOwl:id>
+        <rdfs:label>psychophysiological response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000022 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:24:05Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000022</oboInOwl:id>
+        <rdfs:label>muscle tension response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000023 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cognitive process that happens as a response to fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:16Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000023</oboInOwl:id>
+        <rdfs:label>cognitive response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000024 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:26:25Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000024</oboInOwl:id>
+        <rdfs:label>cognitive response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000025 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Sweat screation that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:28Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000025</oboInOwl:id>
+        <rdfs:label>sweat secretion response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000026 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Sweat screation that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:31:36Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000026</oboInOwl:id>
+        <rdfs:label>sweat secretion response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000027 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000011"/>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:32:52Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000027</oboInOwl:id>
+        <rdfs:label>increased heart response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000028 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:33:04Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000028</oboInOwl:id>
+        <rdfs:label>increased heart response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000029 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:20Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000029</oboInOwl:id>
+        <rdfs:label>increased breathing rate response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000030 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:30Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000030</oboInOwl:id>
+        <rdfs:label>increased breathing rate response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000031 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:42:51Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000031</oboInOwl:id>
+        <rdfs:label>syncope response to fear</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of a fear process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000032 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:43:01Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000032</oboInOwl:id>
+        <rdfs:label>syncope response to anxiety</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000032"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000033 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor behavior that happens as a response to a fear process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:03:57Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000033</oboInOwl:id>
+        <rdfs:label>motoric response to fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000034 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T22:04:12Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000034</oboInOwl:id>
+        <rdfs:label>motoric response to anxiety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000035 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T20:06:41Z</terms:created>
+        <oboInOwl:id>http://purl.bioontology.org/ontology/EMRO/0000035</oboInOwl:id>
+        <rdfs:label>emotional valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <obo:BFO_0000179>process</obo:BFO_0000179>
+        <obo:BFO_0000180>Process</obo:BFO_0000180>
+        <obo:IAO_0000112>a process of cell-division, \ a beating of the heart</obo:IAO_0000112>
+        <obo:IAO_0000112>a process of meiosis</obo:IAO_0000112>
+        <obo:IAO_0000112>a process of sleeping</obo:IAO_0000112>
+        <obo:IAO_0000112>the course of a disease</obo:IAO_0000112>
+        <obo:IAO_0000112>the flight of a bird</obo:IAO_0000112>
+        <obo:IAO_0000112>the life of an organism</obo:IAO_0000112>
+        <obo:IAO_0000112>your process of aging.</obo:IAO_0000112>
+        <obo:IAO_0000115>p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <oboInOwl:id>BFO:0000015</oboInOwl:id>
+        <rdfs:label>process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
+        <obo:IAO_0010000>http://purl.obolibrary.org/obo/bfo/axiom/083-003</obo:IAO_0010000>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
+        <obo:IAO_0010000>http://purl.obolibrary.org/obo/bfo/axiom/083-003</obo:IAO_0010000>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cob.owl"/>
+        <oboInOwl:id>COB:0000502</oboInOwl:id>
+        <rdfs:label>characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032501"/>
+        <obo:IAO_0000115>A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>organ system process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0003008</oboInOwl:id>
+        <rdfs:label>system process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A multicellular organismal process carried out by any of the organs or tissues in an organ system. An organ system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a biological objective.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mtg_cardio</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003008"/>
+        <obo:IAO_0000115>An organ system process carried out at the level of a muscle. Muscle tissue is composed of contractile cells or fibers.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>muscle physiological process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0003012</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_drosophila"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_generic"/>
+        <rdfs:label>muscle system process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003012"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An organ system process carried out at the level of a muscle. Muscle tissue is composed of contractile cells or fibers.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mtg_cardio</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003008"/>
+        <obo:IAO_0000115>An organ system process carried out by any of the organs or tissues of the circulatory system. The circulatory system is an organ system that moves extracellular fluids to and from tissue within a multicellular organism.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasDbXref>Wikipedia:Circulatory_system</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0003013</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_generic"/>
+        <rdfs:label>circulatory system process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003013"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An organ system process carried out by any of the organs or tissues of the circulatory system. The circulatory system is an organ system that moves extracellular fluids to and from tissue within a multicellular organism.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mtg_cardio</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003013"/>
+        <obo:IAO_0000115>A circulatory system process carried out by the heart. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>cardiac process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0003015</oboInOwl:id>
+        <rdfs:label>heart process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A circulatory system process carried out by the heart. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mtg_cardio</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007585"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A process carried out by the organs or tissues of the respiratory system. The respiratory system is an organ system responsible for respiratory gaseous exchange.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasAlternativeId>GO:0010802</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>respiratory gaseous exchange</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0003016</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_generic"/>
+        <rdfs:label>respiratory system process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0003016"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A process carried out by the organs or tissues of the respiratory system. The respiratory system is an organ system responsible for respiratory gaseous exchange.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_cardio</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006810">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051234"/>
+        <obo:IAO_0000115>The directed movement of substances (such as macromolecules, small molecules, ions) or cellular components (such as complexes and organelles) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or a transporter complex, a pore or a motor protein.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/20292</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-12-13T16:25:32Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0015457</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0015460</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044765</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-382551</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-organism transport</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0006810</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_plant_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_prokaryote"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_prokaryote_ribbon"/>
+        <rdfs:comment>Note that this term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term, for e.g. to transmembrane transport, to microtubule-based transport or to vesicle-mediated transport.</rdfs:comment>
+        <rdfs:label>transport</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006810"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The directed movement of substances (such as macromolecules, small molecules, ions) or cellular components (such as complexes and organelles) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or a transporter complex, a pore or a motor protein.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006810"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-382551</owl:annotatedTarget>
+        <rdfs:label>Transport of small molecules</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006936 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006936">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003012"/>
+        <obo:IAO_0000115>A process in which force is generated within muscle tissue, resulting in a change in muscle geometry. Force generation involves a chemo-mechanical energy conversion step that is carried out by the actin/myosin complex activity, which generates force through ATP hydrolysis.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasDbXref>Reactome:R-HSA-445355</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>Wikipedia:Muscle_contraction</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0006936</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>muscle contraction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A process in which force is generated within muscle tissue, resulting in a change in muscle geometry. Force generation involves a chemo-mechanical energy conversion step that is carried out by the actin/myosin complex activity, which generates force through ATP hydrolysis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ef</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_muscle</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>Reactome:R-HSA-445355</owl:annotatedTarget>
+        <rdfs:label>Smooth Muscle Contraction</rdfs:label>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007585 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007585">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032501"/>
+        <obo:IAO_0000115>The process of gaseous exchange between an organism and its environment. In plants, microorganisms, and many small animals, air or water makes direct contact with the organism&apos;s cells or tissue fluids, and the processes of diffusion supply the organism with dioxygen (O2) and remove carbon dioxide (CO2). In larger animals the efficiency of gaseous exchange is improved by specialized respiratory organs, such as lungs and gills, which are ventilated by breathing mechanisms.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasBroadSynonym>breathing</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>respiration</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0007585</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_chembl"/>
+        <rdfs:label>respiratory gaseous exchange by respiratory system</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007585"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The process of gaseous exchange between an organism and its environment. In plants, microorganisms, and many small animals, air or water makes direct contact with the organism&apos;s cells or tissue fluids, and the processes of diffusion supply the organism with dioxygen (O2) and remove carbon dioxide (CO2). In larger animals the efficiency of gaseous exchange is improved by specialized respiratory organs, such as lungs and gills, which are ventilated by breathing mechanisms.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0198506732</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007589 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007589">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046903"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050878"/>
+        <obo:IAO_0000115>The controlled release of a fluid by a cell or tissue in an animal.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0007589</oboInOwl:id>
+        <rdfs:label>body fluid secretion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007589"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The controlled release of a fluid by a cell or tissue in an animal.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032501"/>
+        <obo:IAO_0000115>The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-20T14:06:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0023032</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044708</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044709</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Behavior</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>behavioral response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>behaviour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>behavioural response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-organism behavior</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0007610</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_flybase_ribbon"/>
+        <rdfs:comment>1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
+2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).</rdfs:comment>
+        <rdfs:label>behavior</rdfs:label>
+        <skos:prefLabel>behavioral response to stimulus</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ems</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:jl</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0395448956</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:20160973</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T15:05:24Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0000004</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0007582</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0044699</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>Wikipedia:Biological_process</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>biological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0008150</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pombe"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_yeast"/>
+        <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
+        <rdfs:label>biological_process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:pdt</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032501 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any biological process, occurring at the level of a multicellular organism, pertinent to its function.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/27189</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2012-09-19T16:07:47Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:0044707</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>GO:0050874</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>organismal physiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single-multicellular organism process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0032501</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
+        <rdfs:label>multicellular organismal process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032501"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any biological process, occurring at the level of a multicellular organism, pertinent to its function.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:curators</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032941 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0032941">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032501"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0046903"/>
+        <obo:IAO_0000115>The controlled release of a substance by a tissue.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>tissue secretion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>expulsion of gland contents</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0032941</oboInOwl:id>
+        <rdfs:label>secretion by tissue</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032941"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The controlled release of a substance by a tissue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0032941"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>expulsion of gland contents</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0040011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0040011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Self-propelled movement of a cell or organism from one location to another.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0040011</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>locomotion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0040011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Self-propelled movement of a cell or organism from one location to another.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dgh</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046903 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0046903">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006810"/>
+        <obo:IAO_0000115>The controlled release of a substance by a cell or a tissue.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0046903</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>secretion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0046903"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The controlled release of a substance by a cell or a tissue.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050877 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050877">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003008"/>
+        <obo:IAO_0000115>An organ system process carried out by any of the organs or tissues of the neurological system.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/13824</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>neurological system process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>neurophysiological process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>pan-neural process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0050877</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_flybase_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>nervous system process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050877"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An organ system process carried out by any of the organs or tissues of the neurological system.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mtg_cardio</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050878 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050878">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065008"/>
+        <obo:IAO_0000115>Any process that modulates the levels of body fluids.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0050878</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>regulation of body fluid levels</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050878"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates the levels of body fluids.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:tb</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050890 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050877"/>
+        <obo:IAO_0000115>The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasDbXref>Wikipedia:Cognition</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0050890</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_drosophila"/>
+        <rdfs:label>cognition</rdfs:label>
+        <skos:prefLabel>cognitive process</skos:prefLabel>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ISBN:0721619908</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported, tethered to or otherwise maintained in a specific location. In the case of substances, localization may also be achieved via selective degradation.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/27052</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:created_by>jl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2013-12-18T13:51:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId>GO:1902578</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>establishment and maintenance of localization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>establishment and maintenance of position</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>localisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>establishment and maintenance of cellular component location</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>establishment and maintenance of substance location</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>establishment and maintenance of substrate location</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>single organism localization</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>single-organism localization</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>GO:0051179</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>localization</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051179"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported, tethered to or otherwise maintained in a specific location. In the case of substances, localization may also be achieved via selective degradation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051179"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>localisation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051179"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>single organism localization</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:TermGenie</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051179"/>
+        <obo:IAO_0000115>Any process that localizes a substance or cellular component. This may occur via movement, tethering or selective degradation.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24200</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>establishment of localisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0051234</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_agr"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_flybase_ribbon"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_mouse"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>establishment of localization</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051234"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that localizes a substance or cellular component. This may occur via movement, tethering or selective degradation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:ai</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dos</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0051234"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>establishment of localisation</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0061744 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0061744">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+        <obo:IAO_0000115>The specific neuromuscular movement of a single organism in response to external or internal stimuli.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:created_by>dph</oboInOwl:created_by>
+        <oboInOwl:creation_date>2015-11-09T12:43:11Z</oboInOwl:creation_date>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0061744</oboInOwl:id>
+        <rdfs:label>motor behavior</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0061744"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The specific neuromuscular movement of a single organism in response to external or internal stimuli.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:PARL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:bf</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>PMID:25318560</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0065007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <obo:IAO_0000115>Any process that modulates a measurable attribute of any biological process, quality or function.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasBroadSynonym>regulation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0065007</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>biological regulation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0065007"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates a measurable attribute of any biological process, quality or function.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0065008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0065008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0065007"/>
+        <obo:IAO_0000115>Any process that modulates a qualitative or quantitative trait of a biological quality. A biological quality is a measurable attribute of an organism or part of an organism, such as size, mass, shape, color, etc.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/30599</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:hasExactSynonym>regulation of biological attribute</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>regulation of biological characteristic</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0065008</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#gocheck_do_not_annotate"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-non-classified.owl#goslim_pir"/>
+        <rdfs:label>regulation of biological quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0065008"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Any process that modulates a qualitative or quantitative trait of a biological quality. A biological quality is a measurable attribute of an organism or part of an organism, such as size, mass, shape, color, etc.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:isa_complete</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:mah</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:pr</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:vw</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0160269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0160269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007589"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0032941"/>
+        <obo:IAO_0000115>The regulated release of sweat from the sweat glands.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/30274.</obo:IAO_0000233>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:created_by>rynl</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-05-19T20:55:14Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym>perspiration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>perspiring</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>sweating</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>GO:0160269</oboInOwl:id>
+        <rdfs:label>sweat secretion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/GO_0160269"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>The regulated release of sweat from the sweat glands.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PMID:1778649</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <oboInOwl:hasAlternativeId>PATO:0000072</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000001</oboInOwl:id>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <obo:IAO_0000115>A quality which inheres in an process.</obo:IAO_0000115>
+        <emro-non-classified:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <oboInOwl:hasAlternativeId>PATO:0001239</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>PATO:0001240</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>quality of a process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of occurrent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>relational quality of occurrent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001236</oboInOwl:id>
+        <rdfs:comment>See comments of relational quality of a physical entity.</rdfs:comment>
+        <rdfs:label>process quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quality which inheres in an process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
 </rdf:RDF>
 
 

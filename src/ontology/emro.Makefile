@@ -134,6 +134,12 @@ ontospy-docs: $(RELEASEDIR)/$(ONT).owl
 	$(ROBOT) convert --input $< --format ttl --output $(notdir $<).ttl
 	sh convert-to-skos-ttl.sh $(notdir $<).ttl
 	sh ontospy-gen-docs.sh $(notdir $<).ttl docs
+
+# 	remove old documentation
+	git rm -r $(RELEASEDIR)/docs
+	git commit -am 'removing old documentation'
+
+#	add new documentation
 	cp -r docs $(RELEASEDIR)
 	git add $(RELEASEDIR)/docs
 
@@ -235,7 +241,9 @@ define remove-obsolete-class
 	$(ROBOT) \
 		remove \
 			--input $(1) \
-			--term "<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>" \
+			--term http://www.geneontology.org/formats/oboInOwl#ObsoleteClass \
+			--select "self descendants" \
+			--signature true \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
 	--output $(TMPDIR)/$$(basename $(1)).tmp.owl && mv $(TMPDIR)/$$(basename $(1)).tmp.owl $(1)
