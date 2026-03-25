@@ -1,0 +1,3124 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/custom/favicon.ico">
+
+	
+		<title>Ontospy > http://purl.bioontology.org/ontology/emro.owl</title>
+	
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="static/libs/bootstrap-3_3_7-dist/css/bootstrap.min.css" rel="stylesheet">  -->
+    <!-- Bootswatch:  -->
+    <!-- cerulean  | cyborg |  flatly |  lumen |  sandstone |   spacelab  |  yeti | cosmo |  darkly |  paper | simplex | superhero |  journal | readable  |   slate |  united -->
+    <link href="static/libs/bootswatch3_2/yeti/bootstrap.min.css" rel="stylesheet">
+    <link href="static/custom/css/simple-sidebar.css" rel="stylesheet">
+    <link href="static/custom/css/familytree.css" rel="stylesheet">
+    <link href="static/custom/css/tabletree.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="static/libs/bootstrap-3_3_7-dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/custom/css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+
+  .lead-plus {font-size: 26.5px;}
+  .label-xs {font-size: 10px;}
+  .label-dark {background: #2c3e50; color: white; padding: 1px;}
+  .margin50 {margin-top: 50px; margin-bottom: 50px;}
+
+  .namespaces {background: #ced2d6; width: 100%;}
+
+
+  /*so that the d3plus tooltip panel doesnt cover the top banner*/
+  .navbar {z-index: 3000;}
+
+
+  .panel-body dt {margin-top: 5px;}
+  .page-header  {margin-top: 30px;}
+  #wrapper {margin-top: 50px;}
+
+  .implementation-panel {
+    overflow: auto;
+    /*max-height: 500px;*/
+  }
+
+  tr.table-classproperties {
+      /*background: #f5f5f5;*/
+  }
+  tr.table-classproperties th {
+      font-size: 80%;
+      font-weight: normal;
+  }
+
+
+  tr.table-inheritanceinfo {
+      /*background: #f5f5f5;*/
+      text-align: left;
+  }
+
+  tr.table-inheritanceinfo th {
+      font-size: 90%;
+      font-weight: normal;
+  }
+
+
+  .breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumb a {
+      text-transform: capitalize;
+  }
+  .breadcrumb li {
+      text-transform: none;
+      /*so to catch the uri @todo improve*/
+  }
+
+
+  .fromclass_link {
+    /*color: white;
+    text-decoration: underline;*/
+    /*background: #1c1e52;*/
+    color: inherit;
+    /*padding: 1px;*/
+  }
+
+		.mythumbnail {
+			display: block;
+			padding: 13px;
+			margin-bottom: 30px;
+			line-height: 13.428571;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 30px;
+		}
+
+		.mythumbnail:hover {
+			background: lightyellow;
+			text-decoration: none;
+		}
+
+
+		.img-container{
+		    height:100%;
+			overflow: hidden;
+		    max-height:200px;
+			padding: 10px;
+/*			margin: 20px 0px 20px 0px;*/
+			border: 1em #EAE5E5 solid;
+		}
+
+		.img-container:hover {
+			border: 1px grey solid;
+		}
+
+		img{
+/*		    height:100% !important;*/
+		}
+
+
+		.icon-xxs {
+			font-size: 15px;
+		}
+
+
+    /* dropdown open on hover */
+
+    @media (min-width: 979px) {
+      ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+      }
+    }
+
+
+
+/*pygments css*/
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: #ffffcc }
+.highlight { background: #f8f8f8; }
+.highlight .c { color: #3D7B7B; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #F00 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666 } /* Operator */
+.highlight .ch { color: #3D7B7B; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #3D7B7B; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #9C6500 } /* Comment.Preproc */
+.highlight .cpf { color: #3D7B7B; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #3D7B7B; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #3D7B7B; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .ges { font-weight: bold; font-style: italic } /* Generic.EmphStrong */
+.highlight .gr { color: #E40000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #008400 } /* Generic.Inserted */
+.highlight .go { color: #717171 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #04D } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #687822 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #00F; font-weight: bold } /* Name.Class */
+.highlight .no { color: #800 } /* Name.Constant */
+.highlight .nd { color: #A2F } /* Name.Decorator */
+.highlight .ni { color: #717171; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #CB3F38; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #00F } /* Name.Function */
+.highlight .nl { color: #767600 } /* Name.Label */
+.highlight .nn { color: #00F; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #A2F; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #BBB } /* Text.Whitespace */
+.highlight .mb { color: #666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666 } /* Literal.Number.Float */
+.highlight .mh { color: #666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #AA5D1F; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #A45A77; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #A45A77 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #00F } /* Name.Function.Magic */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
+.highlight .il { color: #666 } /* Literal.Number.Integer.Long */
+
+/*overloading this class from pygments*/
+.highlight {
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+  </head>
+
+  <body>
+
+
+  
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" id="menu-toggle" title="Toggle sidebar">
+        
+        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html"><code style="font-size: 115%;">http://purl.bioontology.org/ontology/emro.owl</code></a></li>
+
+        <li  ><a href="entities-az.html">Entities A-Z</a></li>
+        
+        <li ><a href="entities-tree-classes.html">Classes</a></li>
+        
+        
+        <li ><a href="entities-tree-properties.html">Properties</a></li>
+        
+        
+        
+        
+        <li  ><a href="statistics.html">Statistics</a></li>
+
+
+
+
+
+      </ul>
+      
+    </div><!--/.nav-collapse -->
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<div id="wrapper" class="toggled">
+
+
+    
+  
+    
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+
+
+        <li>
+          <input style="margin-top: 30px;  margin-bottom: 20px;" type="text" id="search-input-sidebar" name="" value="" placeholder="Type to search">
+        </li>
+
+        
+          <li class="-second-level" id="sd_classes"><a href="entities-tree-classes.html">Classes (63)</a>
+          </li>
+
+            
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_2"><a  href="class-httppurlbioontologyorgontologyemro0000000.html">emotion process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_3"><a  href="class-httppurlbioontologyorgontologyemro0000001.html">phenomenal cognitive experience</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_4"><a  href="class-httppurlbioontologyorgontologyemro0000002.html">emotional experience (feeling)</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_5"><a  href="class-httppurlbioontologyorgontologyemro0000003.html">anxiety process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_6"><a  href="class-httppurlbioontologyorgontologyemro0000004.html">fear process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_7"><a  href="class-httppurlbioontologyorgontologyemro0000005.html">sensory experience</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_8"><a  href="class-httppurlbioontologyorgontologyemro0000006.html">motoric response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_9"><a  href="class-httppurlbioontologyorgontologyemro0000007.html">psychophysiological response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_10"><a  href="class-httppurlbioontologyorgontologyemro0000008.html">sweat secretion response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_11"><a  href="class-httppurlbioontologyorgontologyemro0000009.html">positive emotional valence</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_12"><a  href="class-httppurlbioontologyorgontologyemro0000010.html">muscle tension response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_13"><a  href="class-httppurlbioontologyorgontologyemro0000011.html">increased heart response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_14"><a  href="class-httppurlbioontologyorgontologyemro0000012.html">increased breathing rate response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_15"><a  href="class-httppurlbioontologyorgontologyemro0000013.html">cognitive response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_16"><a  href="class-httppurlbioontologyorgontologyemro0000014.html">cognitive appraisal process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_17"><a  href="class-httppurlbioontologyorgontologyemro0000015.html">syncope response to emotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_18"><a  href="class-httppurlbioontologyorgontologyemro0000016.html">negative emotional valence</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_19"><a class="active" href="class-httppurlbioontologyorgontologyemro0000017.html">neutral emotional valence</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_20"><a  href="class-httppurlbioontologyorgontologyemro0000019.html">muscle tension response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_21"><a  href="class-httppurlbioontologyorgontologyemro0000020.html">psychophysiological response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_22"><a  href="class-httppurlbioontologyorgontologyemro0000021.html">psychophysiological response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_23"><a  href="class-httppurlbioontologyorgontologyemro0000022.html">muscle tension response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_24"><a  href="class-httppurlbioontologyorgontologyemro0000023.html">cognitive response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_25"><a  href="class-httppurlbioontologyorgontologyemro0000024.html">cognitive response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_26"><a  href="class-httppurlbioontologyorgontologyemro0000025.html">sweat secretion response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_27"><a  href="class-httppurlbioontologyorgontologyemro0000026.html">sweat secretion response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_28"><a  href="class-httppurlbioontologyorgontologyemro0000027.html">increased heart response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_29"><a  href="class-httppurlbioontologyorgontologyemro0000028.html">increased heart response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_30"><a  href="class-httppurlbioontologyorgontologyemro0000029.html">increased breathing rate response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_31"><a  href="class-httppurlbioontologyorgontologyemro0000030.html">increased breathing rate response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_32"><a  href="class-httppurlbioontologyorgontologyemro0000031.html">syncope response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_33"><a  href="class-httppurlbioontologyorgontologyemro0000032.html">syncope response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_34"><a  href="class-httppurlbioontologyorgontologyemro0000033.html">motoric response to fear</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_35"><a  href="class-httppurlbioontologyorgontologyemro0000034.html">motoric response to anxiety</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_36"><a  href="class-httppurlbioontologyorgontologyemro0000035.html">emotional valence</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_37"><a  href="class-obobfo_0000015.html">process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_38"><a  href="class-obocob_0000502.html">characteristic</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_39"><a  href="class-obogo_0003008.html">system process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_40"><a  href="class-obogo_0003012.html">muscle system process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_41"><a  href="class-obogo_0003013.html">circulatory system process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_42"><a  href="class-obogo_0003015.html">heart process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_43"><a  href="class-obogo_0003016.html">respiratory system process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_44"><a  href="class-obogo_0006810.html">transport</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_45"><a  href="class-obogo_0006936.html">muscle contraction</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_46"><a  href="class-obogo_0007585.html">respiratory gaseous exchange by respiratory system</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_47"><a  href="class-obogo_0007589.html">body fluid secretion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_48"><a  href="class-obogo_0007610.html">behavior</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_49"><a  href="class-obogo_0008150.html">biological_process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_50"><a  href="class-obogo_0032501.html">multicellular organismal process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_51"><a  href="class-obogo_0032941.html">secretion by tissue</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_52"><a  href="class-obogo_0040011.html">locomotion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_53"><a  href="class-obogo_0046903.html">secretion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_54"><a  href="class-obogo_0050877.html">nervous system process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_55"><a  href="class-obogo_0050878.html">regulation of body fluid levels</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_56"><a  href="class-obogo_0050890.html">cognition</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_57"><a  href="class-obogo_0051179.html">localization</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_58"><a  href="class-obogo_0051234.html">establishment of localization</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_59"><a  href="class-obogo_0061744.html">motor behavior</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_60"><a  href="class-obogo_0065007.html">biological regulation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_61"><a  href="class-obogo_0065008.html">regulation of biological quality</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_62"><a  href="class-obogo_0160269.html">sweat secretion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_63"><a  href="class-obopato_0000001.html">quality</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_64"><a  href="class-obopato_0001236.html">process quality</a></li>
+          
+        
+
+        
+            <li class="-second-level" id="sd_properties"><a  href="entities-tree-properties.html">Properties (119)</a>
+            </li>
+
+            
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_115"><a   href="prop-dccontributor.html">contributor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_116"><a   href="prop-dccoverage.html">coverage</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_117"><a   href="prop-dccreator.html">creator</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_118"><a   href="prop-dcdate.html">date</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_119"><a   href="prop-dcdescription.html">description</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_120"><a   href="prop-dcformat.html">format</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_121"><a   href="prop-dcidentifier.html">identifier</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_122"><a   href="prop-dclanguage.html">language</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_123"><a   href="prop-dcpublisher.html">publisher</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_124"><a   href="prop-dcrelation.html">relation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_125"><a   href="prop-dcrights.html">rights</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_126"><a   href="prop-dcsource.html">source</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_127"><a   href="prop-dcsubject.html">subject</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_128"><a   href="prop-dctitle.html">title</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_129"><a   href="prop-dctype.html">type</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_155"><a   href="prop-obobfo_0000050.html">part of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_156"><a   href="prop-obobfo_0000051.html">has part</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_157"><a   href="prop-obobfo_0000062.html">preceded by</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_158"><a   href="prop-obobfo_0000063.html">precedes</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_66"><a   href="prop-obobfo_0000179.html">BFO_0000179</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_67"><a   href="prop-obobfo_0000180.html">BFO_0000180</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_68"><a   href="prop-oboiao_0000111.html">editor preferred term</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_69"><a   href="prop-oboiao_0000112.html">example of usage</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_70"><a   href="prop-oboiao_0000113.html">in branch</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_71"><a   href="prop-oboiao_0000114.html">has curation status</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_72"><a   href="prop-oboiao_0000116.html">editor note</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_73"><a   href="prop-oboiao_0000117.html">term editor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_74"><a   href="prop-oboiao_0000118.html">alternative label</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_75"><a   href="prop-oboiao_0000119.html">definition source</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_76"><a   href="prop-oboiao_0000231.html">has obsolescence reason</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_77"><a   href="prop-oboiao_0000232.html">curator note</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_78"><a   href="prop-oboiao_0000233.html">term tracker item</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_79"><a   href="prop-oboiao_0000234.html">ontology term requester</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_80"><a   href="prop-oboiao_0000411.html">is denotator type</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_81"><a   href="prop-oboiao_0000412.html">imported from</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_82"><a   href="prop-oboiao_0000424.html">expand expression to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_83"><a   href="prop-oboiao_0000425.html">expand assertion to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_84"><a   href="prop-oboiao_0000426.html">first order logic expression</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_85"><a   href="prop-oboiao_0000427.html">antisymmetric property</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_86"><a   href="prop-oboiao_0000589.html">OBO foundry unique label</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_87"><a   href="prop-oboiao_0000596.html">has ID digit count</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_88"><a   href="prop-oboiao_0000597.html">has ID range allocated to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_89"><a   href="prop-oboiao_0000598.html">has ID policy for</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_90"><a   href="prop-oboiao_0000599.html">has ID prefix</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_91"><a   href="prop-oboiao_0000600.html">elucidation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_92"><a   href="prop-oboiao_0000601.html">has associated axiom(nl)</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_93"><a   href="prop-oboiao_0000602.html">has associated axiom(fol)</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_94"><a   href="prop-oboiao_0000603.html">is allocated id range</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_95"><a   href="prop-oboiao_0000700.html">has ontology root term</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_96"><a   href="prop-oboiao_0006011.html">may be identical to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_97"><a   href="prop-oboiao_0006012.html">scheduled for obsoletion on or after</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_98"><a   href="prop-oboiao_0010000.html">has axiom label</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_99"><a   href="prop-oboiao_0100001.html">term replaced by</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_100"><a   href="prop-oboomo_0001001.html">logical characteristic of object property</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_101"><a   href="prop-oboomo_0002000.html">defined by construct</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_102"><a   href="prop-oboomo_0003000.html">abbreviation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_103"><a   href="prop-oboomo_0003001.html">ambiguous synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_104"><a   href="prop-oboomo_0003002.html">dubious synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_105"><a   href="prop-oboomo_0003003.html">layperson synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_106"><a   href="prop-oboomo_0003004.html">plural form</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_107"><a   href="prop-oboomo_0003005.html">UK spelling synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_108"><a   href="prop-oboomo_0003006.html">misspelling</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_109"><a   href="prop-oboomo_0003007.html">misnomer</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_110"><a   href="prop-oboomo_0003008.html">previous name</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_111"><a   href="prop-oboomo_0003009.html">legal name</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_112"><a   href="prop-oboomo_0003010.html">International Nonproprietary Name</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_113"><a   href="prop-oboomo_0003011.html">latin term</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_153"><a   href="prop-oboro_0000052.html">characteristic of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_154"><a   href="prop-oboro_0000053.html">has characteristic</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_159"><a   href="prop-oboro_0000056.html">participates in</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_160"><a   href="prop-oboro_0000057.html">has participant</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_114"><a   href="prop-oboro_0001900.html">RO_0001900</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_161"><a   href="prop-oboro_0002086.html">ends after</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_162"><a   href="prop-oboro_0002131.html">overlaps</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_163"><a   href="prop-oboro_0002215.html">capable of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_164"><a   href="prop-oboro_0002216.html">capable of part of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_165"><a   href="prop-oboro_0002222.html">temporally related to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_166"><a   href="prop-oboro_0002233.html">has input</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_167"><a   href="prop-oboro_0002234.html">has output</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_168"><a   href="prop-oboro_0002314.html">characteristic of part of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_169"><a   href="prop-oboro_0002323.html">mereotopologically related to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_170"><a   href="prop-oboro_0002327.html">enables</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_171"><a   href="prop-oboro_0002328.html">functionally related to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_172"><a   href="prop-oboro_0002333.html">enabled by</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_173"><a   href="prop-oboro_0002352.html">input of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_174"><a   href="prop-oboro_0002353.html">output of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_175"><a   href="prop-oboro_0002404.html">causally downstream of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_176"><a   href="prop-oboro_0002410.html">causally related to</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_177"><a   href="prop-oboro_0002411.html">causally upstream of</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_178"><a   href="prop-oboro_0002418.html">causally upstream of or within</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_179"><a   href="prop-oboro_0002427.html">causally downstream of or within</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_180"><a   href="prop-oboro_0002500.html">causal agent in process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_181"><a   href="prop-oboro_0002501.html">causal relation between processes</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_182"><a   href="prop-oboro_0002502.html">depends on</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_183"><a   href="prop-oboro_0002595.html">causal relation between material entity and a process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_137"><a   href="prop-oboinowlsynonymtype.html">SynonymType</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_138"><a   href="prop-oboinowlcreated_by.html">created_by</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_139"><a   href="prop-oboinowlcreation_date.html">creation_date</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_140"><a   href="prop-oboinowlhasalternativeid.html">hasAlternativeId</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_141"><a   href="prop-oboinowlhasbroadsynonym.html">has broad synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_142"><a   href="prop-oboinowlhasdbxref.html">hasDbXref</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_143"><a   href="prop-oboinowlhasexactsynonym.html">has exact synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_144"><a   href="prop-oboinowlhasnarrowsynonym.html">has narrow synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_145"><a   href="prop-oboinowlhasobonamespace.html">hasOBONamespace</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_146"><a   href="prop-oboinowlhasrelatedsynonym.html">has related synonym</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_147"><a   href="prop-oboinowlid.html">id</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_148"><a   href="prop-oboinowlinsubset.html">inSubset</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_149"><a   href="prop-oboinowlshorthand.html">shorthand</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_65"><a   href="prop-protegedefaultlanguage.html">defaultLanguage</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_152"><a   href="prop-provwasderivedfrom.html">wasDerivedFrom</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_150"><a   href="prop-skosdefinition.html">definition</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_151"><a   href="prop-skospreflabel.html">prefLabel</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_130"><a   href="prop-termscontributor.html">contributor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_131"><a   href="prop-termscreated.html">created</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_132"><a   href="prop-termscreator.html">creator</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_133"><a   href="prop-termsdescription.html">description</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_134"><a   href="prop-termslicense.html">license</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_135"><a   href="prop-termssource.html">source</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_136"><a   href="prop-termstitle.html">title</a></li>
+          
+
+        
+
+        
+
+
+        
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </ul>
+
+</div>
+
+
+<!-- /#sidebar-wrapper -->
+  
+
+
+
+    <!-- Begin page content -->
+    <div class="container" id="page-content-wrapper">
+
+      
+
+	
+
+      
+
+    
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ol class="breadcrumb">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+          <a href="entities-az.html">Entities</a>
+    </li>
+    <li>
+          <a href="entities-tree-classes.html">Classes</a>
+    </li>
+      <li class="active">
+            neutral emotional valence
+        </li>
+  </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    <h1>
+      neutral emotional valence
+      
+        <small class="label label-info label-xs">leaf node</small>
+      
+    </h1>
+
+    <hr>  
+
+    
+    <div class="tree-container">
+      <div class="tree">
+        <ul>
+          
+            
+              <li>
+                <a href="class-httppurlbioontologyorgontologyemro0000035.html" title="'emotional valence'">emotional valence</a>
+                  <ul>
+                    <li><a style="font-weight: bold;" title="'neutral emotional valence'">neutral emotional valence</a>
+                    
+                  </li>
+                </ul>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+
+
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">URI</h3>
+          </div>
+          <div class="panel-body">
+            <code>http://purl.bioontology.org/ontology/EMRO/0000017</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Label</h3>
+          </div>
+          <div class="panel-body">
+            neutral emotional valence
+          </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    
+    
+
+
+    
+    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Superclasses (4)</h3>
+            </div>
+            <div class="panel-body">
+              
+                
+                  <li><a href="class-httppurlbioontologyorgontologyemro0000035.html" title="http://purl.bioontology.org/ontology/EMRO/0000035">emotional valence</a></li>
+                
+                  <li><a href="class-obopato_0001236.html" title="http://purl.obolibrary.org/obo/PATO_0001236">process quality</a></li>
+                
+                  <li><a href="class-obopato_0000001.html" title="http://purl.obolibrary.org/obo/PATO_0000001">quality</a></li>
+                
+                  <li><a href="class-obocob_0000502.html" title="http://purl.obolibrary.org/obo/COB_0000502">characteristic</a></li>
+                
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    
+    
+
+
+    
+    
+
+
+    
+    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Usage</h3>
+            </div>
+            <div class="panel-body" style="overflow: auto;">
+              <p>Instances of neutral emotional valence can have the following properties:</p>
+            </div>
+            <table class="table table-bordered" style="overflow: auto;">
+              <tr class="table-classproperties">
+                <th>PROPERTY</th><th>TYPE</th><th>DESCRIPTION</th><th>RANGE</th>
+              </tr>
+              
+                
+                  
+                
+              
+                
+                  
+                      <tr class="table-inheritanceinfo">
+                        <th colspan="4" class="treeinfo">
+                          <span class="label label-default">From class <a title="owl:Thing" href="class-owlthing.html" class="fromclass_link">Thing</a></span>
+                        </th>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:contributor" href="prop-dccontributor.html">contributor</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:coverage" href="prop-dccoverage.html">coverage</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:creator" href="prop-dccreator.html">creator</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:date" href="prop-dcdate.html">date</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:description" href="prop-dcdescription.html">description</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:format" href="prop-dcformat.html">format</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:identifier" href="prop-dcidentifier.html">identifier</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:language" href="prop-dclanguage.html">language</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:publisher" href="prop-dcpublisher.html">publisher</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:relation" href="prop-dcrelation.html">relation</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:rights" href="prop-dcrights.html">rights</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:source" href="prop-dcsource.html">source</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:subject" href="prop-dcsubject.html">subject</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:title" href="prop-dctitle.html">title</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="dc:type" href="prop-dctype.html">type</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000050" href="prop-obobfo_0000050.html">part of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>a core relation that holds between a part and its whole</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000051" href="prop-obobfo_0000051.html">has part</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>a core relation that holds between a whole and its part</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000062" href="prop-obobfo_0000062.html">preceded by</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000063" href="prop-obobfo_0000063.html">precedes</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000179" href="prop-obobfo_0000179.html">BFO_0000179</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:BFO_0000180" href="prop-obobfo_0000180.html">BFO_0000180</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000111" href="prop-oboiao_0000111.html">editor preferred term</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000112" href="prop-oboiao_0000112.html">example of usage</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000113" href="prop-oboiao_0000113.html">in branch</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000114" href="prop-oboiao_0000114.html">has curation status</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000116" href="prop-oboiao_0000116.html">editor note</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000117" href="prop-oboiao_0000117.html">term editor</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000118" href="prop-oboiao_0000118.html">alternative label</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000119" href="prop-oboiao_0000119.html">definition source</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000231" href="prop-oboiao_0000231.html">has obsolescence reason</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000232" href="prop-oboiao_0000232.html">curator note</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An administrative note of use for a curator but of no use for a user</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000233" href="prop-oboiao_0000233.html">term tracker item</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>The &#39;tracker item&#39; can associate a tracker with a specific ontology term.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000234" href="prop-oboiao_0000234.html">ontology term requester</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>The &#39;term requester&#39; can credit the person, organization or project who request the ontology term.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000411" href="prop-oboiao_0000411.html">is denotator type</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relates an class defined in an ontology, to the type of it&#39;s denotator</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000412" href="prop-oboiao_0000412.html">imported from</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>For external terms/classes, the ontology from which the term was imported</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000424" href="prop-oboiao_0000424.html">expand expression to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000425" href="prop-oboiao_0000425.html">expand assertion to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000426" href="prop-oboiao_0000426.html">first order logic expression</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000427" href="prop-oboiao_0000427.html">antisymmetric property</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Use boolean value xsd:true to indicate that the property is an antisymmetric property</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000589" href="prop-oboiao_0000589.html">OBO foundry unique label</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An alternative name for a class or property which is unique across the OBO Foundry.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000596" href="prop-oboiao_0000596.html">has ID digit count</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relates an ontology used to record id policy to the number of digits in the URI. The URI is: the &#39;has ID prefix&#34; annotation property value concatenated with an integer in the id range (left padded with &#34;0&#34;s to make this many digits)</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000597" href="prop-oboiao_0000597.html">has ID range allocated to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relates a datatype that encodes a range of integers to the name of the person or organization who can use those ids constructed in that range to define new terms</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000598" href="prop-oboiao_0000598.html">has ID policy for</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relating an ontology used to record id policy to the ontology namespace whose policy it manages</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000599" href="prop-oboiao_0000599.html">has ID prefix</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Relates an ontology used to record id policy to a prefix concatenated with an integer in the id range (left padded with &#34;0&#34;s to make this many digits) to construct an ID for a term being created.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000600" href="prop-oboiao_0000600.html">elucidation</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000601" href="prop-oboiao_0000601.html">has associated axiom(nl)</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000602" href="prop-oboiao_0000602.html">has associated axiom(fol)</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000603" href="prop-oboiao_0000603.html">is allocated id range</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Add as annotation triples in the granting ontology</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0000700" href="prop-oboiao_0000700.html">has ontology root term</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Ontology annotation property. Relates an ontology to a term that is a designated root term of the ontology. Display tools like OLS can use terms annotated with this property as the starting point for rendering the ontology class hierarchy. There can be more than one root.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0006011" href="prop-oboiao_0006011.html">may be identical to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Edges asserting this should be annotated with to record evidence supporting the assertion and its provenance.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0006012" href="prop-oboiao_0006012.html">scheduled for obsoletion on or after</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Used when the class or object is scheduled for obsoletion/deprecation on or after a particular date.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                            
+                                
+                                  <i>dateTime</i>
+                                
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0010000" href="prop-oboiao_0010000.html">has axiom label</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:IAO_0100001" href="prop-oboiao_0100001.html">term replaced by</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Add as annotation triples in the granting ontology</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0001001" href="prop-oboomo_0001001.html">logical characteristic of object property</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>This is an annotation used on an object property to indicate a logical characterstic beyond what is possible in OWL.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0002000" href="prop-oboomo_0002000.html">defined by construct</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Links an annotation property to a SPARQL CONSTRUCT query which is meant to provide semantics for a shortcut relation.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003000" href="prop-oboomo_0003000.html">abbreviation</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for describing abbreviations or initalisms</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003001" href="prop-oboomo_0003001.html">ambiguous synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for describing ambiguous synonyms</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003002" href="prop-oboomo_0003002.html">dubious synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for describing dubious synonyms</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003003" href="prop-oboomo_0003003.html">layperson synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for describing layperson or colloquial synonyms</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003004" href="prop-oboomo_0003004.html">plural form</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for describing pluralization synonyms</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003005" href="prop-oboomo_0003005.html">UK spelling synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for describing UK spelling variants</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003006" href="prop-oboomo_0003006.html">misspelling</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for common misspellings</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003007" href="prop-oboomo_0003007.html">misnomer</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for misnomers, i.e., a synonym that is not technically correct but is commonly used anyway</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003008" href="prop-oboomo_0003008.html">previous name</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for names that have been used as primary labels in the past.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003009" href="prop-oboomo_0003009.html">legal name</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for the legal entity name</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003010" href="prop-oboomo_0003010.html">International Nonproprietary Name</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>The International Nonproprietary Name (INN) is a standardize name for a pharmaceutical drug or active ingredient issued by the World Health Organization (WHO) meant to address the issues with country- or language-specific brand names. These are issued in several languages, including English, Latin, French, Russian, Spanish, Arabic, and Chinese.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:OMO_0003011" href="prop-oboomo_0003011.html">latin term</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A synonym type for describing Latin term synonyms.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000052" href="prop-oboro_0000052.html">characteristic of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:FunctionalProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Note that this relation was previously called &#34;inheres in&#34;, but was changed to be called &#34;characteristic of&#34; because BFO2 uses &#34;inheres in&#34; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000053" href="prop-oboro_0000053.html">has characteristic</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:InverseFunctionalProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Inverse of characteristic_of</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000056" href="prop-oboro_0000056.html">participates in</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>a relation between a continuant and a process, in which the continuant is somehow involved in the process</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0000057" href="prop-oboro_0000057.html">has participant</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>a relation between a process and a continuant, in which the continuant is somehow involved in the process</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0001900" href="prop-oboro_0001900.html">RO_0001900</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002086" href="prop-oboro_0002086.html">ends after</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002131" href="prop-oboro_0002131.html">overlaps</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>x overlaps y if and only if there exists some z such that x has part z and z part of y</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002215" href="prop-oboro_0002215.html">capable of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. </span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002216" href="prop-oboro_0002216.html">capable of part of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>c stands in this relationship to p if and only if there exists some p&#39; such that c is capable_of p&#39;, and p&#39; is part_of p.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002222" href="prop-oboro_0002222.html">temporally related to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002233" href="prop-oboro_0002233.html">has input</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002234" href="prop-oboro_0002234.html">has output</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002314" href="prop-oboro_0002314.html">characteristic of part of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002323" href="prop-oboro_0002323.html">mereotopologically related to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A mereological relationship or a topological relationship</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002327" href="prop-oboro_0002327.html">enables</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>c enables p iff c is capable of p and c acts to execute p.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002328" href="prop-oboro_0002328.html">functionally related to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002333" href="prop-oboro_0002333.html">enabled by</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>inverse of enables</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002352" href="prop-oboro_0002352.html">input of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>inverse of has input</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002353" href="prop-oboro_0002353.html">output of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>inverse of has output</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002404" href="prop-oboro_0002404.html">causally downstream of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>inverse of upstream of</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002410" href="prop-oboro_0002410.html">causally related to</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002411" href="prop-oboro_0002411.html">causally upstream of</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002418" href="prop-oboro_0002418.html">causally upstream of or within</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>p is &#39;causally upstream or within&#39; q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002427" href="prop-oboro_0002427.html">causally downstream of or within</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>inverse of causally upstream of or within</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002500" href="prop-oboro_0002500.html">causal agent in process</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A relationship between a material entity and a process where the material entity has some causal role that influences the process</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002501" href="prop-oboro_0002501.html">causal relation between processes</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002502" href="prop-oboro_0002502.html">depends on</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="obo:RO_0002595" href="prop-oboro_0002595.html">causal relation between material entity and a process</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:ObjectProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:SynonymType" href="prop-oboinowlsynonymtype.html">SynonymType</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:created_by" href="prop-oboinowlcreated_by.html">created_by</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:creation_date" href="prop-oboinowlcreation_date.html">creation_date</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasAlternativeId" href="prop-oboinowlhasalternativeid.html">hasAlternativeId</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasBroadSynonym" href="prop-oboinowlhasbroadsynonym.html">has broad synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasDbXref" href="prop-oboinowlhasdbxref.html">hasDbXref</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasExactSynonym" href="prop-oboinowlhasexactsynonym.html">has exact synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasNarrowSynonym" href="prop-oboinowlhasnarrowsynonym.html">has narrow synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasOBONamespace" href="prop-oboinowlhasobonamespace.html">hasOBONamespace</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:hasRelatedSynonym" href="prop-oboinowlhasrelatedsynonym.html">has related synonym</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:id" href="prop-oboinowlid.html">id</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:inSubset" href="prop-oboinowlinsubset.html">inSubset</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="oboInOwl:shorthand" href="prop-oboinowlshorthand.html">shorthand</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="protege:defaultLanguage" href="prop-protegedefaultlanguage.html">defaultLanguage</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="prov:wasDerivedFrom" href="prop-provwasderivedfrom.html">wasDerivedFrom</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="skos:definition" href="prop-skosdefinition.html">definition</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="skos:prefLabel" href="prop-skospreflabel.html">prefLabel</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="terms:contributor" href="prop-termscontributor.html">contributor</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="terms:created" href="prop-termscreated.html">created</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="terms:creator" href="prop-termscreator.html">creator</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="terms:description" href="prop-termsdescription.html">description</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="terms:license" href="prop-termslicense.html">license</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="terms:source" href="prop-termssource.html">source</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="terms:title" href="prop-termstitle.html">title</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:AnnotationProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span></span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                              <i>owl:Thing</i>
+                          
+                        </td>
+                      </tr>
+                    
+                  
+                
+              
+            </table>
+          </div>
+        </div>
+      </div>
+    
+
+
+    
+    
+
+
+    
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Implementation</h3>
+          </div>
+          <div class="panel-body implementation-panel">
+            
+              <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">terms:</span><span class="w"> </span><span class="nv">&lt;http://purl.org/dc/terms/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
+
+<span class="nv">&lt;http://purl.bioontology.org/ontology/EMRO/0000017&gt;</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">Class</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;neutral emotional valence&quot;</span> <span class="p">;</span>
+    <span class="nn">terms</span><span class="p">:</span><span class="nt">contributor</span> <span class="nv">&lt;https://orcid.org/0000-0001-9625-1899&gt;</span> <span class="p">;</span>
+    <span class="nn">terms</span><span class="p">:</span><span class="nt">created</span> <span class="s">&quot;2026-03-17T19:29:48+00:00&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">dateTime</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">subClassOf</span> <span class="nv">&lt;http://purl.bioontology.org/ontology/EMRO/0000035&gt;</span> <span class="p">.</span>
+</pre></div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        
+
+
+
+
+	</div><!-- /#page-content-wrapper -->
+
+
+  
+
+
+
+  
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+    
+      <p class="text-muted">Documentation automatically generated on Wed, 25 Mar 2026 02:10:27 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+
+    
+    </div>
+  </footer>
+
+
+</div><!-- /#wrapper -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="static/libs/jquery/1_12_4/jquery.min.js"></script>
+<script src="static/libs/bootstrap-3_3_7-dist/js/bootstrap.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="static/libs/bootstrap-3_3_7-dist/js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="static/libs/chartjs-2_4_0/chart.bundle.js"></script>
+
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+$('#search-input-sidebar').keyup(function() {
+
+  var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+  // var $rows = $(this).next(".entities-list").find("div");
+  var $rows = $(this).parent().parent().find("li.second-level");
+
+  $rows.show().filter(function() {
+      var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+      return !~text.indexOf(val);
+  }).hide();
+});
+
+</script>
+
+
+
+
+  <!-- Scroll Sidebar Script -->
+
+  
+  
+
+  <script type="text/javascript">
+
+    $(document).ready(function (){
+      $('#sidebar-wrapper').animate({
+          scrollTop: $("#sd_19").offset().top - 100
+      }, 100);
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
