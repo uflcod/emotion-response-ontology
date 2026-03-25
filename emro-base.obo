@@ -1,362 +1,91 @@
-format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-16/emro-base.owl
-date: 16:03:2026 17:16
-idspace: dc http://purl.org/dc/elements/1.1/ 
-idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
-idspace: skos http://www.w3.org/2004/02/skos/core# 
-idspace: terms http://purl.org/dc/terms/ 
-ontology: http://purl.bioontology.org/ontology/emro/emro-base.owl
-property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2026-03-16" xsd:string
-property_value: terms:creator https://orcid.org/0000-0001-9625-1899
-property_value: terms:creator https://orcid.org/0000-0001-9990-8331
-property_value: terms:creator https://orcid.org/0000-0002-0766-8455
-property_value: terms:description "The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences)." xsd:string
-property_value: terms:license http://creativecommons.org/licenses/by/4.0/
-property_value: terms:title "Emotion Response Ontology" xsd:string
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.bioontology.org/ontology/emro/emro-base.owl#"
+     xml:base="http://purl.bioontology.org/ontology/emro/emro-base.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/emro/emro-base.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/http://purl.bioontology.org/ontology/emro/emro-base.owl/http://purl.bioontology.org/ontology/emro/releases/2026-03-24/emro-base.owl/http://purl.bioontology.org/ontology/emro/emro-base.owl.owl"/>
+        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
+        <terms:description>The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</terms:description>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title>Emotion Response Ontology</terms:title>
+        <oboInOwl:date>24:03:2026 18:25</oboInOwl:date>
+        <oboInOwl:hasOBOFormatVersion>1.2</oboInOwl:hasOBOFormatVersion>
+        <owl:versionInfo>2026-03-24</owl:versionInfo>
+    </owl:Ontology>
+    
 
-[Term]
-id: GO:0007610
-property_value: skos:prefLabel "behavioral response to stimulus" xsd:string
 
-[Term]
-id: GO:0050890
-property_value: skos:prefLabel "cognitive process" xsd:string
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000000
-name: emotion process
-def: "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences)." []
-is_a: GO:0007610
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T20:50:19Z" xsd:dateTime
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000001
-name: phenomenal cognitive experience
-def: "A cognitive process during which an organism is aware of something either internal or external to itself." [] {IAO:0000119="https://dictionary.apa.org/consciousness"}
-is_a: GO:0050890
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T20:52:17Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000002
-name: emotional experience (feeling)
-def: "A phenomenal cognitive experience evaluated as pleasant or unpleasant." [] {IAO:0000119="https://dictionary.apa.org/feeling"}
-intersection_of: http://purl.bioontology.org/ontology/EMRO/0000001 ! phenomenal cognitive experience
-intersection_of: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T20:52:39Z" xsd:dateTime
+    <!-- http://purl.org/dc/elements/1.1/type -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000003
-name: anxiety process
-def: "An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T20:56:47Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000004
-name: fear process
-def: "An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T20:57:08Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000005
-name: sensory experience
-def: "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations)." [] {IAO:0000119="https://dictionary.apa.org/sensation"}
-is_a: http://purl.bioontology.org/ontology/EMRO/0000001 ! phenomenal cognitive experience
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T20:59:47Z" xsd:dateTime
+    <!-- http://purl.org/dc/terms/contributor -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000006
-name: motoric response to emotion
-def: "A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing)." []
-is_a: GO:0061744
-relationship: BFO:0000051 GO:0006936
-relationship: RO:0002410 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T21:02:42Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000007
-name: psychophysiological response to emotion
-def: "A psychophysiological process that is part of an emotion process." []
-is_a: GO:0007610
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T21:10:13Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000008
-name: sweat secretion response to emotion
-def: "Sweat screation that happens as a response to an emotion process." []
-is_a: GO:0160269
-relationship: RO:0002410 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T22:22:47Z" xsd:dateTime
+    <!-- http://purl.org/dc/terms/creator -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000010
-name: muscle tension response to emotion
-def: "Muscle contraction that happens as a response to an emotion process." []
-is_a: GO:0006936
-relationship: RO:0002410 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T22:36:17Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000011
-name: increased heart response to emotion
-def: "A heart process during which the rate at which the heart beats increases as a response to an emotion process." []
-is_a: GO:0003015
-relationship: RO:0002410 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T22:39:24Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000012
-name: increased breathing rate response to emotion
-def: "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process." []
-is_a: GO:0003016
-relationship: RO:0002410 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-11-24T22:44:09Z" xsd:dateTime
+    <!-- http://purl.org/dc/terms/description -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000013
-name: cognitive response to emotion
-def: "A cognitive process that happens as a response to an emotion process." []
-is_a: GO:0050890
-relationship: RO:0002410 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-12-17T17:11:45Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000014
-name: cognitive appraisal processs
-def: "A cognitive process during which the nature and significance of a phenomenon or event is evaluated." []
-is_a: GO:0050890
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2025-12-17T17:18:23Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000015
-name: syncope response to emotion
-def: "A transient loss of consciousness and postural tone that happens as a result of an emotion process." [] {IAO:0000119="Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007."}
-synonym: "fainting" BROAD []
-synonym: "fainting response to emotion" EXACT []
-synonym: "syncope" BROAD []
-synonym: "vasovagal syncope" RELATED []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000007 ! psychophysiological response to emotion
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T11:54:16Z" xsd:dateTime
+    <!-- http://purl.org/dc/terms/license -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000019
-name: muscle tension response to fear
-def: "Muscle contraction that happens as a response to a fear process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000010 ! muscle tension response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000004 ! fear process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:16:30Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000020
-name: psychophysiological response to fear
-def: "psychophysiological response to emotion that is part of a fear process." []
-intersection_of: http://purl.bioontology.org/ontology/EMRO/0000007 ! psychophysiological response to emotion
-intersection_of: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000004 ! fear process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:20:49Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000021
-name: psychophysiological response to anxiety
-def: "psychophysiological response to emotion that is part of an anxiety process." []
-intersection_of: http://purl.bioontology.org/ontology/EMRO/0000007 ! psychophysiological response to emotion
-intersection_of: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:21:09Z" xsd:dateTime
+    <!-- http://purl.org/dc/terms/title -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000022
-name: muscle tension response to anxiety
-def: "Muscle contraction that happens as a response to an anxiety process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000010 ! muscle tension response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:24:05Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000023
-name: cognitive response to fear
-def: "A cognitive process that happens as a response to fear process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000013 ! cognitive response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000004 ! fear process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:26:16Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000024
-name: cognitive response to anxiety
-def: "A cognitive process that happens as a response to an anxiety process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000013 ! cognitive response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:26:25Z" xsd:dateTime
+    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000025
-name: sweat secretion response to fear
-def: "Sweat screation that happens as a response to a fear process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000008 ! sweat secretion response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000004 ! fear process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:31:28Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#date"/>
+    
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000026
-name: sweat secretion response to anxiety
-def: "Sweat screation that happens as a response to an anxiety process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000008 ! sweat secretion response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:31:36Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000027
-name: increased heart response to fear
-def: "A heart process during which the rate at which the heart beats increases as a response to a fear process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000011 ! increased heart response to emotion
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:32:52Z" xsd:dateTime
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion -->
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000028
-name: increased heart response to anxiety
-def: "A heart process during which the rate at which the heart beats increases as a response to an anxiety process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000011 ! increased heart response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:33:04Z" xsd:dateTime
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+</rdf:RDF>
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000029
-name: increased breathing rate response to fear
-def: "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000012 ! increased breathing rate response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000004 ! fear process
-property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
-property_value: terms:created "2026-03-05T21:34:20Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000030
-name: increased breathing rate response to anxiety
-def: "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000012 ! increased breathing rate response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:34:30Z" xsd:dateTime
 
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000031
-name: syncope response to fear
-def: "A transient loss of consciousness and postural tone that happens as a result of a fear process." [] {IAO:0000119="Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007."}
-is_a: http://purl.bioontology.org/ontology/EMRO/0000015 ! syncope response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000004 ! fear process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:42:51Z" xsd:dateTime
-
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000032
-name: syncope response to anxiety
-def: "A transient loss of consciousness and postural tone that happens as a result of an anxiety process." [] {IAO:0000119="Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007."}
-is_a: http://purl.bioontology.org/ontology/EMRO/0000015 ! syncope response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T21:43:01Z" xsd:dateTime
-
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000033
-name: motoric response to fear
-def: "A motor behavior that happens as a response to a fear process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000006 ! motoric response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000004 ! fear process
-property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T22:03:57Z" xsd:dateTime
-
-[Term]
-id: http://purl.bioontology.org/ontology/EMRO/0000034
-name: motoric response to anxiety
-def: "A motor behavior that happens as a response to an anxiety process." []
-is_a: http://purl.bioontology.org/ontology/EMRO/0000006 ! motoric response to emotion
-relationship: BFO:0000050 http://purl.bioontology.org/ontology/EMRO/0000003 ! anxiety process
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
-property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:created "2026-03-05T22:04:12Z" xsd:dateTime
+<!-- Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi -->
 
