@@ -446,10 +446,12 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000034> ObjectSomeValuesF
 
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000035> (emotional valence)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/emotional-valence") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000035> "A process quality which inheres in an emotion and is determined by its degree or pleasure or displeasure."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/emotional-valence") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000035> "A characteristic of an emotion process relating to its pleasantness or unpleasantness (or its attractiveness or aversiveness)."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000035> "2026-03-17T20:06:41Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.bioontology.org/ontology/EMRO/0000035> "hedonic tone")
 AnnotationAssertion(rdfs:comment <http://purl.bioontology.org/ontology/EMRO/0000035> "According to cognitive appraisal theory, an individual's cognitive appraisal of a stimulus contributes to producing an emotion (with its corresponding emotional valence)."@en)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000035> "emotional valence")
 SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> <http://purl.obolibrary.org/obo/PATO_0001236>)
