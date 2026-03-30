@@ -1,13 +1,14 @@
 format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-16/emro-base.owl
-date: 16:03:2026 17:16
+data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-24/emro-base.owl
+date: 24:03:2026 19:17
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: http://purl.bioontology.org/ontology/emro/emro-base.owl
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2026-03-16" xsd:string
+property_value: owl:versionInfo "2026-03-24" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
 property_value: terms:creator https://orcid.org/0000-0002-0766-8455
@@ -20,8 +21,16 @@ id: GO:0007610
 property_value: skos:prefLabel "behavioral response to stimulus" xsd:string
 
 [Term]
+id: GO:0008150
+is_a: BFO:0000015
+
+[Term]
 id: GO:0050890
 property_value: skos:prefLabel "cognitive process" xsd:string
+
+[Term]
+id: PATO:0000001
+is_a: COB:0000502
 
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000000
@@ -119,6 +128,13 @@ property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2025-11-24T22:22:47Z" xsd:dateTime
 
 [Term]
+id: http://purl.bioontology.org/ontology/EMRO/0000009
+name: positive emotional valence
+is_a: http://purl.bioontology.org/ontology/EMRO/0000035 ! emotional valence
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-17T19:27:16Z" xsd:dateTime
+
+[Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000010
 name: muscle tension response to emotion
 def: "Muscle contraction that happens as a response to an emotion process." []
@@ -164,7 +180,7 @@ property_value: terms:created "2025-12-17T17:11:45Z" xsd:dateTime
 
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000014
-name: cognitive appraisal processs
+name: cognitive appraisal process
 def: "A cognitive process during which the nature and significance of a phenomenon or event is evaluated." []
 is_a: GO:0050890
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
@@ -185,6 +201,20 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2026-03-05T11:54:16Z" xsd:dateTime
+
+[Term]
+id: http://purl.bioontology.org/ontology/EMRO/0000016
+name: negative emotional valence
+is_a: http://purl.bioontology.org/ontology/EMRO/0000035 ! emotional valence
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-17T19:27:31Z" xsd:dateTime
+
+[Term]
+id: http://purl.bioontology.org/ontology/EMRO/0000017
+name: neutral emotional valence
+is_a: http://purl.bioontology.org/ontology/EMRO/0000035 ! emotional valence
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-17T19:29:48Z" xsd:dateTime
 
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000019
@@ -359,4 +389,13 @@ property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2026-03-05T22:04:12Z" xsd:dateTime
+
+[Term]
+id: http://purl.bioontology.org/ontology/EMRO/0000035
+name: emotional valence
+is_a: PATO:0001236
+relationship: RO:0000052 http://purl.bioontology.org/ontology/EMRO/0000000 ! emotion process
+relationship: RO:0002353 http://purl.bioontology.org/ontology/EMRO/0000014 ! cognitive appraisal process
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-17T20:06:41Z" xsd:dateTime
 

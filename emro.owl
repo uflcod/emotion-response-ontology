@@ -7,13 +7,15 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.bioontology.org/ontology/emro.owl">
-        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-16/emro.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.bioontology.org/ontology/emro/releases/2026-03-24/emro.owl"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-24</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -21,7 +23,7 @@
         <terms:description>The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <owl:versionInfo>2026-03-16</owl:versionInfo>
+        <owl:versionInfo>2026-03-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -45,6 +47,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000180 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
@@ -54,7 +68,6 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -69,7 +82,6 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -96,7 +108,6 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -130,9 +141,7 @@ Personally, I am more comfortable weakening definition to documentation, with in
 We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -147,7 +156,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -163,7 +171,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -180,7 +187,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:comment>Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">alternative label</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -196,7 +202,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -223,7 +228,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">curator note</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -239,7 +243,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">The &apos;tracker item&apos; can associate a tracker with a specific ontology term.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">term tracker item</rdfs:label>
     </owl:AnnotationProperty>
@@ -300,7 +303,6 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
         <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">expand expression to</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -779,17 +781,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0040042 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0040042">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
     
 
 
@@ -951,9 +943,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <!-- http://purl.org/dc/terms/source -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -974,7 +964,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
@@ -983,7 +972,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
     </owl:AnnotationProperty>
     
@@ -991,9 +979,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
     
 
 
@@ -1003,7 +989,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property which has a more general meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has broad synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/18</rdfs:seeAlso>
@@ -1014,10 +999,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
     
 
 
@@ -1027,7 +1009,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has exact synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/20</rdfs:seeAlso>
@@ -1042,7 +1023,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property which has a more specific meaning than the preferred name/primary label.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
         <rdfs:label xml:lang="en">has narrow synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/19</rdfs:seeAlso>
@@ -1053,9 +1033,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
     
 
 
@@ -1065,9 +1043,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000115>An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0001-5208-3432"/>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</obo:IAO_0000233>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/omo_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
         <rdfs:label xml:lang="en">has related synonym</rdfs:label>
         <rdfs:seeAlso>https://github.com/information-artifact-ontology/ontology-metadata/issues/21</rdfs:seeAlso>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000118"/>
@@ -1077,32 +1053,31 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <!-- http://www.geneontology.org/formats/oboInOwl#id -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
     
 
 
@@ -1145,20 +1120,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
-
-A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:RO_0040042 rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <oboInOwl:hasDbXref>BFO:0000050</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:id>part_of</oboInOwl:id>
@@ -1167,8 +1130,8 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>part_of</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>part of</rdfs:label>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
@@ -1189,11 +1152,6 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)
-
-A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_part</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <oboInOwl:hasDbXref>BFO:0000051</oboInOwl:hasDbXref>
@@ -1203,8 +1161,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:shorthand>has_part</oboInOwl:shorthand>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>has part</rdfs:label>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
@@ -1223,12 +1181,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         </owl:propertyChainAxiom>
         <obo:IAO_0000111 xml:lang="en">preceded by</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) &lt;= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">is preceded by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">preceded_by</obo:IAO_0000118>
         <terms:source>http://www.obofoundry.org/ro/#OBO_REL:preceded_by</terms:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">preceded by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1246,7 +1203,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000111 xml:lang="en">precedes</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">precedes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1265,7 +1222,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <rdfs:comment>Note that this relation was previously called &quot;inheres in&quot;, but was changed to be called &quot;characteristic of&quot; because BFO2 uses &quot;inheres in&quot; in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">characteristic of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1279,11 +1236,10 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this vase is bearer of this fragility</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Inverse of characteristic_of</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">bearer_of</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">has characteristic</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1299,7 +1255,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this investigator participates in this investigation</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a continuant and a process, in which the continuant is somehow involved in the process</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">participates_in</obo:IAO_0000118>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">participates in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1317,10 +1273,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this investigation has participant this investigator</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this process has participant this input material (or this output material)</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a process and a continuant, in which the continuant is somehow involved in the process</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_participant</obo:IAO_0000118>
         <terms:source>http://www.obofoundry.org/ro/#OBO_REL:has_participant</terms:source>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1334,7 +1289,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117>David Osumi-Sutherland</obo:IAO_0000117>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:comment xml:lang="en">X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">ends after</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1361,14 +1316,13 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002131"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>x overlaps y if and only if there exists some z such that x has part z and z part of y</obo:IAO_0000115>
         <obo:IAO_0000424>http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)</obo:IAO_0000424>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">overlaps</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1385,9 +1339,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118>has function realized in</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20123131"/>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
-        <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">capable of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1405,7 +1358,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>c stands in this relationship to p if and only if there exists some p&apos; such that c is capable_of p&apos;, and p&apos; is part_of p.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>has function in</obo:IAO_0000118>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">capable of part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
     </owl:ObjectProperty>
@@ -1415,14 +1368,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/RO_0002222 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002222">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Allen%27s_interval_algebra"/>
-        <obo:IAO_0000232>Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends.</obo:IAO_0000232>
         <terms:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1</terms:source>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
         <rdfs:comment>A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">temporally related to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1433,7 +1384,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002352"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>consumes</obo:IAO_0000118>
@@ -1441,7 +1391,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">has input</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_input</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1453,7 +1403,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>produces</obo:IAO_0000118>
@@ -1461,7 +1410,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_ontology"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">has output</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Has_output</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1481,12 +1430,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000115>q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.</obo:IAO_0000115>
-        <obo:IAO_0000116>Because part_of is transitive, inheres in is a sub-relation of characteristic of part of</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>inheres in part of</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">characteristic of part of</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/ro/docs/reflexivity/"/>
     </owl:ObjectProperty>
@@ -1498,9 +1446,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002323">
         <obo:IAO_0000115>A mereological relationship or a topological relationship</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <obo:IAO_0000232>Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships</obo:IAO_0000232>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">mereotopologically related to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1523,9 +1470,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000118>has</obo:IAO_0000118>
         <obo:IAO_0000118>is catalyzing</obo:IAO_0000118>
         <obo:IAO_0000118>is executing</obo:IAO_0000118>
-        <obo:IAO_0000232>This relation differs from the parent relation &apos;capable of&apos; in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized.</obo:IAO_0000232>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_gp2term"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">enables</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Enables</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1537,8 +1483,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002328">
         <obo:IAO_0000115>A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <obo:IAO_0000232>This is a grouping relation that collects relations used for the purpose of connecting structure and function</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">functionally related to</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1552,7 +1497,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000115>inverse of enables</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">enabled by</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://wiki.geneontology.org/Enabled_by</rdfs:seeAlso>
     </owl:ObjectProperty>
@@ -1568,7 +1513,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">input of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1583,7 +1528,7 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">output of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1595,10 +1540,9 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
         <obo:IAO_0000115>inverse of upstream of</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">causally downstream of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1608,24 +1552,8 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002410">
         <obo:IAO_0000115>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</obo:IAO_0000115>
-        <obo:IAO_0000116>This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an &apos;activity flow-centric approach&apos;, with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.
-
-To define causal relations in an activity-flow type network, we make use of 3 primitives:
-
- * Temporal: how do the intervals of the two occurrents relate? 
- * Is the causal relation regulatory?
- * Is the influence positive or negative?
-
-The first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are &apos;direct&apos;, &apos;indirect&apos; or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under &apos;temporally related to&apos;). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.
-
-For the second, we consider a relationship to be regulatory if the system in which the activities occur is capable of altering the relationship to achieve some objective. This could include changing the rate of production of a molecule.
-
-For the third, we consider the effect of the upstream process on the output(s) of the downstream process. If the level of output is increased, or the rate of production of the output is increased, then the direction is increased. Direction can be positive, negative or neutral or capable of either direction. Two positives in succession yield a positive, two negatives in succession yield a positive, otherwise the default assumption is that the net effect is canceled and the influence is neutral.
-
-Each of these 3 primitives can be composed to yield a cross-product of different relation types.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">causally related to</rdfs:label>
     </owl:ObjectProperty>
     <owl:Axiom>
@@ -1647,7 +1575,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label xml:lang="en">causally upstream of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1660,11 +1588,10 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000115>p is &apos;causally upstream or within&apos; q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.</obo:IAO_0000115>
-        <obo:IAO_0000116>We would like to make this disjoint with &apos;preceded by&apos;, but this is prohibited in OWL2</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000118>influences (processual)</obo:IAO_0000118>
         <oboInOwl:hasRelatedSynonym>affects</oboInOwl:hasRelatedSynonym>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>causally upstream of or within</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1679,7 +1606,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>causally downstream of or within</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1691,7 +1618,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002595"/>
         <obo:IAO_0000115>A relationship between a material entity and a process where the material entity has some causal role that influences the process</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>causal agent in process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1704,8 +1631,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
-        <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>causal relation between processes</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1715,7 +1641,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002502">
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>depends on</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
     </owl:ObjectProperty>
@@ -1727,10 +1653,9 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002595">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
         <obo:IAO_0000115>A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity.</obo:IAO_0000115>
-        <obo:IAO_0000116>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/ro_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
         <rdfs:label>causal relation between material entity and a process</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1948,6 +1873,17 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000009 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000035"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:16Z</terms:created>
+        <rdfs:label>positive emotional valence</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.bioontology.org/ontology/EMRO/0000010 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000010">
@@ -2017,7 +1953,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-17T17:18:23Z</terms:created>
-        <rdfs:label xml:lang="en">cognitive appraisal processs</rdfs:label>
+        <rdfs:label xml:lang="en">cognitive appraisal process</rdfs:label>
     </owl:Class>
     
 
@@ -2043,6 +1979,28 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>A transient loss of consciousness and postural tone that happens as a result of an emotion process.</owl:annotatedTarget>
         <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000016 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000035"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:31Z</terms:created>
+        <rdfs:label>negative emotional valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000017 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000035"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:29:48Z</terms:created>
+        <rdfs:label>neutral emotional valence</rdfs:label>
+    </owl:Class>
     
 
 
@@ -2328,6 +2286,70 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     
 
 
+    <!-- http://purl.bioontology.org/ontology/EMRO/0000035 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/EMRO/0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002353"/>
+                <owl:someValuesFrom rdf:resource="http://purl.bioontology.org/ontology/EMRO/0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T20:06:41Z</terms:created>
+        <rdfs:label>emotional valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <obo:BFO_0000179>process</obo:BFO_0000179>
+        <obo:BFO_0000180>Process</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a process of cell-division, \ a beating of the heart</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a process of meiosis</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a process of sleeping</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the course of a disease</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the flight of a bird</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the life of an organism</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your process of aging.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <obo:IAO_0000602>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/083-003"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000502 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000502">
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/cob.owl"/>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0003008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003008">
@@ -2336,7 +2358,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasExactSynonym>organ system process</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0003008</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2358,7 +2380,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0003012</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>muscle system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2380,7 +2402,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0003013</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>circulatory system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2400,7 +2422,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>cardiac process</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0003015</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>heart process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2428,7 +2450,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0003016</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>respiratory system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2467,7 +2489,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_prokaryote_ribbon"/>
         <rdfs:comment>Note that this term should not be used for direct annotation. It should be possible to make a more specific annotation to one of the children of this term, for e.g. to transmembrane transport, to microtubule-based transport or to vesicle-mediated transport.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>transport</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2498,7 +2520,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0006936</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>muscle contraction</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2528,7 +2550,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0007585</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>respiratory gaseous exchange by respiratory system</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2548,7 +2570,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000115>The controlled release of a fluid by a cell or tissue in an animal.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0007589</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>body fluid secretion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2585,7 +2607,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <rdfs:comment>1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
 2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>behavior</rdfs:label>
         <skos:prefLabel>behavioral response to stimulus</skos:prefLabel>
     </owl:Class>
@@ -2604,6 +2626,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115>A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.</obo:IAO_0000115>
         <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/geneontology/go-ontology/issues/24968</obo:IAO_0000233>
         <oboInOwl:created_by>jl</oboInOwl:created_by>
@@ -2626,7 +2649,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pombe"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
         <rdfs:comment>Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code &apos;no data&apos; (ND), is used to indicate this.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>biological_process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2655,7 +2678,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
         <rdfs:comment>Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>multicellular organismal process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2680,7 +2703,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym>expulsion of gland contents</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id>GO:0032941</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>secretion by tissue</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2707,7 +2730,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0040011</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_chembl"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>locomotion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2727,7 +2750,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0046903</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>secretion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2755,7 +2778,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>nervous system process</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2776,7 +2799,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0050878</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>regulation of body fluid levels</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2799,7 +2822,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0050890</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_drosophila"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>cognition</rdfs:label>
         <skos:prefLabel>cognitive process</skos:prefLabel>
     </owl:Class>
@@ -2833,7 +2856,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0051179</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>localization</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2872,7 +2895,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_mouse"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>establishment of localization</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2900,7 +2923,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:creation_date>2015-11-09T12:43:11Z</oboInOwl:creation_date>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0061744</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>motor behavior</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2924,7 +2947,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0065007</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>biological regulation</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2952,7 +2975,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:id>GO:0065008</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>regulation of biological quality</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2982,7 +3005,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <oboInOwl:hasExactSynonym>sweating</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace>biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:id>GO:0160269</oboInOwl:id>
-        <rdfs:isDefinedBy rdf:resource="http://purl.bioontology.org/ontology/emro/imports/go_import.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
         <rdfs:label>sweat secretion</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -2991,6 +3014,58 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <owl:annotatedTarget>The regulated release of sweat from the sweat glands.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>PMID:1778649</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000502"/>
+        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>PATO:0000072</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0000001</oboInOwl:id>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001236">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <obo:IAO_0000115>A quality which inheres in an process.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId>PATO:0001239</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>PATO:0001240</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>quality of a process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of occurrent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>quality of process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>relational quality of occurrent</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>PATO:0001236</oboInOwl:id>
+        <rdfs:comment>See comments of relational quality of a physical entity.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+        <rdfs:label>process quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PATO_0001236"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A quality which inheres in an process.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>PATOC:GVG</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
     
 
 
@@ -3256,6 +3331,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <!-- https://orcid.org/0009-0002-7282-0836 -->
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0009-0002-7282-0836">
+        <rdfs:label>Finn Wilson</rdfs:label>
         <rdfs:label xml:lang="en">Finn Wilson</rdfs:label>
     </owl:NamedIndividual>
     

@@ -8,6 +8,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.bioontology.org/ontology/emro.owl>
 Import(<http://purl.bioontology.org/ontology/emro/components/emro_contributors.owl>)
+Import(<http://purl.bioontology.org/ontology/emro/imports/bfo_import.owl>)
+Import(<http://purl.bioontology.org/ontology/emro/imports/cob_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/go_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/omo_import.owl>)
 Import(<http://purl.bioontology.org/ontology/emro/imports/pato_import.owl>)
@@ -59,7 +61,11 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
+<<<<<<< HEAD
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
+=======
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
+>>>>>>> main
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
@@ -462,9 +468,23 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000035> ObjectSomeValuesF
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
 
+# Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
+
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+
+SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
+
+# Class: <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> (obsolete class)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "2026-03-24T21:31:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "obsolete class")
 
 
 ############################
