@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-24/emro-non-classified.owl
+data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-30/emro-non-classified.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
@@ -7,7 +7,7 @@ idspace: prov http://www.w3.org/ns/prov#
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: http://purl.bioontology.org/ontology/emro/emro-non-classified.owl
-property_value: owl:versionInfo "2026-03-24" xsd:string
+property_value: owl:versionInfo "2026-03-30" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
@@ -489,8 +489,11 @@ property_value: terms:created "2025-11-24T22:22:47Z" xsd:dateTime
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000009
 name: positive emotional valence
+def: "An emotional valence which is inherently pleasant or attractive." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
+comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.
 is_a: http://purl.bioontology.org/ontology/EMRO/0000035 ! emotional valence
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T19:27:16Z" xsd:dateTime
 
 [Term]
@@ -564,15 +567,21 @@ property_value: terms:created "2026-03-05T11:54:16Z" xsd:dateTime
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000016
 name: negative emotional valence
+def: "An emotional valence which is inherently unpleasant or aversive." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
+comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.
 is_a: http://purl.bioontology.org/ontology/EMRO/0000035 ! emotional valence
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T19:27:31Z" xsd:dateTime
 
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000017
 name: neutral emotional valence
+def: "An emotional valence which is inherently neither pleasant nor unpleasant." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
+comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive. Neutral emotional valences are in the center of this continuum.
 is_a: http://purl.bioontology.org/ontology/EMRO/0000035 ! emotional valence
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T19:29:48Z" xsd:dateTime
 
 [Term]
@@ -752,11 +761,24 @@ property_value: terms:created "2026-03-05T22:04:12Z" xsd:dateTime
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000035
 name: emotional valence
+def: "A characteristic of an emotion process reflecting its degree of positivity or negativity." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
+comment: According to cognitive appraisal theory, an individual's cognitive appraisal of a stimulus contributes to producing an emotion (with its corresponding emotional valence).
+synonym: "hedonic tone" RELATED []
 is_a: PATO:0001236 ! process quality
 relationship: RO:0000052 http://purl.bioontology.org/ontology/EMRO/0000000 ! characteristic of emotion process
 relationship: RO:0002353 http://purl.bioontology.org/ontology/EMRO/0000014 ! output of cognitive appraisal process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T20:06:41Z" xsd:dateTime
+property_value: terms:description "the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal." xsd:string
+
+[Term]
+id: oboInOwl:ObsoleteClass
+name: obsolete class
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-24T21:31:17Z" xsd:dateTime
 
 [Typedef]
 id: BFO:0000062
