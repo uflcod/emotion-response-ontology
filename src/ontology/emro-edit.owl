@@ -61,6 +61,7 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
@@ -449,11 +450,13 @@ SubClassOf(<http://purl.bioontology.org/ontology/EMRO/0000034> ObjectSomeValuesF
 
 # Class: <http://purl.bioontology.org/ontology/EMRO/0000035> (emotional valence)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/emotional-valence") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000035> "A characteristic of an emotion process relating to its pleasantness or unpleasantness (or its attractiveness or aversiveness)."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/emotional-valence") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.bioontology.org/ontology/EMRO/0000035> "A characteristic of an emotion process reflecting its degree of positivity or negativity."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0000-0002-0766-8455>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.bioontology.org/ontology/EMRO/0000035> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.bioontology.org/ontology/EMRO/0000035> "2026-03-17T20:06:41Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.bioontology.org/ontology/EMRO/0000035> "the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.bioontology.org/ontology/EMRO/0000035> "hedonic tone")
 AnnotationAssertion(rdfs:comment <http://purl.bioontology.org/ontology/EMRO/0000035> "According to cognitive appraisal theory, an individual's cognitive appraisal of a stimulus contributes to producing an emotion (with its corresponding emotional valence)."@en)
 AnnotationAssertion(rdfs:label <http://purl.bioontology.org/ontology/EMRO/0000035> "emotional valence")
@@ -473,7 +476,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.o
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (<http://purl.obolibrary.org/obo/PATO_0000001>)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
 
