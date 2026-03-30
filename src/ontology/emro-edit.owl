@@ -61,11 +61,8 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
-<<<<<<< HEAD
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
-=======
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
->>>>>>> main
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
