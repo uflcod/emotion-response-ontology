@@ -1,13 +1,13 @@
 format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-03-30/emro-base.owl
-date: 30:03:2026 15:38
+data-version: http://purl.bioontology.org/ontology/emro/releases/2026-04-10/emro-base.owl
+date: 10:04:2026 17:45
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: http://purl.bioontology.org/ontology/emro/emro-base.owl
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2026-03-30" xsd:string
+property_value: owl:versionInfo "2026-04-10" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
@@ -414,10 +414,4 @@ property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T20:06:41Z" xsd:dateTime
 property_value: terms:description "the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal." xsd:string
-
-[Term]
-id: oboInOwl:ObsoleteClass
-name: obsolete class
-property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:created "2026-03-24T21:31:17Z" xsd:dateTime
 
