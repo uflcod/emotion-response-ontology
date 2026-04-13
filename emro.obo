@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-04-07/emro.owl
+data-version: http://purl.bioontology.org/ontology/emro/releases/2026-04-13/emro.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
@@ -7,7 +7,7 @@ idspace: prov http://www.w3.org/ns/prov#
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: http://purl.bioontology.org/ontology/emro.owl
-property_value: owl:versionInfo "2026-04-07" xsd:string
+property_value: owl:versionInfo "2026-04-13" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
@@ -447,7 +447,7 @@ property_value: terms:created "2025-11-24T20:57:08Z" xsd:dateTime
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000005
 name: sensory experience
-def: "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awarness of the external world (i.e., external stimulus) or changes internal organs associated with processes such as hunger, thirst, nausea, and sexual excitement. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations)." [] {IAO:0000119="https://dictionary.apa.org/sensation"}
+def: "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations)." [] {IAO:0000119="https://dictionary.apa.org/sensation"}
 is_a: http://purl.bioontology.org/ontology/EMRO/0000001 ! phenomenal cognitive experience
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
