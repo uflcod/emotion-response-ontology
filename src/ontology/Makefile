@@ -21,7 +21,7 @@
 # ----------------------------------------
 # these can be overwritten on the command line
 
-URIBASE=                    http://purl.bioontology.org/ontology
+URIBASE=                    http://purl.obolibrary.org/obo
 ONT=                        emro
 ONTBASE=                    $(URIBASE)/$(ONT)
 EDIT_FORMAT=                owl

@@ -1,13 +1,14 @@
 format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-04-13/emro.owl
+data-version: releases/2026-04-15
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
 idspace: prov http://www.w3.org/ns/prov# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
-ontology: http://purl.bioontology.org/ontology/emro.owl
-property_value: owl:versionInfo "2026-04-13" xsd:string
+ontology: emro
+property_value: owl:versionInfo "2026-04-15" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
@@ -31,6 +32,23 @@ property_value: IAO:0000112 "the life of an organism" xsd:string
 property_value: IAO:0000112 "your process of aging." xsd:string
 property_value: IAO:0000602 "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000040
+name: material entity
+property_value: IAO:0000112 "a flame" xsd:string
+property_value: IAO:0000112 "a forest fire" xsd:string
+property_value: IAO:0000112 "a human being" xsd:string
+property_value: IAO:0000112 "a hurricane" xsd:string
+property_value: IAO:0000112 "a photon" xsd:string
+property_value: IAO:0000112 "a puff of smoke" xsd:string
+property_value: IAO:0000112 "a sea wave" xsd:string
+property_value: IAO:0000112 "a tornado" xsd:string
+property_value: IAO:0000112 "an aggregate of human beings." xsd:string
+property_value: IAO:0000112 "an energy wave" xsd:string
+property_value: IAO:0000112 "an epidemic" xsd:string
+property_value: IAO:0000112 "the undetached arm of a human being" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
 id: COB:0000502
@@ -390,6 +408,172 @@ synonym: "quality of process" EXACT []
 synonym: "relational quality of occurrent" EXACT []
 is_a: PATO:0000001 ! quality
 property_value: isDefinedBy http://purl.obolibrary.org/obo/pato.owl
+
+[Term]
+id: UBERON:0000456
+name: secretion of exocrine gland
+alt_id: UBERON:0006540
+def: "A portion of organism substance that is produced by exocrine glands." [http://orcid.org/0000-0002-6601-2165]
+subset: human_subset
+subset: mouse_subset
+synonym: "bodily secretion" EXACT [MESH:D012634]
+synonym: "exocrine gland fluid" RELATED []
+synonym: "exocrine gland fluid or secretion" RELATED []
+synonym: "exocrine gland fluid/secretion" EXACT [MA:0002504]
+synonym: "exocrine gland secretion" RELATED []
+synonym: "external secretion" RELATED [BTO:0002977]
+synonym: "secreted substance" EXACT []
+synonym: "secretion" BROAD [FMA:9675]
+xref: AEO:0001005
+xref: BTO:0002977
+xref: BTO:0002979
+xref: EMAPA:36535
+xref: FMA:9675
+xref: galen:Secretion
+xref: MA:0002504
+xref: MESH:D012634
+xref: NCIT:C34062
+xref: UMLS:C1516992 {source="ncithesaurus:Exocrine_Gland_Fluid_or_Secretion"}
+is_a: UBERON:0000463 ! organism substance
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: UBPROP:0000012 "BTO has two distunct classes, with exocrine glandular secretion a subtype of secretion - however, all examples in BTO directly under secretion appear to be exocrine gland secretions" xsd:string {external_ontology="BTO"}
+
+[Term]
+id: UBERON:0000463
+name: organism substance
+def: "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body." [http://orcid.org/0000-0001-9114-8737]
+subset: common_anatomy
+subset: human_subset
+subset: mouse_subset
+subset: pheno_slim
+subset: upper_level
+synonym: "body fluid or substance" EXACT [MA:0002450]
+synonym: "body substance" EXACT [FMA:9669]
+synonym: "organism substance" EXACT [CARO:0000004]
+synonym: "portion of body substance" EXACT [FMA:9669]
+synonym: "portion of organism substance" EXACT [ZFA:0001487]
+xref: AAO:0010839
+xref: AEO:0000004
+xref: BILA:0000004
+xref: CALOHA:TS-2101
+xref: CARO:0000004
+xref: EHDAA2:0003004
+xref: EMAPA:35178
+xref: FBbt:00007019 {sssom:mapping_justification="https://w3id.org/semapv/vocab/ManualMappingCuration"}
+xref: FMA:9669
+xref: galen:BodySubstance
+xref: HAO:0000004
+xref: MA:0002450
+xref: NCIT:C13236
+xref: SPD:0000008
+xref: TAO:0001487
+xref: TGMA:0001824
+xref: VHOG:0001726
+xref: XAO:0004001
+xref: ZFA:0001487
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: RO:0002175 NCBITaxon:33090
+property_value: RO:0002175 NCBITaxon:33208
+property_value: RO:0002175 NCBITaxon:4751
+
+[Term]
+id: UBERON:0000465
+name: material anatomical entity
+def: "Anatomical entity that has mass." [http://orcid.org/0000-0001-9114-8737]
+subset: common_anatomy
+subset: human_subset
+subset: mouse_subset
+subset: upper_level
+xref: AAO:0010264
+xref: AEO:0000006
+xref: BILA:0000006
+xref: CARO:0000006
+xref: EHDAA2:0003006
+xref: FBbt:00007016 {sssom:mapping_justification="https://w3id.org/semapv/vocab/ManualMappingCuration"}
+xref: FMA:67165
+xref: HAO:0000006
+xref: TAO:0001836
+xref: TGMA:0001826
+xref: VHOG:0001721
+is_a: BFO:0000040 ! material entity
+is_a: UBERON:0001062 ! anatomical entity
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: RO:0002175 NCBITaxon:33090
+property_value: RO:0002175 NCBITaxon:33208
+property_value: RO:0002175 NCBITaxon:4751
+
+[Term]
+id: UBERON:0001062
+name: anatomical entity
+def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." [FMA:62955, http://orcid.org/0000-0001-9114-8737]
+subset: common_anatomy
+subset: human_subset
+subset: mouse_subset
+subset: upper_level
+xref: AAO:0010841
+xref: AEO:0000000
+xref: BFO:0000004
+xref: BILA:0000000
+xref: BIRNLEX:6
+xref: CARO:0000000
+xref: EHDAA2:0002229
+xref: FBbt:10000000 {sssom:mapping_justification="https://w3id.org/semapv/vocab/ManualMappingCuration"}
+xref: FMA:62955
+xref: HAO:0000000
+xref: MA:0000001
+xref: NCIT:C12219
+xref: TAO:0100000
+xref: TGMA:0001822
+xref: UMLS:C1515976 {source="ncithesaurus:Anatomic_Structure_System_or_Substance"}
+xref: WBbt:0000100
+xref: XAO:0000000
+xref: ZFA:0100000
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+property_value: RO:0002175 NCBITaxon:33090
+property_value: RO:0002175 NCBITaxon:33208
+property_value: RO:0002175 NCBITaxon:4751
+
+[Term]
+id: UBERON:0001089
+name: sweat
+def: "Secretion produced by a sweat gland." [FMA:12275]
+subset: human_subset
+subset: mouse_subset
+subset: pheno_slim
+subset: uberon_slim
+synonym: "skin exudate" RELATED [BTO:0001254]
+xref: BTO:0001254
+xref: ENVO:02000025
+xref: FMA:12275
+xref: GAID:1172
+xref: MA:0002539
+xref: MESH:D013542
+xref: NCIT:C13280
+xref: UMLS:C0038984 {source="ncithesaurus:Sweat"}
+xref: Wikipedia:Sweat
+is_a: UBERON:0000456 ! secretion of exocrine gland
+is_a: UBERON:0006314 ! bodily fluid
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0006314
+name: bodily fluid
+def: "Liquid components of living organisms. includes fluids that are excreted or secreted from the body as well as body water that normally is not." [MESH:A12.207, Wikipedia:Body_fluid]
+subset: human_subset
+subset: mouse_subset
+subset: pheno_slim
+synonym: "body fluid" EXACT [GAID:266]
+synonym: "fluid" BROAD []
+xref: BIRNLEX:20
+xref: EMAPA:37441 {source="MA:th"}
+xref: FMA:280556
+xref: GAID:266
+xref: galen:BodyFluid
+xref: MESH:D001826
+xref: Wikipedia:Body_fluid
+is_a: UBERON:0000463 ! organism substance
+property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
 
 [Term]
 id: http://purl.bioontology.org/ontology/EMRO/0000000

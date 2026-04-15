@@ -1,13 +1,13 @@
 format-version: 1.2
-data-version: http://purl.bioontology.org/ontology/emro/releases/2026-04-13/emro-base.owl
-date: 13:04:2026 13:43
+data-version: emro/releases/2026-04-15/emro-base.owl
+date: 15:04:2026 13:06
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
-ontology: http://purl.bioontology.org/ontology/emro/emro-base.owl
+ontology: emro/emro-base
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2026-04-13" xsd:string
+property_value: owl:versionInfo "2026-04-15" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
