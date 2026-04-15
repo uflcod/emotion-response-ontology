@@ -16,7 +16,7 @@ Ontology: <https://w3id.org/emototion-experience-ontology/emro-idranges.owl>
 
 Annotations: 
     idsfor: "EMRO",
-    idprefix: "http://purl.obolibrary.org/obo/EMRO/",
+    idprefix: "http://purl.obolibrary.org/obo/EMRO_",
     iddigits: 7
 
 AnnotationProperty: idprefix:
