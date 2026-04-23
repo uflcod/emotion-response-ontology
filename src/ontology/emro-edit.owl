@@ -61,6 +61,9 @@ Declaration(Class(<http://purl.bioontology.org/ontology/EMRO/0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0032501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0050890>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0008126>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0008127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OHD_0008128>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
@@ -475,6 +478,32 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.o
 # Class: <http://purl.obolibrary.org/obo/GO_0050890> (cognition)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
+
+# Class: <http://purl.obolibrary.org/obo/OHD_0008126> (avoidance behavior)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OHD_0008126> "A behavioral defense response in which an organism seeks to avoid an encounter with a potential external threat."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0008126> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0008126> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0008126> <https://orcid.org/0009-0003-7246-1252>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OHD_0008126> "2026-04-23T20:32:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008126> "avoidance behavior"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OHD_0008126> <http://purl.obolibrary.org/obo/GO_0002209>)
+
+# Class: <http://purl.obolibrary.org/obo/OHD_0008127> (embarrassment process)
+
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/contributor> "https://dictionary.apa.org/embarrassment") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OHD_0008127> "A self-conscious emotion process in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0008127> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OHD_0008127> "2026-04-23T20:59:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008127> "embarrassment process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OHD_0008127> <http://purl.obolibrary.org/obo/OHD_0008128>)
+
+# Class: <http://purl.obolibrary.org/obo/OHD_0008128> (self-conscious emotion process)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/self-conscious-emotion") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OHD_0008128> "An emotion process generated when events reflect on the worth or value of the self in one’s own or others’ eyes."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0008128> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OHD_0008128> "2026-04-23T21:26:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008128> "self-conscious emotion process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OHD_0008128> <http://purl.bioontology.org/ontology/EMRO/0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000001> (<http://purl.obolibrary.org/obo/PATO_0000001>)
 

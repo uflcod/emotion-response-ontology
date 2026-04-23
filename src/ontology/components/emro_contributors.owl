@@ -12,6 +12,7 @@ Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9990-8331>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-0766-8455>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0003-7246-1252>))
 
 
 ############################
@@ -33,6 +34,10 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-0766-8455> "Daniel W
 # Individual: <https://orcid.org/0009-0002-7282-0836> (Finn Wilson)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0009-0002-7282-0836> "Finn Wilson")
+
+# Individual: <https://orcid.org/0009-0003-7246-1252> (Ram A.N.R. Challa)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0003-7246-1252> "Ram A.N.R. Challa")
 
 
 )

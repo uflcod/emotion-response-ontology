@@ -41,12 +41,12 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl
 
 $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt 
 	@echo "\n *** building $@ *** \n"
-	$(call onotlogy-annotation,$<)
+	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 		
 $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
 	@echo "\n *** building $@ *** \n"
-	$(call onotlogy-annotation,$<)
+	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 # 	remove uneeded NCBI Taxon terms
@@ -59,22 +59,22 @@ $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_term
 
 $(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms.txt
 	@echo "\n *** building $@ *** \n"
-	$(call onotlogy-annotation,$<)
+	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 $(IMPORTDIR)/pato_import.owl: $(MIRRORDIR)/pato.owl $(IMPORTDIR)/pato_terms.txt
 	@echo "\n *** building $@ *** \n"
-	$(call onotlogy-annotation,$<)
+	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 $(IMPORTDIR)/bfo_import.owl:  $(MIRRORDIR)/bfo.owl $(IMPORTDIR)/bfo_terms.txt
 	@echo "\n *** building $@ *** \n"
-	$(call onotlogy-annotation,$<)
+	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
 	@echo "\n *** building $@ *** \n"
-	$(call onotlogy-annotation,$<)
+	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
 
@@ -154,7 +154,7 @@ ontospy-docs: $(RELEASEDIR)/$(ONT).owl
 # creates a small ontology file containing only the dcterms:source and prov:wasDerivedFrom
 # ontology annotations
 # parameters $(1): mirror file
-define onotlogy-annotation
+define ontology-annotation
 	$(ROBOT) \
 		annotate \
 			--remove-annotations \
@@ -166,7 +166,7 @@ define onotlogy-annotation
 			--copy-ontology-annotations true \
 			--lower-term "owl:Thing" \
 		convert --format ofn \
-	--output $(TMPDIR)/$(notdir $(basename $(1)))_onotlogy_annotations.owl
+	--output $(TMPDIR)/$(notdir $(basename $(1)))_ontology_annotations.owl
 endef
 
 # general function for filtering an ontology
@@ -188,7 +188,7 @@ define filter-ontology
 			--select "owl:deprecated='true'^^xsd:boolean" \
 		merge \
 			--include-annotations true \
-			--input $(TMPDIR)/$(notdir $(basename $(2)))_onotlogy_annotations.owl \
+			--input $(TMPDIR)/$(notdir $(basename $(2)))_ontology_annotations.owl \
 		annotate \
 			--ontology-iri $(URIBASE)/$(ONT)/$(1) \
 		convert \
@@ -216,7 +216,7 @@ define extract-ontology
 			--trim true \
 		merge \
 			--include-annotations true \
-			--input $(TMPDIR)/$(notdir $(basename $(2)))_onotlogy_annotations.owl \
+			--input $(TMPDIR)/$(notdir $(basename $(2)))_ontology_annotations.owl \
 		remove \
 			--select "owl:deprecated='true'^^xsd:boolean" \
 			--term-file imports/exclude_terms.txt \
