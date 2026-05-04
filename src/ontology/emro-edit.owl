@@ -489,21 +489,21 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008126> "avoidance behavior"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OHD_0008126> <http://purl.obolibrary.org/obo/GO_0002209>)
 
-# Class: <http://purl.obolibrary.org/obo/OHD_0008127> (embarrassment process)
+# Class: <http://purl.obolibrary.org/obo/OHD_0008127> (embarrassment)
 
-AnnotationAssertion(Annotation(<http://purl.org/dc/terms/contributor> "https://dictionary.apa.org/embarrassment") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OHD_0008127> "A self-conscious emotion process in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others."@en)
+AnnotationAssertion(Annotation(<http://purl.org/dc/terms/contributor> "https://dictionary.apa.org/embarrassment") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OHD_0008127> "A self-conscious emotional experience in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0008127> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OHD_0008127> "2026-04-23T20:59:23Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008127> "embarrassment process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008127> "embarrassment"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/OHD_0008127> <http://purl.obolibrary.org/obo/OHD_0008128>)
 
-# Class: <http://purl.obolibrary.org/obo/OHD_0008128> (self-conscious emotion process)
+# Class: <http://purl.obolibrary.org/obo/OHD_0008128> (self-conscious emotional experience)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/self-conscious-emotion") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OHD_0008128> "An emotion process generated when events reflect on the worth or value of the self in one’s own or others’ eyes."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OHD_0008128> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OHD_0008128> "2026-04-23T21:26:34Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008128> "self-conscious emotion process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OHD_0008128> <http://purl.bioontology.org/ontology/EMRO/0000000>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OHD_0008128> "self-conscious emotional experience"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OHD_0008128> <http://purl.bioontology.org/ontology/EMRO/0000002>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000001> (<http://purl.obolibrary.org/obo/PATO_0000001>)
 
