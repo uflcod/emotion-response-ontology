@@ -59,6 +59,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0003000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0003001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0003002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0003003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0003004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0003005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003015>))
@@ -474,6 +480,56 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> <http://purl.obolibrary
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/EMRO_0000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.obolibrary.org/obo/EMRO_0000014>))
 
+# Class: <http://purl.obolibrary.org/obo/EMRO_0003000> (avoidance behavior)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0003000> "A behavioral defense response in which an organism seeks to avoid an encounter with a potential external threat."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003000> <https://orcid.org/0000-0001-9990-8331>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003000> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003000> <https://orcid.org/0009-0003-7246-1252>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0003000> "2026-05-04T20:41:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0003000> "avoidance behavior"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003000> <http://purl.obolibrary.org/obo/GO_0002209>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0003001> (self-conscious emotional experience)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/self-conscious-emotion") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0003001> "An emotional experience generated when events reflect on the worth or value of the self in one’s own or others’ eyes."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003001> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0003001> "2026-05-04T20:44:41Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0003001> "self-conscious emotional experience"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003001> <http://purl.obolibrary.org/obo/EMRO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0003002> (embarrassment)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/embarrassment") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0003002> "A self-conscious emotional experience in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003002> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0003002> "2026-05-04T20:47:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0003002> "embarrassment"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003002> <http://purl.obolibrary.org/obo/EMRO_0003001>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0003003> (shame)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/shame") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0003003> "A highly unpleasant self-conscious emotional experience arising from the sense of there being something dishonorable, immodest, or indecorous in one’s own conduct or circumstances."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003003> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0003003> "2026-05-04T20:55:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0003003> "shame"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003003> <http://purl.obolibrary.org/obo/EMRO_0003001>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0003004> (pride)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/pride") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0003004> "A self-conscious emotional experience that occurs when a goal has been attained and one’s achievement has been recognized and approved by others."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003004> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0003004> "2026-05-04T20:57:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0003004> "pride"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003004> <http://purl.obolibrary.org/obo/EMRO_0003001>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0003005> (guilt)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/guilt") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0003005> "A self-conscious emotional experience characterized by a painful appraisal of having done (or thought) something that is wrong and often by a readiness to take action designed to undo or mitigate this wrong."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0003005> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0003005> "2026-05-04T20:58:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0003005> "guilt"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003005> <http://purl.obolibrary.org/obo/EMRO_0003001>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
@@ -486,7 +542,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.o
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (<http://purl.obolibrary.org/obo/PATO_0000001>)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
 
