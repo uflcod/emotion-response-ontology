@@ -59,6 +59,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0002000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003015>))
@@ -474,6 +475,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> <http://purl.obolibrary
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/EMRO_0000000>))
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002353> <http://purl.obolibrary.org/obo/EMRO_0000014>))
 
+# Class: <http://purl.obolibrary.org/obo/EMRO_0002000> (personality trait characteristic)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0002000> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0002000> "2026-06-05T19:34:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0002000> "personality trait characteristic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0002000> <http://purl.obolibrary.org/obo/COB_0000502>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus")
@@ -486,7 +494,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.o
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (<http://purl.obolibrary.org/obo/PATO_0000001>)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
 
