@@ -8,6 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/emro/components/emro_contributors.owl>
 
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-6906-5548>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9625-1899>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-9990-8331>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-0766-8455>))
@@ -17,6 +18,10 @@ Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
 ############################
 #   Named Individuals
 ############################
+
+# Individual: <https://orcid.org/0000-0001-6906-5548> (Damayanthi Jesudas)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6906-5548> "Damayanthi Jesudas")
 
 # Individual: <https://orcid.org/0000-0001-9625-1899> (Bill Duncan)
 
@@ -29,6 +34,10 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9990-8331> "Alexande
 # Individual: <https://orcid.org/0000-0002-0766-8455> (Daniel W. McNeil)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-0766-8455> "Daniel W. McNeil")
+
+# Individual: <https://orcid.org/0009-0002-7282-0836> (Finn Wilson)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0002-7282-0836> "Finn Wilson")
 
 
 )

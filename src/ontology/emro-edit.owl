@@ -15,7 +15,6 @@ Import(<http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/uberon_import.owl>)
-Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0002-7282-0836>)
 Annotation(<http://purl.org/dc/terms/created> "2025-11-24"^^xsd:date)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9625-1899>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9990-8331>)
@@ -76,7 +75,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001236>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002353>))
-Declaration(NamedIndividual(<https://orcid.org/0009-0002-7282-0836>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
@@ -192,7 +190,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000008> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/emotional-valence") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000009> "An emotional valence which is inherently pleasant or attractive."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000009> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000009> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000009> "2026-03-17T19:27:16Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/EMRO_0000009> "Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000009> "positive emotional valence")
@@ -270,7 +267,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000015> <http://purl.obolibrary
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/emotional-valence") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000016> "An emotional valence which is inherently unpleasant or aversive."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000016> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000016> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000016> "2026-03-17T19:27:31Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/EMRO_0000016> "Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000016> "negative emotional valence")
@@ -280,7 +276,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000016> <http://purl.obolibrary
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/emotional-valence") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000017> "An emotional valence which is inherently neither pleasant nor unpleasant."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000017> <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000017> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000017> "2026-03-17T19:29:48Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/EMRO_0000017> "Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive. Neutral emotional valences are in the center of this continuum."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0000017> "neutral emotional valence")
@@ -464,7 +459,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "htt
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000035> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000035> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000035> <https://orcid.org/0000-0002-0766-8455>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000035> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0000035> "2026-03-17T20:06:41Z"^^xsd:dateTime)
 AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0000035> "the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/EMRO_0000035> "hedonic tone")
@@ -495,15 +489,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "2026-03-24T21:31:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> "obsolete class")
-
-
-############################
-#   Named Individuals
-############################
-
-# Individual: <https://orcid.org/0009-0002-7282-0836> (Finn Wilson)
-
-AnnotationAssertion(rdfs:label <https://orcid.org/0009-0002-7282-0836> "Finn Wilson"@en)
 
 
 )
