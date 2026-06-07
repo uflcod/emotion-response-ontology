@@ -30,9 +30,5 @@ AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-9990-8331> "Alexande
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-0766-8455> "Daniel W. McNeil")
 
-# Individual: <https://orcid.org/0009-0002-7282-0836> (Finn Wilson)
-
-AnnotationAssertion(rdfs:label <https://orcid.org/0009-0002-7282-0836> "Finn Wilson")
-
 
 )
