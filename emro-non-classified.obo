@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: emro/releases/2026-04-15/emro-non-classified.owl
+data-version: emro/releases/2026-06-07/emro-non-classified.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
@@ -8,7 +8,7 @@ idspace: skos http://www.w3.org/2004/02/skos/core#
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: emro/emro-non-classified
-property_value: owl:versionInfo "2026-04-15" xsd:string
+property_value: owl:versionInfo "2026-06-07" xsd:string
 property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
@@ -957,6 +957,12 @@ xref: MESH:D001826
 xref: Wikipedia:Body_fluid
 is_a: UBERON:0000463 ! organism substance
 property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: oboInOwl:ObsoleteClass
+name: obsolete class
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-24T21:31:17Z" xsd:dateTime
 
 [Typedef]
 id: BFO:0000062

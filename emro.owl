@@ -15,7 +15,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/emro.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-04-15/emro.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-06-07/emro.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-24</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
@@ -25,6 +25,7 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
         <owl:versionInfo>2026-04-15</owl:versionInfo>
+        <owl:versionInfo>2026-06-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3500,6 +3501,16 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <owl:annotatedTarget>body fluid</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GAID:266</oboInOwl:hasDbXref>
     </owl:Axiom>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-24T21:31:17Z</terms:created>
+        <rdfs:label>obsolete class</rdfs:label>
+    </owl:Class>
     
 
 
