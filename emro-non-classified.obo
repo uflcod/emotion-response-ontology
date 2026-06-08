@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: emro/releases/2026-04-15/emro-non-classified.owl
+data-version: emro/releases/2026-06-07/emro-non-classified.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
@@ -8,8 +8,7 @@ idspace: skos http://www.w3.org/2004/02/skos/core#
 idspace: sssom https://w3id.org/sssom/ 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: emro/emro-non-classified
-property_value: owl:versionInfo "2026-04-15" xsd:string
-property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: owl:versionInfo "2026-06-07" xsd:string
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
 property_value: terms:creator https://orcid.org/0000-0002-0766-8455
@@ -157,7 +156,6 @@ def: "An emotional valence which is inherently pleasant or attractive." [] {IAO:
 comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.
 is_a: EMRO:0000035 ! emotional valence
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T19:27:16Z" xsd:dateTime
 
 [Term]
@@ -235,7 +233,6 @@ def: "An emotional valence which is inherently unpleasant or aversive." [] {IAO:
 comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.
 is_a: EMRO:0000035 ! emotional valence
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T19:27:31Z" xsd:dateTime
 
 [Term]
@@ -245,7 +242,6 @@ def: "An emotional valence which is inherently neither pleasant nor unpleasant."
 comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive. Neutral emotional valences are in the center of this continuum.
 is_a: EMRO:0000035 ! emotional valence
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
-property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T19:29:48Z" xsd:dateTime
 
 [Term]
@@ -434,7 +430,6 @@ relationship: RO:0002353 EMRO:0000014 ! output of cognitive appraisal process
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
-property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:created "2026-03-17T20:06:41Z" xsd:dateTime
 property_value: terms:description "the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal." xsd:string
 
@@ -957,6 +952,12 @@ xref: MESH:D001826
 xref: Wikipedia:Body_fluid
 is_a: UBERON:0000463 ! organism substance
 property_value: isDefinedBy http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: oboInOwl:ObsoleteClass
+name: obsolete class
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:created "2026-03-24T21:31:17Z" xsd:dateTime
 
 [Typedef]
 id: BFO:0000062
