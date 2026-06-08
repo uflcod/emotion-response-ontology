@@ -48,6 +48,13 @@ Datatype: idrange:4
     EquivalentTo: 
         xsd:integer[>= 3000 , < 4000]
     
+    
+Datatype: idrange:5
+    Annotations: 
+        allocatedto: "Damayanthi Jesudas"
+    EquivalentTo: 
+        xsd:integer[>= 4000 , < 5000]
+    
 
 Datatype: idrange:7
     Annotations: 
