@@ -11,6 +11,7 @@ Import(<http://purl.obolibrary.org/obo/emro/components/emro_contributors.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/go_import.owl>)
+Import(<http://purl.obolibrary.org/obo/emro/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/ro_import.owl>)
@@ -65,6 +66,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003015>))
@@ -477,7 +481,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004000> (personality trait characteristic)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004000> "A behavior response to stimulus that is a relatively stable, consistent, and enduring internal characteristic that is inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/personality-trait") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004000> "A behavior response to stimulus that is a relatively stable, consistent, and enduring internal characteristic that is inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004000> "2026-06-05T19:34:58Z"^^xsd:dateTime)
@@ -503,6 +507,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004002> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004003> (shyness trait characteristic)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004003> "A personality trait characteristic that involves anxiety and inhibition in social situations, typically involving three components: (a) global feelings of emotional arousal and specific physiological experiences (e.g., pounding heart, sweating, blushing); (b) acute public self-consciousness, self-deprecation, and worries about being evaluated negatively by others; and (c) observable behavior such as quietness, gaze aversion, and social withdrawal.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/EMRO_0004003> "https://dictionary.apa.org/shyness")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004003> "2026-06-08T16:26:11Z"^^xsd:dateTime)
@@ -512,6 +517,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004003> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004007> (introversion trait characteristic)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004007> "A personality trait characteristic that invloves an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things. Introversion is a broad personality trait and, like extraversion, exists on a continuum of attitudes and behaviors.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/EMRO_0004007> "https://dictionary.apa.org/introversion")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004007> "2026-06-08T16:35:23Z"^^xsd:dateTime)
@@ -534,6 +540,35 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004009> "2026-06-08T16:40:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004009> "depression process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004009> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004010> (societal culture characteristic)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/culture") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004010> "a population characteristic that involves the characteristic attitudes, values, and behaviors shared by a particular group within a society, such as a profession, social class, or age group.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0009-0002-7282-0836>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004010> "2026-06-08T17:03:30Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004010> "The values, beliefs, language, rituals, traditions, and other behaviors that are passed from one generation to another within any social group. Broad definitions include any socially definable group with its own set of values, behaviors, and beliefs. Accordingly, cultural groups could include groups based on shared identities such as ethnicity.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004010> "societal culture characteristic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004010> <http://purl.obolibrary.org/obo/COB_0000502>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004011> (creativity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004011> "A cognition process that has the ability to produce or develop original work, theories, techniques, or thoughts.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004011> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004011> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004011> "2026-06-08T17:06:26Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004011> "creativity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004011> <http://purl.obolibrary.org/obo/GO_0050890>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004012> (stress process)
+
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/stress") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004012> "An emotion process that is a physiological or psychological response to internal or external stressors. Stress involves changes affecting nearly every system of the body, influencing how people feel and behave.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004012> "2026-06-08T17:50:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004012> "stress process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004012> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
 
