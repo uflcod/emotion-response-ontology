@@ -15,8 +15,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/emro.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-04-15/emro.owl"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-06-07/emro.owl"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-24</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -24,7 +23,7 @@
         <terms:description>The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <owl:versionInfo>2026-04-15</owl:versionInfo>
+        <owl:versionInfo>2026-06-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1972,7 +1971,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000035"/>
         <obo:IAO_0000115 xml:lang="en">An emotional valence which is inherently pleasant or attractive.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:16Z</terms:created>
         <rdfs:comment xml:lang="en">Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.</rdfs:comment>
         <rdfs:label>positive emotional valence</rdfs:label>
@@ -2090,7 +2088,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000035"/>
         <obo:IAO_0000115 xml:lang="en">An emotional valence which is inherently unpleasant or aversive.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:31Z</terms:created>
         <rdfs:comment xml:lang="en">Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.</rdfs:comment>
         <rdfs:label>negative emotional valence</rdfs:label>
@@ -2110,7 +2107,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000035"/>
         <obo:IAO_0000115 xml:lang="en">An emotional valence which is inherently neither pleasant nor unpleasant.</obo:IAO_0000115>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:29:48Z</terms:created>
         <rdfs:comment xml:lang="en">Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive. Neutral emotional valences are in the center of this continuum.</rdfs:comment>
         <rdfs:label>neutral emotional valence</rdfs:label>
@@ -2426,7 +2422,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T20:06:41Z</terms:created>
         <terms:description xml:lang="en">the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal.</terms:description>
         <oboInOwl:hasRelatedSynonym>hedonic tone</oboInOwl:hasRelatedSynonym>
@@ -3503,6 +3498,16 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-24T21:31:17Z</terms:created>
+        <rdfs:label>obsolete class</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
@@ -3772,7 +3777,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:NamedIndividual rdf:about="https://orcid.org/0009-0002-7282-0836">
         <rdfs:label>Finn Wilson</rdfs:label>
-        <rdfs:label xml:lang="en">Finn Wilson</rdfs:label>
     </owl:NamedIndividual>
     
 
