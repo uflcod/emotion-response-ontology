@@ -59,6 +59,12 @@ Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/EMRO_0004009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003015>))
@@ -471,10 +477,63 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000035> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004000> (personality trait characteristic)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004000> "A behavior response to stimulus that is a relatively stable, consistent, and enduring internal characteristic that is inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual.")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004000> "2026-06-05T19:34:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait characteristic"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004000> <http://purl.obolibrary.org/obo/COB_0000502>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004001> (affective well-being)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004001> "An emotional experience characterized by the presence of pleasant affect (e.g., feelings of happiness) versus the absence of unpleasant affect (e.g., depressed mood).")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004001> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004001> "2026-06-08T16:15:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004001> "affective well-being"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004001> <http://purl.obolibrary.org/obo/EMRO_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004002> (aloneliness process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004002> "An emotion process that is conceptualized as the negative feelings that arise from the perception that one is not spending enough time alone.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004002> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004002> "2026-06-08T16:21:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004002> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004003> (shyness trait characteristic)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004003> "A personality trait characteristic that involves anxiety and inhibition in social situations, typically involving three components: (a) global feelings of emotional arousal and specific physiological experiences (e.g., pounding heart, sweating, blushing); (b) acute public self-consciousness, self-deprecation, and worries about being evaluated negatively by others; and (c) observable behavior such as quietness, gaze aversion, and social withdrawal.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004003> "2026-06-08T16:26:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004003> "shyness trait characteristic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004003> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004007> (introversion trait characteristic)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004007> "A personality trait characteristic that invloves an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things. Introversion is a broad personality trait and, like extraversion, exists on a continuum of attitudes and behaviors.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004007> "2026-06-08T16:35:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion trait characteristic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004007> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004008> (anxious withdrawal trait characteristic)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004008> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004008> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004008> "2026-06-08T16:37:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004008> "anxious withdrawal trait characteristic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004008> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004009> (depression process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004009> "An emotion process that involves a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0000-0001-6906-5548>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0000-0001-9625-1899>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004009> "2026-06-08T16:40:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004009> "depression process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004009> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
 
@@ -488,7 +547,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.o
 
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/GO_0050890> "cognitive process")
 
-# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
+# Class: <http://purl.obolibrary.org/obo/PATO_0000001> (<http://purl.obolibrary.org/obo/PATO_0000001>)
 
 SubClassOf(<http://purl.obolibrary.org/obo/PATO_0000001> <http://purl.obolibrary.org/obo/COB_0000502>)
 
