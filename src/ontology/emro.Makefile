@@ -43,6 +43,23 @@ $(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms.txt
 	@echo "\n *** building $@ *** \n"
 	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
+
+$(IMPORTDIR)/go_behavior_import.owl: $(MIRRORDIR)/go.owl
+	@echo "\n *** building $@ *** \n"
+
+	$(ROBOT) \
+		filter \
+			--input $< \
+			--term GO:0002209 \
+			--select "self annotations" \
+			--trim true \
+		annotate \
+			--annotate-defined-by true \
+			--ontology-iri $(URIBASE)/$(ONT)/$@ \
+			--version-iri $(URIBASE)/$(ONT)/$@ \
+		convert --format ofn \
+		--output $@
+# adding behavioral defense response without parents
 		
 $(IMPORTDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl $(IMPORTDIR)/uberon_terms.txt
 	@echo "\n *** building $@ *** \n"

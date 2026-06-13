@@ -10,6 +10,7 @@ Ontology(<http://purl.obolibrary.org/obo/emro.owl>
 Import(<http://purl.obolibrary.org/obo/emro/components/emro_contributors.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/cob_import.owl>)
+Import(<http://purl.obolibrary.org/obo/emro/imports/go_behavior_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/go_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/pato_import.owl>)
@@ -523,6 +524,10 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0003005> "2026-05-04T20:58:18Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0003005> "guilt"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003005> <http://purl.obolibrary.org/obo/EMRO_0003001>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0002209> (behavioral defense response)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0002209> <http://purl.obolibrary.org/obo/GO_0007610>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
 

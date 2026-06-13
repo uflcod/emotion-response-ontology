@@ -4,7 +4,6 @@ http://purl.obolibrary.org/obo/GO_0007610  # behavior
 http://purl.obolibrary.org/obo/GO_0050890  # cognition
 http://purl.obolibrary.org/obo/GO_0040011  # locomotion
 http://purl.obolibrary.org/obo/GO_0003016  # respiratory system process
-http://purl.obolibrary.org/obo/GO_0007585  # respiratory gaseous exchange by respiratory system
 http://purl.obolibrary.org/obo/GO_0003008  # system process 
 http://purl.obolibrary.org/obo/GO_0003015  # heart process
 http://purl.obolibrary.org/obo/GO_0003013  # circulatory system process 
@@ -14,4 +13,3 @@ http://purl.obolibrary.org/obo/GO_0032941  # secretion by tissue
 http://purl.obolibrary.org/obo/GO_0160269  # sweat secretion
 http://purl.obolibrary.org/obo/GO_0003015  # heart process
 http://purl.obolibrary.org/obo/GO_0061744  # motor behavior
-http://purl.obolibrary.org/obo/GO_0002209  # behavioral defense response
