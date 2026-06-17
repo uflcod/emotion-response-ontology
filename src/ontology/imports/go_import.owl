@@ -7,7 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/emro/imports/go_import.owl>
-Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/go/releases/2026-01-23/go.owl>)
+Annotation(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/go/releases/2026-05-19/go.owl>)
 Annotation(<http://www.w3.org/ns/prov#wasDerivedFrom> "http://purl.obolibrary.org/obo/go.owl")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003008>))
@@ -17,7 +17,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006810>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0006936>))
-Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007585>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007589>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
@@ -139,7 +138,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0003016> <http://purl.obolibrary.org/obo/go.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003016> "respiratory system process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0003016> <http://purl.obolibrary.org/obo/GO_0003008>)
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0003016> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/GO_0007585>))
 
 # Class: <http://purl.obolibrary.org/obo/GO_0006810> (transport)
 
@@ -179,18 +177,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0006936> <http://purl.obolibrary.org/obo/go.owl>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0006936> "muscle contraction")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0006936> <http://purl.obolibrary.org/obo/GO_0003012>)
-
-# Class: <http://purl.obolibrary.org/obo/GO_0007585> (respiratory gaseous exchange by respiratory system)
-
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0198506732") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0007585> "The process of gaseous exchange between an organism and its environment. In plants, microorganisms, and many small animals, air or water makes direct contact with the organism's cells or tissue fluids, and the processes of diffusion supply the organism with dioxygen (O2) and remove carbon dioxide (CO2). In larger animals the efficiency of gaseous exchange is improved by specialized respiratory organs, such as lungs and gills, which are ventilated by breathing mechanisms.")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/GO_0007585> "breathing")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/GO_0007585> "respiration")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0007585> "biological_process")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0007585> "GO:0007585")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0007585> <http://purl.obolibrary.org/obo/go#goslim_chembl>)
-AnnotationAssertion(rdfs:isDefinedBy <http://purl.obolibrary.org/obo/GO_0007585> <http://purl.obolibrary.org/obo/go.owl>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007585> "respiratory gaseous exchange by respiratory system")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0007585> <http://purl.obolibrary.org/obo/GO_0032501>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0007589> (body fluid secretion)
 
