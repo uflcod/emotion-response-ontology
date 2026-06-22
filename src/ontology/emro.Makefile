@@ -7,7 +7,7 @@
 # ontology imports
 # ----------------------------------------
 
-IMPORTS =  omo pato uberon ro go bfo cob
+IMPORTS =  omo pato uberon ro go bfo cob obi
 OBOBASE = http://purl.obolibrary.org/obo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
@@ -94,6 +94,11 @@ $(IMPORTDIR)/cob_import.owl:  $(MIRRORDIR)/cob.owl $(IMPORTDIR)/cob_terms.txt
 	$(call ontology-annotation,$<)
 	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 # 	$(call filter-ontology,$@,$<,$(lastword $^),"annotations self")
+
+$(IMPORTDIR)/obi_import.owl:  $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt
+	@echo "\n *** building $@ *** \n"
+	$(call onotlogy-annotation,$<)
+	$(call extract-ontology,$@,$<,$(lastword $^),BOT)
 
 # ----------------------------------------
 # Release Management
