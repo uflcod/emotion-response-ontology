@@ -17,6 +17,8 @@ Import(<http://purl.obolibrary.org/obo/emro/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/emro/imports/uberon_import.owl>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-6906-5548>)
+Annotation(<http://purl.org/dc/terms/contributor> <https://orcid.org/0009-0002-7282-0836>)
 Annotation(<http://purl.org/dc/terms/created> "2025-11-24"^^xsd:date)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9625-1899>)
 Annotation(<http://purl.org/dc/terms/creator> <https://orcid.org/0000-0001-9990-8331>)
@@ -678,7 +680,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004009> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004010> (societal culture characteristic)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/culture") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004010> "A process quality characterizing a population based on the attitudes, values, and behaviors shared by a particular group within a society, such as a profession, social class, or age group."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/culture") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004010> "A process quality characterizing the attitudes, values, and behaviors of a population or shared by a particular group within a society, such as a profession, social class, or age group."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004010> "societal culture characteristic (EMRO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004010> <https://orcid.org/0000-0001-9625-1899>)
@@ -706,12 +708,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004011> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004012> (stress process)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/stress") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004012> "An emotion process that is a physiological or psychological response to internal or external stressors. Stress involves changes affecting nearly every system of the body, influencing how people feel and behave."@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/stress") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004012> "An emotion process that is a physiological or psychological response to internal or external stressors."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress process (EMRO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004012> "2026-06-08T17:50:36Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004012> "Stress involves changes affecting nearly every system of the body, influencing how people feel and behave."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004012> "stress process"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress"@en)
