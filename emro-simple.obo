@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: emro/releases/2026-06-07/emro-simple.owl
+data-version: emro/releases/2026-06-22/emro-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -10,7 +10,9 @@ idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl#
 idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: terms http://purl.org/dc/terms/ 
 ontology: emro/emro-simple
-property_value: owl:versionInfo "2026-06-07" xsd:string
+property_value: owl:versionInfo "2026-06-22" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
 property_value: terms:creator https://orcid.org/0000-0001-9625-1899
 property_value: terms:creator https://orcid.org/0000-0001-9990-8331
 property_value: terms:creator https://orcid.org/0000-0002-0766-8455
@@ -22,6 +24,7 @@ property_value: terms:title "Emotion Response Ontology" xsd:string
 id: EMRO:0000000
 name: emotion process
 def: "A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences)." []
+property_value: IAO:0000589 "emotion process (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -31,6 +34,7 @@ property_value: terms:created "2025-11-24T20:50:19Z" xsd:dateTime
 id: EMRO:0000001
 name: phenomenal cognitive experience
 def: "A cognitive process during which an organism is aware of something either internal or external to itself." [] {IAO:0000119="https://dictionary.apa.org/consciousness"}
+property_value: IAO:0000589 "phenomenal cognitive experience (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -38,10 +42,11 @@ property_value: terms:created "2025-11-24T20:52:17Z" xsd:dateTime
 
 [Term]
 id: EMRO:0000002
-name: emotional experience (feeling)
+name: emotional experience
 def: "A phenomenal cognitive experience evaluated as pleasant or unpleasant." [] {IAO:0000119="https://dictionary.apa.org/feeling"}
 is_a: EMRO:0000001 ! phenomenal cognitive experience
 relationship: part_of EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "emotional experience (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -52,6 +57,7 @@ id: EMRO:0000003
 name: anxiety process
 def: "An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future." []
 is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "anxiety process (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -62,6 +68,7 @@ id: EMRO:0000004
 name: fear process
 def: "An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal." []
 is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "fear process (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -72,6 +79,7 @@ id: EMRO:0000005
 name: sensory experience
 def: "A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations)." [] {IAO:0000119="https://dictionary.apa.org/sensation"}
 is_a: EMRO:0000001 ! phenomenal cognitive experience
+property_value: IAO:0000589 "sensory experience (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -82,6 +90,7 @@ id: EMRO:0000006
 name: motoric response to emotion
 def: "A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing)." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
+property_value: IAO:0000589 "motoric response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -93,6 +102,7 @@ name: psychophysiological response to emotion
 def: "A psychophysiological process that is part of an emotion process." []
 relationship: part_of EMRO:0000000 ! emotion process
 relationship: RO:0002410 EMRO:0000000 ! causally related to emotion process
+property_value: IAO:0000589 "psychophysiological response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -103,6 +113,7 @@ id: EMRO:0000008
 name: sweat secretion response to emotion
 def: "Sweat screation that happens as a response to an emotion process." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
+property_value: IAO:0000589 "sweat secretion response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -114,6 +125,7 @@ name: positive emotional valence
 def: "An emotional valence which is inherently pleasant or attractive." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
 comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.
 is_a: EMRO:0000035 ! emotional valence
+property_value: IAO:0000589 "positive emotional valence (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-03-17T19:27:16Z" xsd:dateTime
 
@@ -122,6 +134,7 @@ id: EMRO:0000010
 name: muscle tension response to emotion
 def: "Muscle contraction that happens as a response to an emotion process." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
+property_value: IAO:0000589 "muscle tension response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -132,6 +145,7 @@ id: EMRO:0000011
 name: increased heart response to emotion
 def: "A heart process during which the rate at which the heart beats increases as a response to an emotion process." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
+property_value: IAO:0000589 "increased heart response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -142,6 +156,7 @@ id: EMRO:0000012
 name: increased breathing rate response to emotion
 def: "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
+property_value: IAO:0000589 "increased breathing rate response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -152,6 +167,7 @@ id: EMRO:0000013
 name: cognitive response to emotion
 def: "A cognitive process that happens as a response to an emotion process." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
+property_value: IAO:0000589 "cognitive response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -161,6 +177,7 @@ property_value: terms:created "2025-12-17T17:11:45Z" xsd:dateTime
 id: EMRO:0000014
 name: cognitive appraisal process
 def: "A cognitive process during which the nature and significance of a phenomenon or event is evaluated." []
+property_value: IAO:0000589 "cognitive appraisal process (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -175,6 +192,7 @@ synonym: "fainting response to emotion" EXACT []
 synonym: "syncope" BROAD []
 synonym: "vasovagal syncope" RELATED []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
+property_value: IAO:0000589 "syncope response to emotion (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -186,6 +204,7 @@ name: negative emotional valence
 def: "An emotional valence which is inherently unpleasant or aversive." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
 comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.
 is_a: EMRO:0000035 ! emotional valence
+property_value: IAO:0000589 "negative emotional valence (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-03-17T19:27:31Z" xsd:dateTime
 
@@ -195,6 +214,7 @@ name: neutral emotional valence
 def: "An emotional valence which is inherently neither pleasant nor unpleasant." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
 comment: Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive. Neutral emotional valences are in the center of this continuum.
 is_a: EMRO:0000035 ! emotional valence
+property_value: IAO:0000589 "neutral emotional valence (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-03-17T19:29:48Z" xsd:dateTime
 
@@ -204,6 +224,7 @@ name: muscle tension response to fear
 def: "Muscle contraction that happens as a response to a fear process." []
 is_a: EMRO:0000010 ! muscle tension response to emotion
 is_a: EMRO:0000020 ! psychophysiological response to fear
+property_value: IAO:0000589 "muscle tension response to fear (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -215,6 +236,7 @@ name: psychophysiological response to fear
 def: "psychophysiological response to emotion that is part of a fear process." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
 relationship: part_of EMRO:0000004 ! fear process
+property_value: IAO:0000589 "psychophysiological response to fear (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -226,6 +248,7 @@ name: psychophysiological response to anxiety
 def: "psychophysiological response to emotion that is part of an anxiety process." []
 is_a: EMRO:0000007 ! psychophysiological response to emotion
 relationship: part_of EMRO:0000003 ! anxiety process
+property_value: IAO:0000589 "psychophysiological response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -237,6 +260,7 @@ name: muscle tension response to anxiety
 def: "Muscle contraction that happens as a response to an anxiety process." []
 is_a: EMRO:0000010 ! muscle tension response to emotion
 is_a: EMRO:0000021 ! psychophysiological response to anxiety
+property_value: IAO:0000589 "muscle tension response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -248,6 +272,7 @@ name: cognitive response to fear
 def: "A cognitive process that happens as a response to fear process." []
 is_a: EMRO:0000013 ! cognitive response to emotion
 is_a: EMRO:0000020 ! psychophysiological response to fear
+property_value: IAO:0000589 "cognitive response to fear (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -259,6 +284,7 @@ name: cognitive response to anxiety
 def: "A cognitive process that happens as a response to an anxiety process." []
 is_a: EMRO:0000013 ! cognitive response to emotion
 is_a: EMRO:0000021 ! psychophysiological response to anxiety
+property_value: IAO:0000589 "cognitive response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -270,6 +296,7 @@ name: sweat secretion response to fear
 def: "Sweat screation that happens as a response to a fear process." []
 is_a: EMRO:0000008 ! sweat secretion response to emotion
 is_a: EMRO:0000020 ! psychophysiological response to fear
+property_value: IAO:0000589 "sweat secretion response to fear (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -281,6 +308,7 @@ name: sweat secretion response to anxiety
 def: "Sweat screation that happens as a response to an anxiety process." []
 is_a: EMRO:0000008 ! sweat secretion response to emotion
 is_a: EMRO:0000021 ! psychophysiological response to anxiety
+property_value: IAO:0000589 "sweat secretion response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -291,6 +319,7 @@ id: EMRO:0000027
 name: increased heart response to fear
 def: "A heart process during which the rate at which the heart beats increases as a response to a fear process." []
 is_a: EMRO:0000011 ! increased heart response to emotion
+property_value: IAO:0000589 "increased heart response to fear (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -302,6 +331,7 @@ name: increased heart response to anxiety
 def: "A heart process during which the rate at which the heart beats increases as a response to an anxiety process." []
 is_a: EMRO:0000011 ! increased heart response to emotion
 is_a: EMRO:0000021 ! psychophysiological response to anxiety
+property_value: IAO:0000589 "increased heart response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -313,6 +343,7 @@ name: increased breathing rate response to fear
 def: "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process." []
 is_a: EMRO:0000012 ! increased breathing rate response to emotion
 is_a: EMRO:0000020 ! psychophysiological response to fear
+property_value: IAO:0000589 "increased breathing rate response to fear (EMRO)" xsd:string
 property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
 property_value: terms:created "2026-03-05T21:34:20Z" xsd:dateTime
 
@@ -322,6 +353,7 @@ name: increased breathing rate response to anxiety
 def: "A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process." []
 is_a: EMRO:0000012 ! increased breathing rate response to emotion
 is_a: EMRO:0000021 ! psychophysiological response to anxiety
+property_value: IAO:0000589 "increased breathing rate response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -333,6 +365,7 @@ name: syncope response to fear
 def: "A transient loss of consciousness and postural tone that happens as a result of a fear process." [] {IAO:0000119="Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007."}
 is_a: EMRO:0000015 ! syncope response to emotion
 is_a: EMRO:0000020 ! psychophysiological response to fear
+property_value: IAO:0000589 "syncope response to fear (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -344,6 +377,7 @@ name: syncope response to anxiety
 def: "A transient loss of consciousness and postural tone that happens as a result of an anxiety process." [] {IAO:0000119="Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007."}
 is_a: EMRO:0000015 ! syncope response to emotion
 is_a: EMRO:0000021 ! psychophysiological response to anxiety
+property_value: IAO:0000589 "syncope response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -355,6 +389,7 @@ name: motoric response to fear
 def: "A motor behavior that happens as a response to a fear process." []
 is_a: EMRO:0000006 ! motoric response to emotion
 is_a: EMRO:0000020 ! psychophysiological response to fear
+property_value: IAO:0000589 "motoric response to fear (EMRO)" xsd:string
 property_value: terms:contributor http://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
@@ -367,6 +402,7 @@ name: motoric response to anxiety
 def: "A motor behavior that happens as a response to an anxiety process." []
 is_a: EMRO:0000006 ! motoric response to emotion
 is_a: EMRO:0000021 ! psychophysiological response to anxiety
+property_value: IAO:0000589 "motoric response to anxiety (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
@@ -375,16 +411,271 @@ property_value: terms:created "2026-03-05T22:04:12Z" xsd:dateTime
 [Term]
 id: EMRO:0000035
 name: emotional valence
-def: "A characteristic of an emotion process reflecting its degree of positivity or negativity." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
+def: "A process quality that characterizes the degree of positivity or negativity of an emotion process." [] {IAO:0000119="https://dictionary.apa.org/emotional-valence"}
 comment: According to cognitive appraisal theory, an individual's cognitive appraisal of a stimulus contributes to producing an emotion (with its corresponding emotional valence).
 synonym: "hedonic tone" RELATED []
 relationship: RO:0000052 EMRO:0000000 ! characteristic of emotion process
 relationship: RO:0002353 EMRO:0000014 ! output of cognitive appraisal process
+property_value: IAO:0000589 "emotional valence (EMRO)" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
 property_value: terms:contributor https://orcid.org/0000-0002-0766-8455
 property_value: terms:created "2026-03-17T20:06:41Z" xsd:dateTime
 property_value: terms:description "the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal." xsd:string
+
+[Term]
+id: EMRO:0003000
+name: avoidance behavior
+def: "A behavioral defense response in which an organism seeks to avoid an encounter with a potential external threat." []
+property_value: IAO:0000589 "avoidance behavior (EMRO)" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-9990-8331
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:contributor https://orcid.org/0009-0003-7246-1252
+property_value: terms:created "2026-05-04T20:41:52Z" xsd:dateTime
+
+[Term]
+id: EMRO:0003001
+name: self-conscious emotional experience
+def: "An emotional experience generated when events reflect on the worth or value of the self in one’s own or others’ eyes." [] {IAO:0000119="https://dictionary.apa.org/self-conscious-emotion"}
+is_a: EMRO:0000002 ! emotional experience
+property_value: IAO:0000589 "self-conscious emotional experience (EMRO)" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-05-04T20:44:41Z" xsd:dateTime
+
+[Term]
+id: EMRO:0003002
+name: embarrassment
+def: "A self-conscious emotional experience in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others." [] {IAO:0000119="https://dictionary.apa.org/embarrassment"}
+is_a: EMRO:0003001 ! self-conscious emotional experience
+property_value: IAO:0000589 "embarrassment (EMRO)" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-05-04T20:47:27Z" xsd:dateTime
+
+[Term]
+id: EMRO:0003003
+name: shame
+def: "A highly unpleasant self-conscious emotional experience arising from the sense of there being something dishonorable, immodest, or indecorous in one’s own conduct or circumstances." [] {IAO:0000119="https://dictionary.apa.org/shame"}
+is_a: EMRO:0003001 ! self-conscious emotional experience
+property_value: IAO:0000589 "shame (EMRO)" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-05-04T20:55:14Z" xsd:dateTime
+
+[Term]
+id: EMRO:0003004
+name: pride
+def: "A self-conscious emotional experience that occurs when a goal has been attained and one’s achievement has been recognized and approved by others." [] {IAO:0000119="https://dictionary.apa.org/pride"}
+is_a: EMRO:0003001 ! self-conscious emotional experience
+property_value: IAO:0000589 "pride (EMRO)" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-05-04T20:57:07Z" xsd:dateTime
+
+[Term]
+id: EMRO:0003005
+name: guilt
+def: "A self-conscious emotional experience characterized by a painful appraisal of having done (or thought) something that is wrong and often by a readiness to take action designed to undo or mitigate this wrong." [] {IAO:0000119="https://dictionary.apa.org/guilt"}
+is_a: EMRO:0003001 ! self-conscious emotional experience
+property_value: IAO:0000589 "guilt (EMRO)" xsd:string
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-05-04T20:58:18Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004000
+name: personality trait characteristic
+def: "A process quality that characterizes a behavioral response to stimulus that is relatively stable, consistent, and enduring." [] {IAO:0000119="https://dictionary.apa.org/personality-trait"}
+synonym: "personality trait" EXACT []
+property_value: IAO:0000589 "personality triat characteristic (EMRO)" xsd:string
+property_value: skos:prefLabel "personality trait" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-05T19:34:58Z" xsd:dateTime
+property_value: terms:description "Personality triats are inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual." xsd:string
+
+[Term]
+id: EMRO:0004001
+name: affective well-being
+def: "An emotional experience characterized by the presence of pleasant affect (e.g., feelings of happiness) versus the absence of unpleasant affect (e.g., depressed mood)." [] {IAO:0000119="https://dictionary.apa.org/affective-well-being"}
+synonym: "affective well-being" EXACT []
+is_a: EMRO:0000002 ! emotional experience
+property_value: IAO:0000589 "affective well-being (EMRO)" xsd:string
+property_value: skos:prefLabel "affective well-being" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T16:15:01Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004002
+name: aloneliness process
+def: "An emotion process during which negative feelings arise from the perception that one is not spending enough time alone." []
+synonym: "aloneliness" EXACT []
+is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "aloneliness process (EMRO)" xsd:string
+property_value: skos:prefLabel "aloneliness" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T16:21:21Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004003
+name: shyness trait characteristic
+def: "A personality trait characteristic that is associated with  anxiety and inhibition in social situations." [] {IAO:0000119="https://dictionary.apa.org/shyness"}
+synonym: "shyness" EXACT []
+is_a: EMRO:0004000 ! personality trait characteristic
+property_value: IAO:0000119 "https://dictionary.apa.org/shyness" xsd:string
+property_value: IAO:0000589 "shyness triat characteristic (EMRO)" xsd:string
+property_value: skos:prefLabel "shyness" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T16:26:11Z" xsd:dateTime
+property_value: terms:description "It typically involves three components: (a) global feelings of emotional arousal and specific physiological experiences (e.g., pounding heart, sweating, blushing); (b) acute public self-consciousness, self-deprecation, and worries about being evaluated negatively by others; and (c) observable behavior such as quietness, gaze aversion, and social withdrawal." xsd:string
+
+[Term]
+id: EMRO:0004007
+name: introversion trait characteristic
+def: "A personality trait characteristic involving an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things." [] {IAO:0000119="https://dictionary.apa.org/introversion"}
+synonym: "introversion" EXACT []
+is_a: EMRO:0004000 ! personality trait characteristic
+property_value: IAO:0000589 "introversion triat characteristic (EMRO)" xsd:string
+property_value: skos:prefLabel "introversion" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T16:35:23Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004008
+name: obsolete anxious withdrawal trait characteristic
+synonym: "anxious solitude" EXACT []
+property_value: IAO:0000231 "The term anxious withdrawal (or anxious solitude) is better suited in a more specific domain ontology, such as PHASES." xsd:string
+property_value: IAO:0000589 "anxious withdrawal triat characteristic (EMRO)" xsd:string
+property_value: skos:prefLabel "obsolete anxious withdrawal" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T16:37:36Z" xsd:dateTime
+is_obsolete: true
+
+[Term]
+id: EMRO:0004009
+name: depression process
+def: "An emotion process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life." [] {IAO:0000119="https://dictionary.apa.org/depression"}
+synonym: "depression" EXACT []
+is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "depression process (EMRO)" xsd:string
+property_value: skos:prefLabel "depression" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T16:40:11Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004010
+name: societal culture characteristic
+def: "A process quality characterizing the attitudes, values, and behaviors of a population or shared by a particular group within a society, such as a profession, social class, or age group." [] {IAO:0000119="https://dictionary.apa.org/culture"}
+synonym: "social culture" EXACT []
+property_value: IAO:0000589 "societal culture characteristic (EMRO)" xsd:string
+property_value: skos:prefLabel "culture" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T17:03:30Z" xsd:dateTime
+property_value: terms:description "The values, beliefs, language, rituals, traditions, and other behaviors that are passed from one generation to another within any social group. Broad definitions include any socially definable group with its own set of values, behaviors, and beliefs. Accordingly, cultural groups could include groups based on shared identities such as ethnicity." xsd:string
+
+[Term]
+id: EMRO:0004011
+name: creativity
+def: "A cognitive process during which an individual produces or develops original work, theories, techniques, or thoughts." [] {IAO:0000119="https://dictionary.apa.org/creativity"}
+synonym: "creativity" EXACT []
+property_value: IAO:0000589 "creativity (EMRO)" xsd:string
+property_value: skos:prefLabel "creativity" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T17:06:26Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004012
+name: stress process
+def: "An emotion process that is a physiological or psychological response to internal or external stressors." [] {IAO:0000119="https://dictionary.apa.org/stress"}
+synonym: "stress" EXACT []
+is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "stress process (EMRO)" xsd:string
+property_value: skos:prefLabel "stress" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T17:50:36Z" xsd:dateTime
+property_value: terms:description "Stress involves changes affecting nearly every system of the body, influencing how people feel and behave." xsd:string
+
+[Term]
+id: EMRO:0004013
+name: social isolation process
+def: "An emotion process involving voluntary or involuntary absence of contact with others." [] {IAO:0000119="https://dictionary.apa.org/social-isolation"}
+synonym: "social isolation" EXACT []
+is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "social isolation process (EMRO)" xsd:string
+property_value: skos:prefLabel "social isolation" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T18:06:37Z" xsd:dateTime
+property_value: terms:description "Social isolation often produces abnormal behavioral and physiological changes in both humans and nonhuman animals." xsd:string
+
+[Term]
+id: EMRO:0004014
+name: happiness
+def: "An emotion process of joy, gladness, satisfaction, and well-being." [] {IAO:0000119="https://dictionary.apa.org/happiness"}
+synonym: "happiness" EXACT []
+is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "happiness (EMRO)" xsd:string
+property_value: skos:prefLabel "happiness" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T20:14:47Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004015
+name: behavioral inhibition trait characteristic
+def: "A personality trait characteristic involving restraint in engaging with the world combined with a tendency to scrutinize the environment for potential threats and to avoid or withdraw from unfamiliar situations or people." [] {IAO:0000119="https://dictionary.apa.org/behavioral-inhibition"}
+synonym: "behavioral inhibition" EXACT []
+synonym: "behavioural inhibition" EXACT []
+is_a: EMRO:0004000 ! personality trait characteristic
+property_value: IAO:0000589 "behavioral inhibition trait characteristic (EMRO)" xsd:string
+property_value: skos:prefLabel "behavioral inhibition" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T20:20:37Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004016
+name: social withdrawal process
+def: "An emotion process involving the removal of oneself from familiar and unfamiliar peers." [] {IAO:0000119="Rubin, K. H., Coplan, R. J., & Bowker, J. C. (2009). Social withdrawal in childhood. Annual Review of Psychology, 60(1), 141–171."}
+synonym: "social withdrawal" EXACT []
+is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "social withdrawal process (EMRO)" xsd:string
+property_value: skos:prefLabel "social withdrawal" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T20:47:51Z" xsd:dateTime
+
+[Term]
+id: EMRO:0004017
+name: loneliness process
+def: "An emotion process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary." [] {terms:source="https://dictionary.apa.org/loneliness"}
+synonym: "loneliness" EXACT []
+is_a: EMRO:0000000 ! emotion process
+property_value: IAO:0000589 "loneliness process (EMRO)" xsd:string
+property_value: skos:prefLabel "loneliness" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6906-5548
+property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
+property_value: terms:contributor https://orcid.org/0009-0002-7282-0836
+property_value: terms:created "2026-06-08T21:04:33Z" xsd:dateTime
 
 [Typedef]
 id: RO:0000052
