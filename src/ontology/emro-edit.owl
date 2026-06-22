@@ -653,17 +653,19 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004007> "in
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004007> <http://purl.obolibrary.org/obo/EMRO_0004000>)
 
-# Class: <http://purl.obolibrary.org/obo/EMRO_0004008> (anxious withdrawal trait characteristic)
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004008> (obsolete anxious withdrawal trait characteristic)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000231> <http://purl.obolibrary.org/obo/EMRO_0004008> "The term anxious withdrawal (or anxious solitude) is better suited in a more specific domain ontology, such as PHASES.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004008> "anxious withdrawal triat characteristic (EMRO)"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004008> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004008> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004008> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004008> "2026-06-08T16:37:36Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004008> "anxious solitude"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004008> "anxious withdrawal trait characteristic"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004008> "anxious withdrawal"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004008> <http://purl.obolibrary.org/obo/EMRO_0004000>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004008> "obsolete anxious withdrawal trait characteristic"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/EMRO_0004008> "true"^^xsd:boolean)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004008> "obsolete anxious withdrawal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004008> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004009> (depression process)
 
