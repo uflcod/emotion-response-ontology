@@ -594,7 +594,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_113"><a   href="prop-oboiao_0000427.html">antisymmetric property</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_114"><a class="active"  href="prop-oboiao_0000589.html">OBO foundry unique label</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_114"><a   href="prop-oboiao_0000589.html">OBO foundry unique label</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_115"><a   href="prop-oboiao_0000596.html">has ID digit count</a></li>
           
@@ -744,7 +744,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_185"><a   href="prop-provwasderivedfrom.html">wasDerivedFrom</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_182"><a   href="prop-skosclosematch.html">closeMatch</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_182"><a class="active"  href="prop-skosclosematch.html">closeMatch</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_183"><a   href="prop-skosdefinition.html">definition</a></li>
           
@@ -869,7 +869,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            OBO foundry unique label
+            closeMatch
         </li>
   </ol>
 
@@ -893,7 +893,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
             <h1>
 
-                OBO foundry unique label
+                closeMatch
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -912,7 +912,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'OBO foundry unique label' - An alternative name for a class or property which is unique across the OBO Foundry.">OBO foundry unique label</a>
+                            <li><a style="font-weight: bold;" title="'closeMatch'">closeMatch</a>
 
                             
                               </li>
@@ -936,7 +936,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 <code>http://purl.obolibrary.org/obo/IAO_0000589</code>
+                 <code>http://www.w3.org/2004/02/skos/core#closeMatch</code>
              </div>
            </div>
             </div></div>
@@ -951,7 +951,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 OBO foundry unique label
+                 closeMatch
              </div>
            </div>
             </div></div>
@@ -959,18 +959,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 
             
-            <div class="row"><div class="col-md-12">
-              <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Description</h3>
-            </div>
-            <div class="panel-body">
-
-                <p>An alternative name for a class or property which is unique across the OBO Foundry.</p>
-            </div>
-          </div>
-           </div></div>
-           
 
 
 
@@ -1000,7 +988,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                    </td>
 
                     <td>
-                      OBO foundry unique label
+                      closeMatch
                     </td>
 
                     <td>
@@ -1024,23 +1012,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
                 
 
-                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">obo:</span><span class="w"> </span><span class="nv">&lt;http://purl.obolibrary.org/obo/&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">skos:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="nn">obo</span><span class="p">:</span><span class="nt">IAO_0000589</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">AnnotationProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">label</span> <span class="s">&quot;OBO foundry unique label&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">;</span>
-    <span class="nn">obo</span><span class="p">:</span><span class="nt">IAO_0000111</span> <span class="s">&quot;OBO foundry unique label&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">;</span>
-    <span class="nn">obo</span><span class="p">:</span><span class="nt">IAO_0000114</span> <span class="nn">obo</span><span class="p">:</span><span class="nt">IAO_0000125</span> <span class="p">;</span>
-    <span class="nn">obo</span><span class="p">:</span><span class="nt">IAO_0000116</span> <span class="s">&quot;The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = &#39;sequence &#39; + [label], etc. , MA could specify &#39;mouse + [label]&#39; etc. Upon importing terms, ontology developers can choose to use the &#39;OBO foundry unique label&#39; for an imported term or not. The same applies to tools .&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">;</span>
-    <span class="nn">obo</span><span class="p">:</span><span class="nt">IAO_0000117</span> <span class="s">&quot;PERSON:Alan Ruttenberg&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">,</span>
-        <span class="s">&quot;PERSON:Bjoern Peters&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">,</span>
-        <span class="s">&quot;PERSON:Chris Mungall&quot;</span><span class="o">@</span><span class="ge">en</span><span class="p">,</span>
-        <span class="s">&quot;PERSON:Melanie Courtot&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">;</span>
-    <span class="nn">obo</span><span class="p">:</span><span class="nt">IAO_0000119</span> <span class="s">&quot;GROUP:OBO Foundry &lt;http://obofoundry.org/&gt;&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">isDefinedBy</span> <span class="nv">&lt;http://purl.obolibrary.org/obo/emro/imports/omo_import.owl&gt;</span> <span class="p">;</span>
-    <span class="nn">skos</span><span class="p">:</span><span class="nt">definition</span> <span class="s">&quot;An alternative name for a class or property which is unique across the OBO Foundry.&quot;</span><span class="o">@</span><span class="ge">en</span> <span class="p">.</span>
+<span class="nn">skos</span><span class="p">:</span><span class="nt">closeMatch</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">AnnotationProperty</span> <span class="p">.</span>
 </pre></div>
 
 
@@ -1140,7 +1115,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_114").offset().top - 100
+          scrollTop: $("#sd_182").offset().top - 100
       }, 100);
     });
 
