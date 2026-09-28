@@ -177,6 +177,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0000003> "http://purl.obolibrary.org/obo/SYMP_0000412")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0000003> "http://semanticscience.org/resource/SIO_000815")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0000003> "http://snomed.info/id/48694002")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0000003> "anxiety response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000003> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0000004> (fear response process)
@@ -198,6 +199,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0000004> "http://purl.obolibrary.org/obo/OMIT_0006459")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0000004> "http://semanticscience.org/resource/SIO_000837")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0000004> "http://snomed.info/id/1402001")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0000004> "fear response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000004> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0000005> (sensory experience)
@@ -672,7 +674,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004002> "2026-06-08T16:21:21Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness response process"@en)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004002> "aloneliness response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004002> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004003> (shyness trait characteristic)
@@ -744,7 +746,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004009> "http://purl.obolibrary.org/obo/OMIT_0005139")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004009> "http://purl.obolibrary.org/obo/SCDO_0000360")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004009> "http://semanticscience.org/resource/SIO_000824")
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004009> "depression"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004009> "depression response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004009> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004010> (societal culture characteristic)
@@ -804,7 +806,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004012> "st
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004012> "http://purl.obolibrary.org/obo/GSSO_006346")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004012> "http://purl.obolibrary.org/obo/NCIT_C35041")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004012> "http://snomed.info/id/73595000")
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004012> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004013> (social isolation response process)
@@ -824,10 +826,10 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://purl.obolibrary.org/obo/NCIT_C21100")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://purl.obolibrary.org/obo/SCDO_0001084")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://snomed.info/id/422650009")
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
-# Class: <http://purl.obolibrary.org/obo/EMRO_0004014> (happiness)
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004014> (happiness response process)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/happiness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004014> "An emotion response process of joy, gladness, satisfaction, and well-being."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004014> "happiness (EMRO)"@en)
@@ -839,7 +841,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/EMRO_0004014> "gladness"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/EMRO_0004014> "happiness"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/EMRO_0004014> "joy"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004014> "happiness"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004014> "happiness response process"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004014> "http://id.nlm.nih.gov/mesh/D006240")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004014> "http://purl.obolibrary.org/obo/MFOEM_000042")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004014> "http://purl.obolibrary.org/obo/NCIT_C72670")
@@ -875,7 +877,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004016> "so
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004016> "http://purl.obolibrary.org/obo/MP_0001361")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004016> "http://purl.obolibrary.org/obo/NBO_0000565")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004016> "http://snomed.info/id/105411000")
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004017> (loneliness response process)
@@ -892,7 +894,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004017> "http://purl.obolibrary.org/obo/NCIT_C34785")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004017> "http://purl.obolibrary.org/obo/OMIT_0009215")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004017> "http://semanticscience.org/resource/SIO_000852")
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness response"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004017> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0002209> (behavioral defense response)
