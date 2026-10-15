@@ -503,8 +503,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000030> ObjectSomeValuesFrom(<h
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000031> "A transient loss of consciousness and postural tone that happens as a result of a fear process.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000031> "syncope response to fear (EMRO)")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000031> "A transient loss of consciousness and postural tone that happens as a result of a fear process.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000031> "syncope response to fear (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000031> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000031> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000031> <https://orcid.org/0000-0002-0766-8455>)
