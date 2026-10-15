@@ -161,7 +161,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/EMRO_0000002> ObjectIntersecti
 # Class: <http://purl.obolibrary.org/obo/EMRO_0000003> (anxiety emotion response process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000003> "An emotion response process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000003> "anxiety response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000003> "anxiety emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000003> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000003> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000003> <https://orcid.org/0000-0002-0766-8455>)
@@ -184,7 +184,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000003> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0000004> (fear emotion response process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000004> "An emotion response process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000004> "fear response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000004> "fear emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000004> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000004> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000004> <https://orcid.org/0000-0002-0766-8455>)
@@ -721,7 +721,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004008> <http://www.geneontolog
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004009> (depression emotion response process)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/depression") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004009> "An emotion response process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004009> "depression response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004009> "depression emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004009> <https://orcid.org/0009-0002-7282-0836>)
@@ -782,7 +782,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004011> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004012> (stress emotion response process)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/stress") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004012> "An emotion response process that is a physiological or psychological response to internal or external stressors.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004012> <https://orcid.org/0009-0002-7282-0836>)
@@ -800,7 +800,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004012> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004013> (social isolation emotion response process)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/social-isolation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004013> "An emotion response process involving voluntary or involuntary absence of contact with others.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0009-0002-7282-0836>)
@@ -819,7 +819,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004014> (happiness emotion response process)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/happiness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004014> "An emotion response process of joy, gladness, satisfaction, and well-being.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004014> "happiness (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004014> "happiness emotion response process")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004014> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004014> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004014> <https://orcid.org/0009-0002-7282-0836>)
@@ -853,7 +853,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004015> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004016> (social withdrawal emotion response process)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Rubin, K. H., Coplan, R. J., & Bowker, J. C. (2009). Social withdrawal in childhood. Annual Review of Psychology, 60(1), 141–171.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "An emotion process involving the removal of oneself from familiar and unfamiliar peers.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0009-0002-7282-0836>)
@@ -868,7 +868,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004017> (loneliness emotion response process)
 
 AnnotationAssertion(Annotation(<http://purl.org/dc/terms/source> "https://dictionary.apa.org/loneliness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004017> "An emotion response process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004017> "loneliness emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004017> <https://orcid.org/0009-0002-7282-0836>)
@@ -884,7 +884,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004017> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004020> (emotional downregulation response process)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC10850342/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004020> "An emotion response process which entails cognitive and behavioral methods focused on reducing or moderating the intensity of specific emotional states.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004020> "emotional downregulation response process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004020> "emotional downregulation emotion response process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004020> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004020> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004020> "2026-10-12T14:37:28Z"^^xsd:dateTime)
