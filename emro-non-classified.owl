@@ -15,7 +15,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/emro/emro-non-classified.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-10-14/emro-non-classified.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-10-15/emro-non-classified.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-24</terms:created>
@@ -25,7 +25,7 @@
         <terms:description>The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <owl:versionInfo>2026-10-14</owl:versionInfo>
+        <owl:versionInfo>2026-10-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1863,14 +1863,14 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.</obo:IAO_0000115>
-        <obo:IAO_0000589>anxiety response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>anxiety emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:56:47Z</terms:created>
         <oboInOwl:hasRelatedSynonym>anxiousness</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>social anxiety</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">anxiety response process</rdfs:label>
+        <rdfs:label xml:lang="en">anxiety emotion response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D001007</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0000739</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MFOEM_000028</skos:closeMatch>
@@ -1880,7 +1880,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <skos:closeMatch>http://purl.obolibrary.org/obo/SYMP_0000412</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000815</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/48694002</skos:closeMatch>
-        <skos:prefLabel>anxiety response</skos:prefLabel>
+        <skos:prefLabel>anxiety</skos:prefLabel>
     </owl:Class>
     
 
@@ -1890,23 +1890,22 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.</obo:IAO_0000115>
-        <obo:IAO_0000589>fear response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>fear emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:57:08Z</terms:created>
-        <oboInOwl:hasExactSynonym>fear</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>frightened</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>threat cue</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>threat sensitivity</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">fear response process</rdfs:label>
+        <rdfs:label xml:lang="en">fear emotion response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D005239</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MFOEM_000026</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C77960</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0006459</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000837</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/1402001</skos:closeMatch>
-        <skos:prefLabel>fear response</skos:prefLabel>
+        <skos:prefLabel>fear</skos:prefLabel>
     </owl:Class>
     
 
@@ -2759,23 +2758,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://purl.obolibrary.org/obo/EMRO_0004002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115>An emotion response process during which negative feelings arise from the perception that one is not spending enough time alone.</obo:IAO_0000115>
-        <obo:IAO_0000589>aloneliness response process (EMRO)</obo:IAO_0000589>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T16:21:21Z</terms:created>
-        <oboInOwl:hasExactSynonym>aloneliness</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">aloneliness response process</rdfs:label>
-        <skos:prefLabel>aloneliness response</skos:prefLabel>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/EMRO_0004003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004003">
@@ -2838,22 +2820,21 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life.</obo:IAO_0000115>
-        <obo:IAO_0000589>depression response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>depression emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T16:40:11Z</terms:created>
-        <oboInOwl:hasExactSynonym>depression</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>depressive episode</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>depressivity</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">depression response process</rdfs:label>
+        <rdfs:label xml:lang="en">depression emotion response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D003863</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0000716</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C2982</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0005139</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SCDO_0000360</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000824</skos:closeMatch>
-        <skos:prefLabel>depression response</skos:prefLabel>
+        <skos:prefLabel>depression</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004009"/>
@@ -2935,7 +2916,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process that is a physiological or psychological response to internal or external stressors.</obo:IAO_0000115>
-        <obo:IAO_0000589>stress response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>stress emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
@@ -2943,12 +2924,11 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <terms:description>Stress involves changes affecting nearly every system of the body, influencing how people feel and behave.</terms:description>
         <oboInOwl:hasExactSynonym>psychological stress</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>state of stress</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>stress</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">stress response process</rdfs:label>
+        <rdfs:label xml:lang="en">stress emotion response process</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/GSSO_006346</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C35041</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/73595000</skos:closeMatch>
-        <skos:prefLabel>stress response</skos:prefLabel>
+        <skos:prefLabel>stress</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004012"/>
@@ -2964,21 +2944,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process involving voluntary or involuntary absence of contact with others.</obo:IAO_0000115>
-        <obo:IAO_0000589>social isolation response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>social isolation emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T18:06:37Z</terms:created>
         <terms:description>Social isolation often produces abnormal behavioral and physiological changes in both humans and nonhuman animals.</terms:description>
-        <oboInOwl:hasExactSynonym>social isolation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>social exclusion</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">social isolation response process</rdfs:label>
+        <rdfs:label xml:lang="en">social isolation emotion response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D012934</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/GSSO_003702</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C21100</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SCDO_0001084</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/422650009</skos:closeMatch>
-        <skos:prefLabel>social isolation response</skos:prefLabel>
+        <skos:prefLabel>social isolation</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004013"/>
@@ -2994,16 +2973,15 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process of joy, gladness, satisfaction, and well-being.</obo:IAO_0000115>
-        <obo:IAO_0000589>happiness (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>happiness emotion response process</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T20:14:47Z</terms:created>
         <oboInOwl:hasExactSynonym>happy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>gladness</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym>happiness</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>joy</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">happiness response process</rdfs:label>
+        <rdfs:label xml:lang="en">happiness emotion response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D006240</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MFOEM_000042</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C72670</skos:closeMatch>
@@ -3049,17 +3027,16 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion process involving the removal of oneself from familiar and unfamiliar peers.</obo:IAO_0000115>
-        <obo:IAO_0000589>social withdrawal response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>social withdrawal emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T20:47:51Z</terms:created>
-        <oboInOwl:hasExactSynonym>social withdrawal</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">social withdrawal response process</rdfs:label>
+        <rdfs:label xml:lang="en">social withdrawal emotion response process</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MP_0001361</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NBO_0000565</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/105411000</skos:closeMatch>
-        <skos:prefLabel>social withdrawal response</skos:prefLabel>
+        <skos:prefLabel>social withdrawal</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004016"/>
@@ -3075,18 +3052,17 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary.</obo:IAO_0000115>
-        <obo:IAO_0000589>loneliness response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>loneliness emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T21:04:33Z</terms:created>
-        <oboInOwl:hasExactSynonym>loneliness</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">loneliness response process</rdfs:label>
+        <rdfs:label xml:lang="en">loneliness emotion response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D008132</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C34785</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0009215</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000852</skos:closeMatch>
-        <skos:prefLabel>loneliness response</skos:prefLabel>
+        <skos:prefLabel>loneliness</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004017"/>
@@ -3102,11 +3078,12 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
         <obo:IAO_0000115>An emotion response process which entails cognitive and behavioral methods focused on reducing or moderating the intensity of specific emotional states.</obo:IAO_0000115>
-        <obo:IAO_0000589>emotional downregulation response process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000589>emotional downregulation emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-12T14:37:28Z</terms:created>
         <rdfs:label xml:lang="en">emotional downregulation response process</rdfs:label>
+        <skos:prefLabel>emotional downregulation</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004020"/>
