@@ -15,7 +15,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/emro.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-08-24/emro.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/emro/releases/2026-10-14/emro.owl"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-11-24</terms:created>
@@ -25,7 +25,7 @@
         <terms:description>The Emotion Response Ontology represents emotions as behavioral responses to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</terms:description>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title>Emotion Response Ontology</terms:title>
-        <owl:versionInfo>2026-08-24</owl:versionInfo>
+        <owl:versionInfo>2026-10-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1788,19 +1788,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000115 xml:lang="en">A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">emotion process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A behavioral response that includes overt action, cognitive response, verbal response, or physiological reaction in response to a situation or event, or internal process which evokes positive feelings, negative feelings, or surprise (i.e., emotional experiences).</obo:IAO_0000115>
+        <obo:IAO_0000589>emotion response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:50:19Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">emotion</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">emotion process</rdfs:label>
+        <oboInOwl:hasExactSynonym>emotion</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">emotion response process</rdfs:label>
         <skos:closeMatch>http://opendata.inrae.fr/PO2/Ontology/TransformON/c_5qTfIv</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/GECKO_0000121</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C54266</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000276</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/285854004</skos:closeMatch>
+        <skos:prefLabel>emotion response</skos:prefLabel>
     </owl:Class>
     
 
@@ -1809,8 +1810,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <obo:IAO_0000115 xml:lang="en">A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">phenomenal cognitive experience (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A cognitive process during which an organism is aware of something either internal or external to itself.</obo:IAO_0000115>
+        <obo:IAO_0000589>phenomenal cognitive experience (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -1820,7 +1821,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A cognitive process during which an organism is aware of something either internal or external to itself.</owl:annotatedTarget>
+        <owl:annotatedTarget>A cognitive process during which an organism is aware of something either internal or external to itself.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/consciousness</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1847,8 +1848,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">emotional experience (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</obo:IAO_0000115>
+        <obo:IAO_0000589>emotional experience (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -1858,7 +1859,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A phenomenal cognitive experience evaluated as pleasant or unpleasant.</owl:annotatedTarget>
+        <owl:annotatedTarget>A phenomenal cognitive experience evaluated as pleasant or unpleasant.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/feeling</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1868,15 +1869,15 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">anxiety process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process that is a response that occurs more distally in time or physical space with regard to threatening stimuli. Anxiety typically involves worrying about experiencing threats that could or will be experienced in the future.</obo:IAO_0000115>
+        <obo:IAO_0000589>anxiety response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:56:47Z</terms:created>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">anxiousness</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">social anxiety</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">anxiety process</rdfs:label>
+        <oboInOwl:hasRelatedSynonym>anxiousness</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>social anxiety</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">anxiety response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D001007</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0000739</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MFOEM_000028</skos:closeMatch>
@@ -1886,6 +1887,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <skos:closeMatch>http://purl.obolibrary.org/obo/SYMP_0000412</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000815</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/48694002</skos:closeMatch>
+        <skos:prefLabel>anxiety response</skos:prefLabel>
     </owl:Class>
     
 
@@ -1894,23 +1896,24 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">fear process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.</obo:IAO_0000115>
+        <obo:IAO_0000589>fear response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-24T20:57:08Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">fear</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">frightened</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">threat cue</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">threat sensitivity</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">fear process</rdfs:label>
+        <oboInOwl:hasExactSynonym>fear</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>frightened</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>threat cue</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>threat sensitivity</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">fear response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D005239</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MFOEM_000026</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C77960</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0006459</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000837</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/1402001</skos:closeMatch>
+        <skos:prefLabel>fear response</skos:prefLabel>
     </owl:Class>
     
 
@@ -1919,8 +1922,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000001"/>
-        <obo:IAO_0000115 xml:lang="en">A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">sensory experience (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</obo:IAO_0000115>
+        <obo:IAO_0000589>sensory experience (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -1930,7 +1933,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
+        <owl:annotatedTarget>A phenomenal cognitive experience produced by the parts of the nervous sysem involved in awareness of the external world (i.e., external stimulus) or changes to internal organs. A sensory experience does not necessarily entail the existence phenomenon experiences (e.g., hallucinations).</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/sensation</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -1947,8 +1950,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">motoric response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an emotion process. The motoric response includes muscle contractions that may move parts of the body or prevent the body from moving (e.g., freezing).</obo:IAO_0000115>
+        <obo:IAO_0000589>motoric response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -1994,8 +1997,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A psychophysiological process that is part of an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">psychophysiological response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A psychophysiological process that is part of an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000589>psychophysiological response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2010,8 +2013,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0160269"/>
-        <obo:IAO_0000115 xml:lang="en">Sweat screation that happens as a response to an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">sweat secretion response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>Sweat screation that happens as a response to an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000589>sweat secretion response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2025,17 +2028,17 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000035"/>
-        <obo:IAO_0000115 xml:lang="en">An emotional valence which is inherently pleasant or attractive.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">positive emotional valence (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotional valence which is inherently pleasant or attractive.</obo:IAO_0000115>
+        <obo:IAO_0000589>positive emotional valence (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:16Z</terms:created>
-        <rdfs:comment xml:lang="en">Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.</rdfs:comment>
+        <rdfs:comment>Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.</rdfs:comment>
         <rdfs:label xml:lang="en">positive emotional valence</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotional valence which is inherently pleasant or attractive.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotional valence which is inherently pleasant or attractive.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/emotional-valence</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2046,8 +2049,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006936"/>
-        <obo:IAO_0000115 xml:lang="en">Muscle contraction that happens as a response to an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">muscle tension response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000589>muscle tension response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2062,8 +2065,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003015"/>
-        <obo:IAO_0000115 xml:lang="en">A heart process during which the rate at which the heart beats increases as a response to an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">increased heart response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased heart response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2078,8 +2081,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0003016"/>
-        <obo:IAO_0000115 xml:lang="en">A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">increased breathing rate response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased breathing rate response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2094,8 +2097,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <obo:IAO_0000115 xml:lang="en">A cognitive process that happens as a response to an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">cognitive response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000589>cognitive response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2109,8 +2112,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <obo:IAO_0000115 xml:lang="en">A cognitive process during which the nature and significance of a phenomenon or event is evaluated.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">cognitive appraisal process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A cognitive process during which the nature and significance of a phenomenon or event is evaluated.</obo:IAO_0000115>
+        <obo:IAO_0000589>cognitive appraisal process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2124,24 +2127,21 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000007"/>
-        <obo:IAO_0000115 xml:lang="en">A transient loss of consciousness and postural tone that happens as a result of an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">syncope response to emotion (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A psychophysiological response to emotion during which a transient loss of consciousness and postural tone occurs.</obo:IAO_0000115>
+        <obo:IAO_0000589>syncope response to emotion (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T11:54:16Z</terms:created>
-        <oboInOwl:hasBroadSynonym xml:lang="en">fainting</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym xml:lang="en">syncope</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">fainting response to emotion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">vasovagal syncope</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>fainting</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>syncope</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>fainting response to emotion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>vasovagal syncope</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>Adapted from MeSH definition for syncope. (http://id.nlm.nih.gov/mesh/D013575)</rdfs:comment>
         <rdfs:label xml:lang="en">syncope response to emotion</rdfs:label>
+        <skos:closeMatch>http://id.nlm.nih.gov/mesh/D013575</skos:closeMatch>
+        <skos:closeMatch>http://purl.bioontology.org/ontology/SNOMEDCT/271594007</skos:closeMatch>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000015"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A transient loss of consciousness and postural tone that happens as a result of an emotion process.</owl:annotatedTarget>
-        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -2149,17 +2149,17 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000035"/>
-        <obo:IAO_0000115 xml:lang="en">An emotional valence which is inherently unpleasant or aversive.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">negative emotional valence (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotional valence which is inherently unpleasant or aversive.</obo:IAO_0000115>
+        <obo:IAO_0000589>negative emotional valence (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:27:31Z</terms:created>
-        <rdfs:comment xml:lang="en">Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.</rdfs:comment>
+        <rdfs:comment>Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive.</rdfs:comment>
         <rdfs:label xml:lang="en">negative emotional valence</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotional valence which is inherently unpleasant or aversive.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotional valence which is inherently unpleasant or aversive.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/emotional-valence</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2169,17 +2169,17 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000035"/>
-        <obo:IAO_0000115 xml:lang="en">An emotional valence which is inherently neither pleasant nor unpleasant.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">neutral emotional valence (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotional valence which is inherently neither pleasant nor unpleasant.</obo:IAO_0000115>
+        <obo:IAO_0000589>neutral emotional valence (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T19:29:48Z</terms:created>
-        <rdfs:comment xml:lang="en">Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive. Neutral emotional valences are in the center of this continuum.</rdfs:comment>
+        <rdfs:comment>Emotional valences exist on a continuum from pleasant to unpleasant, or from attractive to aversive. Neutral emotional valences are in the center of this continuum.</rdfs:comment>
         <rdfs:label xml:lang="en">neutral emotional valence</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotional valence which is inherently neither pleasant nor unpleasant.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotional valence which is inherently neither pleasant nor unpleasant.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/emotional-valence</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2190,8 +2190,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">Muscle contraction that happens as a response to a fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">muscle tension response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to a fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>muscle tension response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2222,8 +2222,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">psychophysiological response to emotion that is part of a fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">psychophysiological response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of a fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>psychophysiological response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2254,8 +2254,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">psychophysiological response to emotion that is part of an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">psychophysiological response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>psychophysiological response to emotion that is part of an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>psychophysiological response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2270,8 +2270,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000021"/>
-        <obo:IAO_0000115 xml:lang="en">Muscle contraction that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">muscle tension response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>Muscle contraction that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>muscle tension response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2286,8 +2286,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000013"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A cognitive process that happens as a response to fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">cognitive response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A cognitive process that happens as a response to fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>cognitive response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2302,8 +2302,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000013"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000021"/>
-        <obo:IAO_0000115 xml:lang="en">A cognitive process that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">cognitive response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A cognitive process that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>cognitive response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2318,8 +2318,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">Sweat screation that happens as a response to a fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">sweat secretion response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>Sweat screation that happens as a response to a fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>sweat secretion response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2334,8 +2334,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000021"/>
-        <obo:IAO_0000115 xml:lang="en">Sweat screation that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">sweat secretion response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>Sweat screation that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>sweat secretion response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2349,8 +2349,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A heart process during which the rate at which the heart beats increases as a response to a fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">increased heart response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to a fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased heart response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2365,8 +2365,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000021"/>
-        <obo:IAO_0000115 xml:lang="en">A heart process during which the rate at which the heart beats increases as a response to an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">increased heart response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A heart process during which the rate at which the heart beats increases as a response to an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased heart response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2381,8 +2381,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000012"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">increased breathing rate response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to a fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased breathing rate response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:34:20Z</terms:created>
         <rdfs:label xml:lang="en">increased breathing rate response to fear</rdfs:label>
@@ -2395,8 +2395,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000012"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000021"/>
-        <obo:IAO_0000115 xml:lang="en">A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">increased breathing rate response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A respiratory system process during which the rate  at which an organism moves air in and out of its lungs increases as a response to an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>increased breathing rate response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2411,20 +2411,14 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A transient loss of consciousness and postural tone that happens as a result of a fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">syncope response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A syncope response to emotion that happens as a result of a fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>syncope response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:42:51Z</terms:created>
         <rdfs:label xml:lang="en">syncope response to fear</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000031"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A transient loss of consciousness and postural tone that happens as a result of a fear process.</owl:annotatedTarget>
-        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -2433,20 +2427,14 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000021"/>
-        <obo:IAO_0000115 xml:lang="en">A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">syncope response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A syncope response to emotion that happens as a result of an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>syncope response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-05T21:43:01Z</terms:created>
         <rdfs:label xml:lang="en">syncope response to anxiety</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000032"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A transient loss of consciousness and postural tone that happens as a result of an anxiety process.</owl:annotatedTarget>
-        <obo:IAO_0000119>Adapted from MeSH definition for syncope. See https://meshb.nlm.nih.gov/record/ui?ui=D013575 or http://purl.bioontology.org/ontology/SNOMEDCT/271594007.</obo:IAO_0000119>
-    </owl:Axiom>
     
 
 
@@ -2455,8 +2443,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000020"/>
-        <obo:IAO_0000115 xml:lang="en">A motor behavior that happens as a response to a fear process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">motoric response to fear (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A motor behavior that happens as a response to a fear process.</obo:IAO_0000115>
+        <obo:IAO_0000589>motoric response to fear (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
@@ -2472,8 +2460,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000021"/>
-        <obo:IAO_0000115 xml:lang="en">A motor behavior that happens as a response to an anxiety process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">motoric response to anxiety (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A motor behavior that happens as a response to an anxiety process.</obo:IAO_0000115>
+        <obo:IAO_0000589>motoric response to anxiety (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
@@ -2499,21 +2487,21 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A process quality that characterizes the degree of positivity or negativity of an emotion process.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">emotional valence (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A process quality that characterizes the degree of positivity or negativity of an emotion process.</obo:IAO_0000115>
+        <obo:IAO_0000589>emotional valence (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-0766-8455"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T20:06:41Z</terms:created>
-        <terms:description xml:lang="en">the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal.</terms:description>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">hedonic tone</oboInOwl:hasRelatedSynonym>
-        <rdfs:comment xml:lang="en">According to cognitive appraisal theory, an individual&apos;s cognitive appraisal of a stimulus contributes to producing an emotion (with its corresponding emotional valence).</rdfs:comment>
+        <terms:description>the value associated with a stimulus as expressed on a continuum from pleasant to unpleasant or from attractive to aversive. In factor analysis and multidimensional scaling studies, emotional valence is one of two axes (or dimensions) on which an emotion can be located, the other axis being arousal (expressed as a continuum from high to low). For example, happiness is typically characterized by pleasant valence and relatively high arousal, whereas sadness or depression is typically characterized by unpleasant valence and relatively low arousal.</terms:description>
+        <oboInOwl:hasRelatedSynonym>hedonic tone</oboInOwl:hasRelatedSynonym>
+        <rdfs:comment>According to cognitive appraisal theory, an individual&apos;s cognitive appraisal of a stimulus contributes to producing an emotion (with its corresponding emotional valence).</rdfs:comment>
         <rdfs:label xml:lang="en">emotional valence</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000035"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A process quality that characterizes the degree of positivity or negativity of an emotion process.</owl:annotatedTarget>
+        <owl:annotatedTarget>A process quality that characterizes the degree of positivity or negativity of an emotion process.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/emotional-valence</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2523,13 +2511,13 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0003000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002209"/>
-        <obo:IAO_0000115 xml:lang="en">A behavioral defense response in which an organism seeks to avoid an encounter with a potential external threat.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">avoidance behavior (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A behavioral defense response in which an organism seeks to avoid an encounter with a potential external threat.</obo:IAO_0000115>
+        <obo:IAO_0000589>avoidance response behavior (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9990-8331"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0003-7246-1252"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-04T20:41:52Z</terms:created>
-        <rdfs:label xml:lang="en">avoidance behavior</rdfs:label>
+        <rdfs:label xml:lang="en">avoidance response behavior</rdfs:label>
     </owl:Class>
     
 
@@ -2538,8 +2526,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0003001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000002"/>
-        <obo:IAO_0000115 xml:lang="en">An emotional experience generated when events reflect on the worth or value of the self in one’s own or others’ eyes.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">self-conscious emotional experience (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotional experience generated when events reflect on the worth or value of the self in one’s own or others’ eyes.</obo:IAO_0000115>
+        <obo:IAO_0000589>self-conscious emotional experience (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-04T20:44:41Z</terms:created>
         <rdfs:label xml:lang="en">self-conscious emotional experience</rdfs:label>
@@ -2547,7 +2535,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotional experience generated when events reflect on the worth or value of the self in one’s own or others’ eyes.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotional experience generated when events reflect on the worth or value of the self in one’s own or others’ eyes.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/self-conscious-emotion</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2557,8 +2545,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0003002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003001"/>
-        <obo:IAO_0000115 xml:lang="en">A self-conscious emotional experience in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">embarrassment (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A self-conscious emotional experience in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others.</obo:IAO_0000115>
+        <obo:IAO_0000589>embarrassment (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-04T20:47:27Z</terms:created>
         <rdfs:label xml:lang="en">embarrassment</rdfs:label>
@@ -2569,7 +2557,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003002"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A self-conscious emotional experience in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others.</owl:annotatedTarget>
+        <owl:annotatedTarget>A self-conscious emotional experience in which a person feels awkward or flustered in other people’s company or because of the attention of others, as, for example, when being observed engaging in actions that are subject to mild disapproval from others.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/embarrassment</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2579,8 +2567,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0003003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003001"/>
-        <obo:IAO_0000115 xml:lang="en">A highly unpleasant self-conscious emotional experience arising from the sense of there being something dishonorable, immodest, or indecorous in one’s own conduct or circumstances.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">shame (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A highly unpleasant self-conscious emotional experience arising from the sense of there being something dishonorable, immodest, or indecorous in one’s own conduct or circumstances.</obo:IAO_0000115>
+        <obo:IAO_0000589>shame (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-04T20:55:14Z</terms:created>
         <rdfs:label xml:lang="en">shame</rdfs:label>
@@ -2592,7 +2580,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A highly unpleasant self-conscious emotional experience arising from the sense of there being something dishonorable, immodest, or indecorous in one’s own conduct or circumstances.</owl:annotatedTarget>
+        <owl:annotatedTarget>A highly unpleasant self-conscious emotional experience arising from the sense of there being something dishonorable, immodest, or indecorous in one’s own conduct or circumstances.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/shame</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2602,8 +2590,8 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0003004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003001"/>
-        <obo:IAO_0000115 xml:lang="en">A self-conscious emotional experience that occurs when a goal has been attained and one’s achievement has been recognized and approved by others.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">pride (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A self-conscious emotional experience that occurs when a goal has been attained and one’s achievement has been recognized and approved by others.</obo:IAO_0000115>
+        <obo:IAO_0000589>pride (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-04T20:57:07Z</terms:created>
         <rdfs:label xml:lang="en">pride</rdfs:label>
@@ -2613,7 +2601,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A self-conscious emotional experience that occurs when a goal has been attained and one’s achievement has been recognized and approved by others.</owl:annotatedTarget>
+        <owl:annotatedTarget>A self-conscious emotional experience that occurs when a goal has been attained and one’s achievement has been recognized and approved by others.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/pride</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2623,12 +2611,12 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0003005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003001"/>
-        <obo:IAO_0000115 xml:lang="en">A self-conscious emotional experience characterized by a painful appraisal of having done (or thought) something that is wrong and often by a readiness to take action designed to undo or mitigate this wrong.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">guilt (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A self-conscious emotional experience characterized by a painful appraisal of having done (or thought) something that is wrong and often by a readiness to take action designed to undo or mitigate this wrong.</obo:IAO_0000115>
+        <obo:IAO_0000589>guilt (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-04T20:58:18Z</terms:created>
-        <oboInOwl:hasBroadSynonym xml:lang="en">self-blame</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">excessive self-reproach</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>self-blame</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym>excessive self-reproach</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">guilt</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D006167</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_6000011</skos:closeMatch>
@@ -2640,7 +2628,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0003005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A self-conscious emotional experience characterized by a painful appraisal of having done (or thought) something that is wrong and often by a readiness to take action designed to undo or mitigate this wrong.</owl:annotatedTarget>
+        <owl:annotatedTarget>A self-conscious emotional experience characterized by a painful appraisal of having done (or thought) something that is wrong and often by a readiness to take action designed to undo or mitigate this wrong.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/guilt</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2656,25 +2644,25 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A process quality that characterizes a behavioral response to stimulus that is relatively stable, consistent, and enduring.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">personality triat characteristic (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A process quality that characterizes a behavioral response to stimulus that is relatively stable, consistent, and enduring.</obo:IAO_0000115>
+        <obo:IAO_0000589>personality triat characteristic (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-05T19:34:58Z</terms:created>
-        <terms:description xml:lang="en">Personality triats are inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual.</terms:description>
-        <oboInOwl:hasExactSynonym xml:lang="en">personality dimension</oboInOwl:hasExactSynonym>
+        <terms:description>Personality triats are inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual.</terms:description>
+        <oboInOwl:hasExactSynonym>personality dimension</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>personality trait</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">personality trait characteristic</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MF_0000203</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C17713</skos:closeMatch>
         <skos:closeMatch>http://www.ebi.ac.uk/efo/EFO_0004365</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">personality trait</skos:prefLabel>
+        <skos:prefLabel>personality trait</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A process quality that characterizes a behavioral response to stimulus that is relatively stable, consistent, and enduring.</owl:annotatedTarget>
+        <owl:annotatedTarget>A process quality that characterizes a behavioral response to stimulus that is relatively stable, consistent, and enduring.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/personality-trait</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2684,20 +2672,20 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000002"/>
-        <obo:IAO_0000115 xml:lang="en">An emotional experience characterized by the presence of pleasant affect (e.g., feelings of happiness) versus the absence of unpleasant affect (e.g., depressed mood).</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">affective well-being (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotional experience characterized by the presence of pleasant affect (e.g., feelings of happiness) versus the absence of unpleasant affect (e.g., depressed mood).</obo:IAO_0000115>
+        <obo:IAO_0000589>affective well-being (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T16:15:01Z</terms:created>
         <oboInOwl:hasExactSynonym>affective well-being</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">affective well-being</rdfs:label>
-        <skos:prefLabel xml:lang="en">affective well-being</skos:prefLabel>
+        <skos:prefLabel>affective well-being</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotional experience characterized by the presence of pleasant affect (e.g., feelings of happiness) versus the absence of unpleasant affect (e.g., depressed mood).</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotional experience characterized by the presence of pleasant affect (e.g., feelings of happiness) versus the absence of unpleasant affect (e.g., depressed mood).</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/affective-well-being</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2707,15 +2695,15 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process during which negative feelings arise from the perception that one is not spending enough time alone.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">aloneliness process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process during which negative feelings arise from the perception that one is not spending enough time alone.</obo:IAO_0000115>
+        <obo:IAO_0000589>aloneliness response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T16:21:21Z</terms:created>
         <oboInOwl:hasExactSynonym>aloneliness</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">aloneliness process</rdfs:label>
-        <skos:prefLabel xml:lang="en">aloneliness</skos:prefLabel>
+        <rdfs:label xml:lang="en">aloneliness response process</rdfs:label>
+        <skos:prefLabel>aloneliness response</skos:prefLabel>
     </owl:Class>
     
 
@@ -2724,26 +2712,26 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004000"/>
-        <obo:IAO_0000115 xml:lang="en">A personality trait characteristic that is associated with  anxiety and inhibition in social situations.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">https://dictionary.apa.org/shyness</obo:IAO_0000119>
-        <obo:IAO_0000589 xml:lang="en">shyness triat characteristic (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A personality trait characteristic that is associated with  anxiety and inhibition in social situations.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://dictionary.apa.org/shyness</obo:IAO_0000119>
+        <obo:IAO_0000589>shyness triat characteristic (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T16:26:11Z</terms:created>
-        <terms:description xml:lang="en">It typically involves three components: (a) global feelings of emotional arousal and specific physiological experiences (e.g., pounding heart, sweating, blushing); (b) acute public self-consciousness, self-deprecation, and worries about being evaluated negatively by others; and (c) observable behavior such as quietness, gaze aversion, and social withdrawal.</terms:description>
-        <oboInOwl:hasExactSynonym xml:lang="en">shyness</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">timidity</oboInOwl:hasRelatedSynonym>
+        <terms:description>It typically involves three components: (a) global feelings of emotional arousal and specific physiological experiences (e.g., pounding heart, sweating, blushing); (b) acute public self-consciousness, self-deprecation, and worries about being evaluated negatively by others; and (c) observable behavior such as quietness, gaze aversion, and social withdrawal.</terms:description>
+        <oboInOwl:hasExactSynonym>shyness</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>timidity</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">shyness trait characteristic</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D012792</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0013683</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000867</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">shyness</skos:prefLabel>
+        <skos:prefLabel>shyness</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A personality trait characteristic that is associated with  anxiety and inhibition in social situations.</owl:annotatedTarget>
+        <owl:annotatedTarget>A personality trait characteristic that is associated with  anxiety and inhibition in social situations.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/shyness</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2753,25 +2741,25 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004000"/>
-        <obo:IAO_0000115 xml:lang="en">A personality trait characteristic involving an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">introversion triat characteristic (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A personality trait characteristic involving an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things.</obo:IAO_0000115>
+        <obo:IAO_0000589>introversion triat characteristic (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T16:35:23Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">introversion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">psychology introversion</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym>introversion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>psychology introversion</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">introversion trait characteristic</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D007439</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/GSSO_007104</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MF_0000026</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0008556</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">introversion</skos:prefLabel>
+        <skos:prefLabel>introversion</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004007"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A personality trait characteristic involving an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things.</owl:annotatedTarget>
+        <owl:annotatedTarget>A personality trait characteristic involving an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/introversion</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2781,28 +2769,28 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">depression process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life.</obo:IAO_0000115>
+        <obo:IAO_0000589>depression response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T16:40:11Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">depression</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">depressive episode</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">depressivity</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">depression process</rdfs:label>
+        <oboInOwl:hasExactSynonym>depression</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>depressive episode</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>depressivity</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">depression response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D003863</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/HP_0000716</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C2982</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0005139</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SCDO_0000360</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000824</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">depression</skos:prefLabel>
+        <skos:prefLabel>depression response</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004009"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotion process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotion response process involving a negative affective state, ranging from unhappiness and discontent to an extreme feeling of sadness, pessimism, and despondency, that interferes with daily life.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/depression</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2818,28 +2806,28 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000181"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A process quality characterizing the attitudes, values, and behaviors of a population or shared by a particular group within a society, such as a profession, social class, or age group.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">societal culture characteristic (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A process quality characterizing the attitudes, values, and behaviors of a population or shared by a particular group within a society, such as a profession, social class, or age group.</obo:IAO_0000115>
+        <obo:IAO_0000589>societal culture characteristic (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T17:03:30Z</terms:created>
-        <terms:description xml:lang="en">The values, beliefs, language, rituals, traditions, and other behaviors that are passed from one generation to another within any social group. Broad definitions include any socially definable group with its own set of values, behaviors, and beliefs. Accordingly, cultural groups could include groups based on shared identities such as ethnicity.</terms:description>
-        <oboInOwl:hasExactSynonym xml:lang="en">social culture</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">cultural background</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">cultural belief</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">cultural value</oboInOwl:hasRelatedSynonym>
+        <terms:description>The values, beliefs, language, rituals, traditions, and other behaviors that are passed from one generation to another within any social group. Broad definitions include any socially definable group with its own set of values, behaviors, and beliefs. Accordingly, cultural groups could include groups based on shared identities such as ethnicity.</terms:description>
+        <oboInOwl:hasExactSynonym>social culture</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>cultural background</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cultural belief</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>cultural value</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">societal culture characteristic</rdfs:label>
         <skos:closeMatch>http://addictovocab.org/ADDICTO_0001365</skos:closeMatch>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D003469</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C16478</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SCDO_0000299</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">culture</skos:prefLabel>
+        <skos:prefLabel>culture</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004010"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A process quality characterizing the attitudes, values, and behaviors of a population or shared by a particular group within a society, such as a profession, social class, or age group.</owl:annotatedTarget>
+        <owl:annotatedTarget>A process quality characterizing the attitudes, values, and behaviors of a population or shared by a particular group within a society, such as a profession, social class, or age group.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/culture</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2849,26 +2837,26 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
-        <obo:IAO_0000115 xml:lang="en">A cognitive process during which an individual produces or develops original work, theories, techniques, or thoughts.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">creativity (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A cognitive process during which an individual produces or develops original work, theories, techniques, or thoughts.</obo:IAO_0000115>
+        <obo:IAO_0000589>creativity (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T17:06:26Z</terms:created>
         <oboInOwl:hasExactSynonym>creativity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">creative ability</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">creative thinking</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">creativeness</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>creative ability</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>creative thinking</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>creativeness</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">creativity</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D003405</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0004700</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/T4FS_0000165</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">creativity</skos:prefLabel>
+        <skos:prefLabel>creativity</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A cognitive process during which an individual produces or develops original work, theories, techniques, or thoughts.</owl:annotatedTarget>
+        <owl:annotatedTarget>A cognitive process during which an individual produces or develops original work, theories, techniques, or thoughts.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/creativity</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2878,26 +2866,26 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process that is a physiological or psychological response to internal or external stressors.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">stress process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process that is a physiological or psychological response to internal or external stressors.</obo:IAO_0000115>
+        <obo:IAO_0000589>stress response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T17:50:36Z</terms:created>
-        <terms:description xml:lang="en">Stress involves changes affecting nearly every system of the body, influencing how people feel and behave.</terms:description>
-        <oboInOwl:hasExactSynonym xml:lang="en">psychological stress</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">state of stress</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">stress</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">stress process</rdfs:label>
+        <terms:description>Stress involves changes affecting nearly every system of the body, influencing how people feel and behave.</terms:description>
+        <oboInOwl:hasExactSynonym>psychological stress</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>state of stress</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>stress</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">stress response process</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/GSSO_006346</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C35041</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/73595000</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">stress</skos:prefLabel>
+        <skos:prefLabel>stress response</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004012"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotion process that is a physiological or psychological response to internal or external stressors.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotion response process that is a physiological or psychological response to internal or external stressors.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/stress</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2907,27 +2895,27 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process involving voluntary or involuntary absence of contact with others.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">social isolation process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process involving voluntary or involuntary absence of contact with others.</obo:IAO_0000115>
+        <obo:IAO_0000589>social isolation response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T18:06:37Z</terms:created>
-        <terms:description xml:lang="en">Social isolation often produces abnormal behavioral and physiological changes in both humans and nonhuman animals.</terms:description>
-        <oboInOwl:hasExactSynonym xml:lang="en">social isolation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">social exclusion</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">social isolation process</rdfs:label>
+        <terms:description>Social isolation often produces abnormal behavioral and physiological changes in both humans and nonhuman animals.</terms:description>
+        <oboInOwl:hasExactSynonym>social isolation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>social exclusion</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">social isolation response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D012934</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/GSSO_003702</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C21100</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/SCDO_0001084</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/422650009</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">social isolation</skos:prefLabel>
+        <skos:prefLabel>social isolation response</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004013"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotion process involving voluntary or involuntary absence of contact with others.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotion response process involving voluntary or involuntary absence of contact with others.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/social-isolation</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2937,28 +2925,28 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process of joy, gladness, satisfaction, and well-being.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">happiness (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process of joy, gladness, satisfaction, and well-being.</obo:IAO_0000115>
+        <obo:IAO_0000589>happiness (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T20:14:47Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">happy</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">gladness</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">happiness</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym xml:lang="en">joy</oboInOwl:hasRelatedSynonym>
-        <rdfs:label xml:lang="en">happiness</rdfs:label>
+        <oboInOwl:hasExactSynonym>happy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>gladness</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>happiness</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>joy</oboInOwl:hasRelatedSynonym>
+        <rdfs:label xml:lang="en">happiness response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D006240</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MFOEM_000042</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C72670</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0007413</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000840</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">happiness</skos:prefLabel>
+        <skos:prefLabel>happiness</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004014"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotion process of joy, gladness, satisfaction, and well-being.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotion response process of joy, gladness, satisfaction, and well-being.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/happiness</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2968,21 +2956,21 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004000"/>
-        <obo:IAO_0000115 xml:lang="en">A personality trait characteristic involving restraint in engaging with the world combined with a tendency to scrutinize the environment for potential threats and to avoid or withdraw from unfamiliar situations or people.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">behavioral inhibition trait characteristic (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>A personality trait characteristic involving restraint in engaging with the world combined with a tendency to scrutinize the environment for potential threats and to avoid or withdraw from unfamiliar situations or people.</obo:IAO_0000115>
+        <obo:IAO_0000589>behavioral inhibition trait characteristic (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T20:20:37Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">behavioral inhibition</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym xml:lang="en">behavioural inhibition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>behavioral inhibition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>behavioural inhibition</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">behavioral inhibition trait characteristic</rdfs:label>
-        <skos:prefLabel xml:lang="en">behavioral inhibition</skos:prefLabel>
+        <skos:prefLabel>behavioral inhibition</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004015"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">A personality trait characteristic involving restraint in engaging with the world combined with a tendency to scrutinize the environment for potential threats and to avoid or withdraw from unfamiliar situations or people.</owl:annotatedTarget>
+        <owl:annotatedTarget>A personality trait characteristic involving restraint in engaging with the world combined with a tendency to scrutinize the environment for potential threats and to avoid or withdraw from unfamiliar situations or people.</owl:annotatedTarget>
         <obo:IAO_0000119>https://dictionary.apa.org/behavioral-inhibition</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -2992,23 +2980,23 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process involving the removal of oneself from familiar and unfamiliar peers.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">social withdrawal process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion process involving the removal of oneself from familiar and unfamiliar peers.</obo:IAO_0000115>
+        <obo:IAO_0000589>social withdrawal response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T20:47:51Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">social withdrawal</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">social withdrawal process</rdfs:label>
+        <oboInOwl:hasExactSynonym>social withdrawal</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">social withdrawal response process</rdfs:label>
         <skos:closeMatch>http://purl.obolibrary.org/obo/MP_0001361</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NBO_0000565</skos:closeMatch>
         <skos:closeMatch>http://snomed.info/id/105411000</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">social withdrawal</skos:prefLabel>
+        <skos:prefLabel>social withdrawal response</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004016"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotion process involving the removal of oneself from familiar and unfamiliar peers.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotion process involving the removal of oneself from familiar and unfamiliar peers.</owl:annotatedTarget>
         <obo:IAO_0000119>Rubin, K. H., Coplan, R. J., &amp; Bowker, J. C. (2009). Social withdrawal in childhood. Annual Review of Psychology, 60(1), 141–171.</obo:IAO_0000119>
     </owl:Axiom>
     
@@ -3018,25 +3006,70 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
-        <obo:IAO_0000115 xml:lang="en">An emotion process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary.</obo:IAO_0000115>
-        <obo:IAO_0000589 xml:lang="en">loneliness process (EMRO)</obo:IAO_0000589>
+        <obo:IAO_0000115>An emotion response process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary.</obo:IAO_0000115>
+        <obo:IAO_0000589>loneliness response process (EMRO)</obo:IAO_0000589>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-7282-0836"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-06-08T21:04:33Z</terms:created>
-        <oboInOwl:hasExactSynonym xml:lang="en">loneliness</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">loneliness process</rdfs:label>
+        <oboInOwl:hasExactSynonym>loneliness</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">loneliness response process</rdfs:label>
         <skos:closeMatch>http://id.nlm.nih.gov/mesh/D008132</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C34785</skos:closeMatch>
         <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0009215</skos:closeMatch>
         <skos:closeMatch>http://semanticscience.org/resource/SIO_000852</skos:closeMatch>
-        <skos:prefLabel xml:lang="en">loneliness</skos:prefLabel>
+        <skos:prefLabel>loneliness response</skos:prefLabel>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004017"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget xml:lang="en">An emotion process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary.</owl:annotatedTarget>
+        <owl:annotatedTarget>An emotion response process involving affective and cognitive discomfort or uneasiness that arises from being or perceiving oneself to be alone or otherwise solitary.</owl:annotatedTarget>
         <terms:source>https://dictionary.apa.org/loneliness</terms:source>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMRO_0004020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EMRO_0000000"/>
+        <obo:IAO_0000115>An emotion response process which entails cognitive and behavioral methods focused on reducing or moderating the intensity of specific emotional states.</obo:IAO_0000115>
+        <obo:IAO_0000589>emotional downregulation response process (EMRO)</obo:IAO_0000589>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-12T14:37:28Z</terms:created>
+        <rdfs:label xml:lang="en">emotional downregulation response process</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004020"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>An emotion response process which entails cognitive and behavioral methods focused on reducing or moderating the intensity of specific emotional states.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://pmc.ncbi.nlm.nih.gov/articles/PMC10850342/</obo:IAO_0000119>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EMRO_0004021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EMRO_0004021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050890"/>
+        <obo:IAO_0000115>A cognitive process that involves a person&apos;s willingness to exert physical or mental effort in pursuit of a goal or outcome.</obo:IAO_0000115>
+        <obo:IAO_0000589>motivation (EMRO)</obo:IAO_0000589>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6906-5548"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-10-12T14:49:53Z</terms:created>
+        <rdfs:label xml:lang="en">motivation</rdfs:label>
+        <skos:closeMatch>http://id.nlm.nih.gov/mesh/D009042</skos:closeMatch>
+        <skos:closeMatch>http://purl.obolibrary.org/obo/CIDO_0000434</skos:closeMatch>
+        <skos:closeMatch>http://purl.obolibrary.org/obo/NCIT_C28495</skos:closeMatch>
+        <skos:closeMatch>http://purl.obolibrary.org/obo/OMIT_0010086</skos:closeMatch>
+        <skos:closeMatch>http://snomed.info/id/363882003</skos:closeMatch>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EMRO_0004021"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A cognitive process that involves a person&apos;s willingness to exert physical or mental effort in pursuit of a goal or outcome.</owl:annotatedTarget>
+        <obo:IAO_0000119>https://dictionary.apa.org/motivation</obo:IAO_0000119>
     </owl:Axiom>
     
 
