@@ -638,12 +638,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0003005> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004000> (personality trait characteristic)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/personality-trait") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004000> "A process quality that characterizes a behavioral response to stimulus that is relatively stable, consistent, and enduring.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality triat characteristic (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait characteristic (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004000> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004000> "2026-06-05T19:34:58Z"^^xsd:dateTime)
-AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004000> "Personality triats are inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual.")
+AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004000> "Personality traits are inferred from a pattern of behaviors, attitudes, feelings, and habits in the individual.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality dimension")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004000> "personality trait characteristic"@en)
@@ -671,7 +671,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004001> <http://purl.obolibrary
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/shyness") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004003> "A personality trait characteristic that is associated with  anxiety and inhibition in social situations.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/EMRO_0004003> "https://dictionary.apa.org/shyness")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004003> "shyness triat characteristic (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004003> "shyness trait characteristic (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004003> <https://orcid.org/0009-0002-7282-0836>)
@@ -689,7 +689,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004003> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004007> (introversion trait characteristic)
 
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/introversion") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004007> "A personality trait characteristic involving an orientation toward the internal private world of one’s self and one’s inner thoughts and feelings, rather than toward the outer world of people and things.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion triat characteristic (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004007> "introversion trait characteristic (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004007> <https://orcid.org/0009-0002-7282-0836>)
