@@ -184,7 +184,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0000003> <http://purl.obolibrary
 # Class: <http://purl.obolibrary.org/obo/EMRO_0000004> (fear process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0000004> "An emotion response process that is an in-the-moment response to a perceived threat. Fear is typically associated with organized, robust visceral arousal.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000004> "fear emotion process (EMRO)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0000004> "fear process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000004> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000004> <https://orcid.org/0000-0001-9990-8331>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0000004> <https://orcid.org/0000-0002-0766-8455>)
@@ -794,13 +794,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004012> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004013> (social isolation process)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/social-isolation") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004013> "An emotion response process involving voluntary or involuntary absence of contact with others.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/social-isolation") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pubmed.ncbi.nlm.nih.gov/19726219/") Annotation(<http://purl.org/dc/terms/source> "https://peplau.psych.ucla.edu/wp-content/uploads/sites/141/2017/07/Perlman-Peplau-81.pdf") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004013> "An emotion response process involving voluntary or involuntary absence of contact with others, or the perception of such absence, which can be felt even when a person is among other people.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004013> "2026-06-08T18:06:37Z"^^xsd:dateTime)
-AnnotationAssertion(<http://purl.org/dc/terms/description> <http://purl.obolibrary.org/obo/EMRO_0004013> "Social isolation often produces abnormal behavioral and physiological changes in both humans and nonhuman animals.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/EMRO_0004013> "social exclusion")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://id.nlm.nih.gov/mesh/D012934")
@@ -846,7 +845,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004015> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004016> (social withdrawal process)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "Rubin, K. H., Coplan, R. J., & Bowker, J. C. (2009). Social withdrawal in childhood. Annual Review of Psychology, 60(1), 141–171.") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "An emotion process involving the removal of oneself from familiar and unfamiliar peers.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC3800115/") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC8382207/#R10") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "An emotion process involving the removal of oneself from interaction with familiar and unfamiliar peers, either by physical distance or by not engaging while present.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-9625-1899>)
