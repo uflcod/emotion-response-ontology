@@ -792,23 +792,22 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004012> "stress")
 SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004012> <http://purl.obolibrary.org/obo/EMRO_0000000>)
 
-# Class: <http://purl.obolibrary.org/obo/EMRO_0004013> (social isolation process)
+# Class: <http://purl.obolibrary.org/obo/EMRO_0004013> (social isolation characteristic)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/social-isolation") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pubmed.ncbi.nlm.nih.gov/19726219/") Annotation(<http://purl.org/dc/terms/source> "https://peplau.psych.ucla.edu/wp-content/uploads/sites/141/2017/07/Perlman-Peplau-81.pdf") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004013> "An emotion response process involving voluntary or involuntary absence of contact with others, or the perception of such absence, which can be felt even when a person is among other people.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process (EMRO)")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://dictionary.apa.org/social-isolation") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pubmed.ncbi.nlm.nih.gov/19726219/") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004013> "A process quality involving voluntary or involuntary absence of contact with others.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation characteristic (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004013> <https://orcid.org/0009-0002-7282-0836>)
 AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/EMRO_0004013> "2026-06-08T18:06:37Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/EMRO_0004013> "social exclusion")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation characteristic"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://id.nlm.nih.gov/mesh/D012934")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://purl.obolibrary.org/obo/GSSO_003702")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://purl.obolibrary.org/obo/NCIT_C21100")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://purl.obolibrary.org/obo/SCDO_0001084")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004013> "http://snomed.info/id/422650009")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004013> "social isolation")
-SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004013> <http://purl.obolibrary.org/obo/PATO_0001236>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004014> (happiness process)
 
@@ -845,7 +844,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004015> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004016> (social withdrawal process)
 
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC3800115/") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC8382207/#R10") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "An emotion process involving the removal of oneself from interaction with familiar and unfamiliar peers, either by physical distance or by not engaging while present.")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC3800115/") Annotation(<http://purl.obolibrary.org/obo/IAO_0000119> "https://pmc.ncbi.nlm.nih.gov/articles/PMC8382207/#R10") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/EMRO_0004016> "A behavior response involving the removal of oneself from interaction with familiar and unfamiliar peers.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000589> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal process (EMRO)")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-6906-5548>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/EMRO_0004016> <https://orcid.org/0000-0001-9625-1899>)
@@ -856,7 +855,7 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://pur
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004016> "http://purl.obolibrary.org/obo/NBO_0000565")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <http://purl.obolibrary.org/obo/EMRO_0004016> "http://snomed.info/id/105411000")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/EMRO_0004016> "social withdrawal")
-SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/EMRO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/EMRO_0004016> <http://purl.obolibrary.org/obo/GO_0007610>)
 
 # Class: <http://purl.obolibrary.org/obo/EMRO_0004017> (loneliness process)
 
